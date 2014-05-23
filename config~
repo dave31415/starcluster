@@ -47,7 +47,7 @@ EC2_PRIVATE_KEY = /home/davej/east.pem
 # --help" for instructions on how to create a new keypair. Section name should
 # match your key name e.g.:
 [key east]
-KEY_LOCATION=~/amaz/east.pem
+KEY_LOCATION=~/.starcluster/user_keys/east.pem
 
 # You can of course have multiple keypair sections
 # [key myotherkey]

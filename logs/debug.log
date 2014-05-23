@@ -4141,3 +4141,15 @@ ClusterValidationError: key_location '/Users/davej/amaz/east.pem' does not exist
 2014-05-23 19:28:39,909 PID: 10419 sshutils.py:859 - DEBUG - rsa private key fingerprint (/Users/davej/.starcluster/user_keys/east.pem): 94:91:37:dd:62:95:94:50:8b:e9:7c:c8:e2:cc:13:fe:c0:52:51:e7
 2014-05-23 19:28:40,135 PID: 10419 node.py:1091 - DEBUG - Using native OpenSSH client
 2014-05-23 19:28:40,136 PID: 10419 node.py:1104 - DEBUG - ssh_cmd: ssh -i /Users/davej/.starcluster/user_keys/east.pem root@ec2-54-235-2-222.compute-1.amazonaws.com
+2014-05-23 19:29:52,610 PID: 10437 config.py:567 - DEBUG - Loading config
+2014-05-23 19:29:52,610 PID: 10437 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 19:29:52,615 PID: 10437 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 19:29:53,007 PID: 10437 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 19:29:53,007 PID: 10437 cluster.py:767 - DEBUG - adding node i-e84ec9bb to self._nodes list
+2014-05-23 19:29:53,008 PID: 10437 cluster.py:767 - DEBUG - adding node i-b74bcce4 to self._nodes list
+2014-05-23 19:29:53,008 PID: 10437 cluster.py:767 - DEBUG - adding node i-4e49ce1d to self._nodes list
+2014-05-23 19:29:53,008 PID: 10437 cluster.py:767 - DEBUG - adding node i-bf4dcaec to self._nodes list
+2014-05-23 19:29:53,008 PID: 10437 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 19:29:53,108 PID: 10437 sshutils.py:859 - DEBUG - rsa private key fingerprint (/Users/davej/.starcluster/user_keys/east.pem): 94:91:37:dd:62:95:94:50:8b:e9:7c:c8:e2:cc:13:fe:c0:52:51:e7
+2014-05-23 19:29:53,226 PID: 10437 node.py:1091 - DEBUG - Using native OpenSSH client
+2014-05-23 19:29:53,226 PID: 10437 node.py:1104 - DEBUG - ssh_cmd: ssh -i /Users/davej/.starcluster/user_keys/east.pem root@ec2-54-235-2-222.compute-1.amazonaws.com

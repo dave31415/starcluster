@@ -2,9 +2,6 @@
 ## StarCluster Configuration File ##
 ####################################
 [global]
-# Configure the default cluster template to use when starting a cluster
-# defaults to 'smallcluster' defined below. This template should be usable
-# out-of-the-box provided you've configured your keypair correctly
 DEFAULT_TEMPLATE=smallcluster
 # enable experimental features for this release
 #ENABLE_EXPERIMENTAL=True
@@ -19,12 +16,8 @@ DEFAULT_TEMPLATE=smallcluster
 ## AWS Credentials and Connection Settings ##
 #############################################
 [aws info]
-# This is the AWS credentials section (required).
-# These settings apply to all clusters
-# replace these with your AWS keys
 AWS_ACCESS_KEY_ID = AKIAII6OQGOPBXPILCZA
 AWS_SECRET_ACCESS_KEY = lEzC6PyO132KvX8VCXSF9e410Jvmu3NkzdJrzQCL
-# replace this with your account number
 AWS_USER_ID=  9751-3920-3755
 # Uncomment to specify a different Amazon AWS region  (OPTIONAL)
 # (defaults to us-east-1 if not specified)
@@ -43,35 +36,14 @@ EC2_PRIVATE_KEY = /home/davej/east.pem
 ###########################
 ## Defining EC2 Keypairs ##
 ###########################
-# Sections starting with "key" define your keypairs. See "starcluster createkey
-# --help" for instructions on how to create a new keypair. Section name should
-# match your key name e.g.:
 [key east]
 KEY_LOCATION=~/.starcluster/user_keys/east.pem
-
-# You can of course have multiple keypair sections
-# [key myotherkey]
-# KEY_LOCATION=~/.ssh/myotherkey.rsa
 
 ################################
 ## Defining Cluster Templates ##
 ################################
-# Sections starting with "cluster" represent a cluster template. These
-# "templates" are a collection of settings that define a single cluster
-# configuration and are used when creating and configuring a cluster. You can
-# change which template to use when creating your cluster using the -c option
-# to the start command:
-#
-#     $ starcluster start -c mediumcluster mycluster
-#
-# If a template is not specified then the template defined by DEFAULT_TEMPLATE
-# in the [global] section above is used. Below is the "default" template named
-# "smallcluster". You can rename it but dont forget to update the
-# DEFAULT_TEMPLATE setting in the [global] section above. See the next section
-# on defining multiple templates.
 
 [cluster small]
-# change this to the name of one of the keypair sections defined above
 KEYNAME = east
 # number of ec2 instances to launch
 CLUSTER_SIZE = 3
@@ -120,10 +92,14 @@ NODE_INSTANCE_TYPE = r3.xlarge
 # list of volumes to attach to the master node (OPTIONAL)
 # these volumes, if any, will be NFS shared to the worker nodes
 # see "Configuring EBS Volumes" below on how to define volume sections
+
 #VOLUMES = bigdata
+
 # list of plugins to load after StarCluster's default setup routines (OPTIONAL)
 # see "Configuring StarCluster Plugins" below on how to define plugin sections
+
 PLUGINS = pkginstaller,createusers,ipcluster,tmux,hadoop,mysqlcluster,xvfb
+
 # list of permissions (or firewall rules) to apply to the cluster's security
 # group (OPTIONAL).
 #PERMISSIONS = ssh, http
@@ -141,11 +117,6 @@ SPOT_BID = 0.07
 ###########################################
 ## Defining Additional Cluster Templates ##
 ###########################################
-# You can also define multiple cluster templates. You can either supply all
-# configuration options as with smallcluster above, or create an
-# EXTENDS=<cluster_name> variable in the new cluster section to use all
-# settings from <cluster_name> as defaults. Below are example templates that
-# use the EXTENDS feature:
 
 [cluster medium]
 # Declares that this cluster uses smallcluster as defaults
@@ -165,29 +136,10 @@ CLUSTER_SIZE=10
 #############################
 ## Configuring EBS Volumes ##
 #############################
-# StarCluster can attach one or more EBS volumes to the master and then
-# NFS_share these volumes to all of the worker nodes. A new [volume] section
-# must be created for each EBS volume you wish to use with StarCluser. The
-# section name is a tag for your volume. This tag is used in the VOLUMES
-# setting of a cluster template to declare that an EBS volume is to be mounted
-# and nfs shared on the cluster. (see the commented VOLUMES setting in the
-# example 'smallcluster' template above) Below are some examples of defining
-# and configuring EBS volumes to be used with StarCluster:
-# Sections starting with "volume" define your EBS volumes
+
 [volume bigdata]
-#attach vol-c9999999 to /bigdata on master node and NFS-shre to worker nodes
 VOLUME_ID = vol-d7fd1692
 MOUNT_PATH = /bigdata
-
-# Same volume as above, but mounts to different location
-# [volume biodata2]
-# VOLUME_ID = vol-c999999
-# MOUNT_PATH = /opt/
-
-# Another volume example
-# [volume oceandata]
-# VOLUME_ID = vol-d7777777
-# MOUNT_PATH = /mydata
 
 # By default StarCluster will attempt first to mount the entire volume device,
 # failing that it will try the first partition. If you have more than one
@@ -234,13 +186,6 @@ MOUNT_PATH = /bigdata
 #####################################
 ## Configuring StarCluster Plugins ##
 #####################################
-# Sections starting with "plugin" define a custom python class which perform
-# additional configurations to StarCluster's default routines. These plugins
-# can be assigned to a cluster template to customize the setup procedure when
-# starting a cluster from this template (see the commented PLUGINS setting in
-# the 'smallcluster' template above). Below is an example of defining a user
-# plugin called 'myplugin':
-
 # [plugin myplugin]
 # NOTE: myplugin module must either live in ~/.starcluster/plugins or be
 # on your PYTHONPATH
@@ -249,11 +194,16 @@ MOUNT_PATH = /bigdata
 # SOME_PARAM_FOR_MY_PLUGIN = 1
 # SOME_OTHER_PARAM = 2
 
+######################                                                                                               
+## My Plugins ##                                                                                
+######################  
+
+[plugin rstudio]
+SETUP_CLASS = rstudio.RStudioServerInstaller
+
 ######################
 ## Built-in Plugins ##
 ######################
-# The following plugins ship with StarCluster and should work out-of-the-box.
-# Uncomment as needed. Don't forget to update your PLUGINS list!
 # See http://star.mit.edu/cluster/docs/latest/plugins for plugin details.
 #
 
@@ -261,7 +211,7 @@ MOUNT_PATH = /bigdata
 [plugin pkginstaller]
 SETUP_CLASS = starcluster.plugins.pkginstaller.PackageInstaller
 # # list of apt-get installable packages
-PACKAGES = mongodb, python-pymongo, r-base-dev
+PACKAGES = mongodb, python-pymongo, r-base-dev, postgresql-client
 
 [plugin rstudio]
 SETUP_CLASS = rstudio.RStudioServerInstaller
