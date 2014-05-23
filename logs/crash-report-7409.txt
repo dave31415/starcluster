@@ -1,0 +1,452 @@
+---------- SYSTEM INFO ----------
+StarCluster: 0.95.5
+Python: 2.7.2+ (default, Oct  4 2011, 20:06:09)  [GCC 4.6.1]
+Platform: Linux-3.0.0-12-generic-x86_64-with-LinuxMint-12-lisa
+boto: 2.28.0
+paramiko: 1.14.0
+Crypto: 2.6.1
+
+---------- CRASH DETAILS ----------
+Command: starcluster runplugin rstudio dragon
+
+2014-05-23 17:57:05,001 PID: 7409 config.py:567 - DEBUG - Loading config
+2014-05-23 17:57:05,001 PID: 7409 config.py:138 - DEBUG - Loading file: /home/davej/.starcluster/config
+2014-05-23 17:57:05,005 PID: 7409 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 17:57:05,888 PID: 7409 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 17:57:05,888 PID: 7409 cluster.py:767 - DEBUG - adding node i-e84ec9bb to self._nodes list
+2014-05-23 17:57:05,889 PID: 7409 cluster.py:767 - DEBUG - adding node i-b74bcce4 to self._nodes list
+2014-05-23 17:57:05,889 PID: 7409 cluster.py:767 - DEBUG - adding node i-4e49ce1d to self._nodes list
+2014-05-23 17:57:05,889 PID: 7409 cluster.py:767 - DEBUG - adding node i-bf4dcaec to self._nodes list
+2014-05-23 17:57:05,890 PID: 7409 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 17:57:06,176 PID: 7409 sshutils.py:859 - DEBUG - rsa private key fingerprint (/home/davej/amaz/east.pem): 94:91:37:dd:62:95:94:50:8b:e9:7c:c8:e2:cc:13:fe:c0:52:51:e7
+2014-05-23 17:57:06,487 PID: 7409 cluster.py:759 - DEBUG - existing nodes: {u'i-bf4dcaec': <Node: node001 (i-bf4dcaec)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-4e49ce1d': <Node: node002 (i-4e49ce1d)>, u'i-b74bcce4': <Node: node003 (i-b74bcce4)>}
+2014-05-23 17:57:06,487 PID: 7409 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 17:57:06,487 PID: 7409 cluster.py:762 - DEBUG - updating existing node i-b74bcce4 in self._nodes
+2014-05-23 17:57:06,488 PID: 7409 cluster.py:762 - DEBUG - updating existing node i-4e49ce1d in self._nodes
+2014-05-23 17:57:06,488 PID: 7409 cluster.py:762 - DEBUG - updating existing node i-bf4dcaec in self._nodes
+2014-05-23 17:57:06,488 PID: 7409 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 17:57:06,630 PID: 7409 sshutils.py:87 - DEBUG - loading private key /home/davej/amaz/east.pem
+2014-05-23 17:57:06,630 PID: 7409 sshutils.py:94 - DEBUG - specified key does not end in either rsa or dsa, trying both
+2014-05-23 17:57:06,631 PID: 7409 sshutils.py:185 - DEBUG - Using private key /home/davej/amaz/east.pem (RSA)
+2014-05-23 17:57:06,631 PID: 7409 sshutils.py:112 - DEBUG - connecting to host ec2-54-235-2-222.compute-1.amazonaws.com on port 22 as user root
+2014-05-23 17:57:07,125 PID: 7409 sshutils.py:204 - DEBUG - creating sftp connection
+2014-05-23 17:57:07,511 PID: 7409 sshutils.py:87 - DEBUG - loading private key /home/davej/amaz/east.pem
+2014-05-23 17:57:07,512 PID: 7409 sshutils.py:94 - DEBUG - specified key does not end in either rsa or dsa, trying both
+2014-05-23 17:57:07,514 PID: 7409 sshutils.py:185 - DEBUG - Using private key /home/davej/amaz/east.pem (RSA)
+2014-05-23 17:57:07,514 PID: 7409 sshutils.py:112 - DEBUG - connecting to host ec2-54-237-82-146.compute-1.amazonaws.com on port 22 as user root
+2014-05-23 17:57:08,027 PID: 7409 sshutils.py:204 - DEBUG - creating sftp connection
+2014-05-23 17:57:08,367 PID: 7409 sshutils.py:87 - DEBUG - loading private key /home/davej/amaz/east.pem
+2014-05-23 17:57:08,368 PID: 7409 sshutils.py:94 - DEBUG - specified key does not end in either rsa or dsa, trying both
+2014-05-23 17:57:08,369 PID: 7409 sshutils.py:185 - DEBUG - Using private key /home/davej/amaz/east.pem (RSA)
+2014-05-23 17:57:08,370 PID: 7409 sshutils.py:112 - DEBUG - connecting to host ec2-54-205-88-103.compute-1.amazonaws.com on port 22 as user root
+2014-05-23 17:57:08,897 PID: 7409 sshutils.py:204 - DEBUG - creating sftp connection
+2014-05-23 17:57:09,205 PID: 7409 sshutils.py:87 - DEBUG - loading private key /home/davej/amaz/east.pem
+2014-05-23 17:57:09,205 PID: 7409 sshutils.py:94 - DEBUG - specified key does not end in either rsa or dsa, trying both
+2014-05-23 17:57:09,208 PID: 7409 sshutils.py:185 - DEBUG - Using private key /home/davej/amaz/east.pem (RSA)
+2014-05-23 17:57:09,208 PID: 7409 sshutils.py:112 - DEBUG - connecting to host ec2-54-87-231-100.compute-1.amazonaws.com on port 22 as user root
+2014-05-23 17:57:09,670 PID: 7409 sshutils.py:204 - DEBUG - creating sftp connection
+2014-05-23 17:57:09,892 PID: 7409 utils.py:510 - DEBUG - nargs = 0
+2014-05-23 17:57:09,892 PID: 7409 utils.py:511 - DEBUG - ndefaults = 0
+2014-05-23 17:57:09,893 PID: 7409 utils.py:512 - DEBUG - nrequired = 0
+2014-05-23 17:57:09,893 PID: 7409 utils.py:513 - DEBUG - args = []
+2014-05-23 17:57:09,893 PID: 7409 utils.py:514 - DEBUG - kwargs = []
+2014-05-23 17:57:09,893 PID: 7409 utils.py:515 - DEBUG - defaults = None
+2014-05-23 17:57:09,893 PID: 7409 deathrow.py:72 - DEBUG - config_args = []
+2014-05-23 17:57:09,894 PID: 7409 deathrow.py:82 - DEBUG - config_kwargs = {}
+2014-05-23 17:57:09,894 PID: 7409 rstudio.py:7 - DEBUG - Installing Rstudio Server on port 8787 of each node
+2014-05-23 17:57:10,025 PID: 7409 cluster.py:759 - DEBUG - existing nodes: {u'i-bf4dcaec': <Node: node001 (i-bf4dcaec)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-4e49ce1d': <Node: node002 (i-4e49ce1d)>, u'i-b74bcce4': <Node: node003 (i-b74bcce4)>}
+2014-05-23 17:57:10,025 PID: 7409 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 17:57:10,025 PID: 7409 cluster.py:762 - DEBUG - updating existing node i-b74bcce4 in self._nodes
+2014-05-23 17:57:10,026 PID: 7409 cluster.py:762 - DEBUG - updating existing node i-4e49ce1d in self._nodes
+2014-05-23 17:57:10,026 PID: 7409 cluster.py:762 - DEBUG - updating existing node i-bf4dcaec in self._nodes
+2014-05-23 17:57:10,026 PID: 7409 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 17:57:10,026 PID: 7409 cluster.py:1714 - INFO - Running plugin rstudio
+2014-05-23 17:57:10,026 PID: 7409 rstudio.py:11 - INFO - Installing Rstudio Server on master
+2014-05-23 17:57:10,058 PID: 7409 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && sudo apt-get -y install r-base-core gdebi-core libapparmor1
+2014-05-23 17:57:10,275 PID: 7409 sshutils.py:585 - DEBUG - output of 'source /etc/profile && sudo apt-get -y install r-base-core gdebi-core libapparmor1':
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libapparmor1 is already the newest version.
+gdebi-core is already the newest version.
+r-base-core is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and 21 not upgraded.
+2014-05-23 17:57:10,393 PID: 7409 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && wget http://download2.rstudio.org/rstudio-server-0.98.507-amd64.deb
+2014-05-23 17:57:10,738 PID: 7409 sshutils.py:585 - DEBUG - output of 'source /etc/profile && wget http://download2.rstudio.org/rstudio-server-0.98.507-amd64.deb':
+--2014-05-23 21:57:10--  http://download2.rstudio.org/rstudio-server-0.98.507-amd64.deb
+Resolving download2.rstudio.org (download2.rstudio.org)... 54.230.16.140, 54.230.17.4, 54.230.17.43, ...
+Connecting to download2.rstudio.org (download2.rstudio.org)|54.230.16.140|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 15824560 (15M) [application/x-deb]
+Saving to: ‘rstudio-server-0.98.507-amd64.deb.1’
+
+0K .......... .......... .......... .......... ..........  0% 13.1M 1s
+50K .......... .......... .......... .......... ..........  0% 12.3M 1s
+100K .......... .......... .......... .......... ..........  0% 23.6M 1s
+150K .......... .......... .......... .......... ..........  1% 22.7M 1s
+200K .......... .......... .......... .......... ..........  1%  140M 1s
+250K .......... .......... .......... .......... ..........  1% 27.6M 1s
+300K .......... .......... .......... .......... ..........  2% 95.0M 1s
+350K .......... .......... .......... .......... ..........  2% 37.8M 1s
+400K .......... .......... .......... .......... ..........  2% 95.7M 1s
+450K .......... .......... .......... .......... ..........  3%  137M 0s
+500K .......... .......... .......... .......... ..........  3% 52.0M 0s
+550K .......... .......... .......... .......... ..........  3% 97.3M 0s
+600K .......... .......... .......... .......... ..........  4%  117M 0s
+650K .......... .......... .......... .......... ..........  4% 91.9M 0s
+700K .......... .......... .......... .......... ..........  4%  140M 0s
+750K .......... .......... .......... .......... ..........  5% 92.0M 0s
+800K .......... .......... .......... .......... ..........  5% 96.4M 0s
+850K .......... .......... .......... .......... ..........  5%  100M 0s
+900K .......... .......... .......... .......... ..........  6%  108M 0s
+950K .......... .......... .......... .......... ..........  6%  163M 0s
+1000K .......... .......... .......... .......... ..........  6%  100M 0s
+1050K .......... .......... .......... .......... ..........  7%  102M 0s
+1100K .......... .......... .......... .......... ..........  7% 93.3M 0s
+1150K .......... .......... .......... .......... ..........  7%  109M 0s
+1200K .......... .......... .......... .......... ..........  8%  135M 0s
+1250K .......... .......... .......... .......... ..........  8%  102M 0s
+1300K .......... .......... .......... .......... ..........  8% 93.6M 0s
+1350K .......... .......... .......... .......... ..........  9%  130M 0s
+1400K .......... .......... .......... .......... ..........  9%  122M 0s
+1450K .......... .......... .......... .......... ..........  9% 98.9M 0s
+1500K .......... .......... .......... .......... .......... 10% 97.7M 0s
+1550K .......... .......... .......... .......... .......... 10% 87.1M 0s
+1600K .......... .......... .......... .......... .......... 10%  159M 0s
+1650K .......... .......... .......... .......... .......... 11% 91.6M 0s
+1700K .......... .......... .......... .......... .......... 11% 98.4M 0s
+1750K .......... .......... .......... .......... .......... 11%  129M 0s
+1800K .......... .......... .......... .......... .......... 11%  118M 0s
+1850K .......... .......... .......... .......... .......... 12% 98.9M 0s
+1900K .......... .......... .......... .......... .......... 12%  102M 0s
+1950K .......... .......... .......... .......... .......... 12%  108M 0s
+2000K .......... .......... .......... .......... .......... 13%  133M 0s
+2050K .......... .......... .......... .......... .......... 13% 75.7M 0s
+2100K .......... .......... .......... .......... .......... 13%  202M 0s
+2150K .......... .......... .......... .......... .......... 14% 89.7M 0s
+2200K .......... .......... .......... .......... .......... 14%  102M 0s
+2250K .......... .......... .......... .......... .......... 14% 88.4M 0s
+2300K .......... .......... .......... .......... .......... 15%  141M 0s
+2350K .......... .......... .......... .......... .......... 15% 77.8M 0s
+2400K .......... .......... .......... .......... .......... 15%  124M 0s
+2450K .......... .......... .......... .......... .......... 16%  102M 0s
+2500K .......... .......... .......... .......... .......... 16%  106M 0s
+2550K .......... .......... .......... .......... .......... 16%  106M 0s
+2600K .......... .......... .......... .......... .......... 17%  129M 0s
+2650K .......... .......... .......... .......... .......... 17%  103M 0s
+2700K .......... .......... .......... .......... .......... 17% 92.8M 0s
+2750K .......... .......... .......... .......... .......... 18% 70.0M 0s
+2800K .......... .......... .......... .......... .......... 18%  159M 0s
+2850K .......... .......... .......... .......... .......... 18% 95.0M 0s
+2900K .......... .......... .......... .......... .......... 19% 98.8M 0s
+2950K .......... .......... .......... .......... .......... 19% 93.4M 0s
+3000K .......... .......... .......... .......... .......... 19%  110M 0s
+3050K .......... .......... .......... .......... .......... 20% 80.4M 0s
+3100K .......... .......... .......... .......... .......... 20%  162M 0s
+3150K .......... .......... .......... .......... .......... 20% 56.1M 0s
+3200K .......... .......... .......... .......... .......... 21% 94.5M 0s
+3250K .......... .......... .......... .......... .......... 21%  137M 0s
+3300K .......... .......... .......... .......... .......... 21%  106M 0s
+3350K .......... .......... .......... .......... .......... 22%  105M 0s
+3400K .......... .......... .......... .......... .......... 22% 90.7M 0s
+3450K .......... .......... .......... .......... .......... 22%  186M 0s
+3500K .......... .......... .......... .......... .......... 22% 90.9M 0s
+3550K .......... .......... .......... .......... .......... 23% 99.4M 0s
+3600K .......... .......... .......... .......... .......... 23%  143M 0s
+3650K .......... .......... .......... .......... .......... 23%  107M 0s
+3700K .......... .......... .......... .......... .......... 24%  106M 0s
+3750K .......... .......... .......... .......... .......... 24%  124M 0s
+3800K .......... .......... .......... .......... .......... 24%  126M 0s
+3850K .......... .......... .......... .......... .......... 25% 97.7M 0s
+3900K .......... .......... .......... .......... .......... 25% 86.8M 0s
+3950K .......... .......... .......... .......... .......... 25%  185M 0s
+4000K .......... .......... .......... .......... .......... 26% 86.3M 0s
+4050K .......... .......... .......... .......... .......... 26% 74.8M 0s
+4100K .......... .......... .......... .......... .......... 26%  135M 0s
+4150K .......... .......... .......... .......... .......... 27% 99.9M 0s
+4200K .......... .......... .......... .......... .......... 27% 98.6M 0s
+4250K .......... .......... .......... .......... .......... 27% 99.6M 0s
+4300K .......... .......... .......... .......... .......... 28%  163M 0s
+4350K .......... .......... .......... .......... .......... 28% 94.9M 0s
+4400K .......... .......... .......... .......... .......... 28%  102M 0s
+4450K .......... .......... .......... .......... .......... 29% 65.0M 0s
+4500K .......... .......... .......... .......... .......... 29%  152M 0s
+4550K .......... .......... .......... .......... .......... 29%  125M 0s
+4600K .......... .......... .......... .......... .......... 30% 83.0M 0s
+4650K .......... .......... .......... .......... .......... 30% 89.4M 0s
+4700K .......... .......... .......... .......... .......... 30% 52.0M 0s
+4750K .......... .......... .......... .......... .......... 31%  108M 0s
+4800K .......... .......... .......... .......... .......... 31%  117M 0s
+4850K .......... .......... .......... .......... .......... 31% 91.5M 0s
+4900K .......... .......... .......... .......... .......... 32%  118M 0s
+4950K .......... .......... .......... .......... .......... 32% 95.0M 0s
+5000K .......... .......... .......... .......... .......... 32% 96.8M 0s
+5050K .......... .......... .......... .......... .......... 33% 89.4M 0s
+5100K .......... .......... .......... .......... .......... 33% 95.6M 0s
+5150K .......... .......... .......... .......... .......... 33% 98.5M 0s
+5200K .......... .......... .......... .......... .......... 33%  121M 0s
+5250K .......... .......... .......... .......... .......... 34%  155M 0s
+5300K .......... .......... .......... .......... .......... 34% 77.1M 0s
+5350K .......... .......... .......... .......... .......... 34%  113M 0s
+5400K .......... .......... .......... .......... .......... 35% 92.5M 0s
+5450K .......... .......... .......... .......... .......... 35% 68.6M 0s
+5500K .......... .......... .......... .......... .......... 35%  135M 0s
+5550K .......... .......... .......... .......... .......... 36% 74.4M 0s
+5600K .......... .......... .......... .......... .......... 36%  140M 0s
+5650K .......... .......... .......... .......... .......... 36% 99.8M 0s
+5700K .......... .......... .......... .......... .......... 37%  144M 0s
+5750K .......... .......... .......... .......... .......... 37% 76.6M 0s
+5800K .......... .......... .......... .......... .......... 37%  146M 0s
+5850K .......... .......... .......... .......... .......... 38% 99.6M 0s
+5900K .......... .......... .......... .......... .......... 38% 93.2M 0s
+5950K .......... .......... .......... .......... .......... 38%  108M 0s
+6000K .......... .......... .......... .......... .......... 39%  144M 0s
+6050K .......... .......... .......... .......... .......... 39%  100M 0s
+6100K .......... .......... .......... .......... .......... 39%  100M 0s
+6150K .......... .......... .......... .......... .......... 40%  109M 0s
+6200K .......... .......... .......... .......... .......... 40%  139M 0s
+6250K .......... .......... .......... .......... .......... 40% 95.3M 0s
+6300K .......... .......... .......... .......... .......... 41% 70.3M 0s
+6350K .......... .......... .......... .......... .......... 41%  185M 0s
+6400K .......... .......... .......... .......... .......... 41% 90.0M 0s
+6450K .......... .......... .......... .......... .......... 42%  169M 0s
+6500K .......... .......... .......... .......... .......... 42% 96.1M 0s
+6550K .......... .......... .......... .......... .......... 42%  109M 0s
+6600K .......... .......... .......... .......... .......... 43% 76.6M 0s
+6650K .......... .......... .......... .......... .......... 43% 88.0M 0s
+6700K .......... .......... .......... .......... .......... 43%  119M 0s
+6750K .......... .......... .......... .......... .......... 44% 95.2M 0s
+6800K .......... .......... .......... .......... .......... 44% 96.5M 0s
+6850K .......... .......... .......... .......... .......... 44%  165M 0s
+6900K .......... .......... .......... .......... .......... 44%  113M 0s
+6950K .......... .......... .......... .......... .......... 45% 96.6M 0s
+7000K .......... .......... .......... .......... .......... 45%  104M 0s
+7050K .......... .......... .......... .......... .......... 45% 86.8M 0s
+7100K .......... .......... .......... .......... .......... 46% 87.4M 0s
+7150K .......... .......... .......... .......... .......... 46%  102M 0s
+7200K .......... .......... .......... .......... .......... 46%  121M 0s
+7250K .......... .......... .......... .......... .......... 47% 86.5M 0s
+7300K .......... .......... .......... .......... .......... 47%  114M 0s
+7350K .......... .......... .......... .......... .......... 47%  115M 0s
+7400K .......... .......... .......... .......... .......... 48%  101M 0s
+7450K .......... .......... .......... .......... .......... 48%  142M 0s
+7500K .......... .......... .......... .......... .......... 48%  107M 0s
+7550K .......... .......... .......... .......... .......... 49% 77.1M 0s
+7600K .......... .......... .......... .......... .......... 49% 90.3M 0s
+7650K .......... .......... .......... .......... .......... 49%  148M 0s
+7700K .......... .......... .......... .......... .......... 50% 89.4M 0s
+7750K .......... .......... .......... .......... .......... 50%  116M 0s
+7800K .......... .......... .......... .......... .......... 50% 85.7M 0s
+7850K .......... .......... .......... .......... .......... 51%  102M 0s
+7900K .......... .......... .......... .......... .......... 51%  110M 0s
+7950K .......... .......... .......... .......... .......... 51%  170M 0s
+8000K .......... .......... .......... .......... .......... 52% 88.2M 0s
+8050K .......... .......... .......... .......... .......... 52%  137M 0s
+8100K .......... .......... .......... .......... .......... 52%  101M 0s
+8150K .......... .......... .......... .......... .......... 53%  125M 0s
+8200K .......... .......... .......... .......... .......... 53% 96.4M 0s
+8250K .......... .......... .......... .......... .......... 53%  131M 0s
+8300K .......... .......... .......... .......... .......... 54%  109M 0s
+8350K .......... .......... .......... .......... .......... 54%  112M 0s
+8400K .......... .......... .......... .......... .......... 54%  120M 0s
+8450K .......... .......... .......... .......... .......... 55% 71.9M 0s
+8500K .......... .......... .......... .......... .......... 55%  173M 0s
+8550K .......... .......... .......... .......... .......... 55%  121M 0s
+8600K .......... .......... .......... .......... .......... 55% 90.3M 0s
+8650K .......... .......... .......... .......... .......... 56%  112M 0s
+8700K .......... .......... .......... .......... .......... 56%  110M 0s
+8750K .......... .......... .......... .......... .......... 56% 95.8M 0s
+8800K .......... .......... .......... .......... .......... 57%  108M 0s
+8850K .......... .......... .......... .......... .......... 57% 85.6M 0s
+8900K .......... .......... .......... .......... .......... 57% 92.0M 0s
+8950K .......... .......... .......... .......... .......... 58%  136M 0s
+9000K .......... .......... .......... .......... .......... 58% 60.9M 0s
+9050K .......... .......... .......... .......... .......... 58%  134M 0s
+9100K .......... .......... .......... .......... .......... 59%  114M 0s
+9150K .......... .......... .......... .......... .......... 59% 90.5M 0s
+9200K .......... .......... .......... .......... .......... 59% 85.2M 0s
+9250K .......... .......... .......... .......... .......... 60%  102M 0s
+9300K .......... .......... .......... .......... .......... 60%  166M 0s
+9350K .......... .......... .......... .......... .......... 60%  112M 0s
+9400K .......... .......... .......... .......... .......... 61%  101M 0s
+9450K .......... .......... .......... .......... .......... 61% 90.8M 0s
+9500K .......... .......... .......... .......... .......... 61%  123M 0s
+9550K .......... .......... .......... .......... .......... 62%  101M 0s
+9600K .......... .......... .......... .......... .......... 62%  110M 0s
+9650K .......... .......... .......... .......... .......... 62%  144M 0s
+9700K .......... .......... .......... .......... .......... 63%  109M 0s
+9750K .......... .......... .......... .......... .......... 63%  111M 0s
+9800K .......... .......... .......... .......... .......... 63% 93.9M 0s
+9850K .......... .......... .......... .......... .......... 64%  131M 0s
+9900K .......... .......... .......... .......... .......... 64% 97.7M 0s
+9950K .......... .......... .......... .......... .......... 64%  106M 0s
+10000K .......... .......... .......... .......... .......... 65%  107M 0s
+10050K .......... .......... .......... .......... .......... 65% 47.7M 0s
+10100K .......... .......... .......... .......... .......... 65%  160M 0s
+10150K .......... .......... .......... .......... .......... 66% 92.9M 0s
+10200K .......... .......... .......... .......... .......... 66% 98.6M 0s
+10250K .......... .......... .......... .......... .......... 66%  143M 0s
+10300K .......... .......... .......... .......... .......... 66% 77.0M 0s
+10350K .......... .......... .......... .......... .......... 67% 85.8M 0s
+10400K .......... .......... .......... .......... .......... 67% 97.3M 0s
+10450K .......... .......... .......... .......... .......... 67%  110M 0s
+10500K .......... .......... .......... .......... .......... 68% 86.0M 0s
+10550K .......... .......... .......... .......... .......... 68%  101M 0s
+10600K .......... .......... .......... .......... .......... 68%  119M 0s
+10650K .......... .......... .......... .......... .......... 69% 81.2M 0s
+10700K .......... .......... .......... .......... .......... 69%  115M 0s
+10750K .......... .......... .......... .......... .......... 69% 99.3M 0s
+10800K .......... .......... .......... .......... .......... 70%  125M 0s
+10850K .......... .......... .......... .......... .......... 70% 69.8M 0s
+10900K .......... .......... .......... .......... .......... 70%  144M 0s
+10950K .......... .......... .......... .......... .......... 71% 64.7M 0s
+11000K .......... .......... .......... .......... .......... 71%  105M 0s
+11050K .......... .......... .......... .......... .......... 71%  141M 0s
+11100K .......... .......... .......... .......... .......... 72%  101M 0s
+11150K .......... .......... .......... .......... .......... 72% 73.6M 0s
+11200K .......... .......... .......... .......... .......... 72%  134M 0s
+11250K .......... .......... .......... .......... .......... 73%  112M 0s
+11300K .......... .......... .......... .......... .......... 73%  108M 0s
+11350K .......... .......... .......... .......... .......... 73%  102M 0s
+11400K .......... .......... .......... .......... .......... 74% 92.3M 0s
+11450K .......... .......... .......... .......... .......... 74%  103M 0s
+11500K .......... .......... .......... .......... .......... 74%  110M 0s
+11550K .......... .......... .......... .......... .......... 75%  125M 0s
+11600K .......... .......... .......... .......... .......... 75%  105M 0s
+11650K .......... .......... .......... .......... .......... 75%  109M 0s
+11700K .......... .......... .......... .......... .......... 76% 98.3M 0s
+11750K .......... .......... .......... .......... .......... 76%  119M 0s
+11800K .......... .......... .......... .......... .......... 76%  153M 0s
+11850K .......... .......... .......... .......... .......... 77%  105M 0s
+11900K .......... .......... .......... .......... .......... 77% 90.0M 0s
+11950K .......... .......... .......... .......... .......... 77% 92.4M 0s
+12000K .......... .......... .......... .......... .......... 77%  141M 0s
+12050K .......... .......... .......... .......... .......... 78% 96.2M 0s
+12100K .......... .......... .......... .......... .......... 78%  108M 0s
+12150K .......... .......... .......... .......... .......... 78% 89.4M 0s
+12200K .......... .......... .......... .......... .......... 79%  104M 0s
+12250K .......... .......... .......... .......... .......... 79%  157M 0s
+12300K .......... .......... .......... .......... .......... 79%  104M 0s
+12350K .......... .......... .......... .......... .......... 80% 91.3M 0s
+12400K .......... .......... .......... .......... .......... 80%  182M 0s
+12450K .......... .......... .......... .......... .......... 80% 83.6M 0s
+12500K .......... .......... .......... .......... .......... 81%  106M 0s
+12550K .......... .......... .......... .......... .......... 81% 94.3M 0s
+12600K .......... .......... .......... .......... .......... 81%  106M 0s
+12650K .......... .......... .......... .......... .......... 82%  121M 0s
+12700K .......... .......... .......... .......... .......... 82% 87.5M 0s
+12750K .......... .......... .......... .......... .......... 82% 88.0M 0s
+12800K .......... .......... .......... .......... .......... 83%  162M 0s
+12850K .......... .......... .......... .......... .......... 83%  103M 0s
+12900K .......... .......... .......... .......... .......... 83%  108M 0s
+12950K .......... .......... .......... .......... .......... 84%  113M 0s
+13000K .......... .......... .......... .......... .......... 84%  112M 0s
+13050K .......... .......... .......... .......... .......... 84% 95.0M 0s
+13100K .......... .......... .......... .......... .......... 85%  108M 0s
+13150K .......... .......... .......... .......... .......... 85% 90.3M 0s
+13200K .......... .......... .......... .......... .......... 85%  142M 0s
+13250K .......... .......... .......... .......... .......... 86% 99.4M 0s
+13300K .......... .......... .......... .......... .......... 86% 94.4M 0s
+13350K .......... .......... .......... .......... .......... 86%  119M 0s
+13400K .......... .......... .......... .......... .......... 87% 90.0M 0s
+13450K .......... .......... .......... .......... .......... 87%  113M 0s
+13500K .......... .......... .......... .......... .......... 87%  121M 0s
+13550K .......... .......... .......... .......... .......... 88%  148M 0s
+13600K .......... .......... .......... .......... .......... 88% 77.6M 0s
+13650K .......... .......... .......... .......... .......... 88%  145M 0s
+13700K .......... .......... .......... .......... .......... 88% 50.9M 0s
+13750K .......... .......... .......... .......... .......... 89%  166M 0s
+13800K .......... .......... .......... .......... .......... 89%  121M 0s
+13850K .......... .......... .......... .......... .......... 89% 79.0M 0s
+13900K .......... .......... .......... .......... .......... 90% 78.6M 0s
+13950K .......... .......... .......... .......... .......... 90% 95.6M 0s
+14000K .......... .......... .......... .......... .......... 90%  116M 0s
+14050K .......... .......... .......... .......... .......... 91% 96.9M 0s
+14100K .......... .......... .......... .......... .......... 91%  137M 0s
+14150K .......... .......... .......... .......... .......... 91% 94.4M 0s
+14200K .......... .......... .......... .......... .......... 92%  115M 0s
+14250K .......... .......... .......... .......... .......... 92% 48.2M 0s
+14300K .......... .......... .......... .......... .......... 92% 88.0M 0s
+14350K .......... .......... .......... .......... .......... 93% 39.8M 0s
+14400K .......... .......... .......... .......... .......... 93%  112M 0s
+14450K .......... .......... .......... .......... .......... 93%  134M 0s
+14500K .......... .......... .......... .......... .......... 94% 33.1M 0s
+14550K .......... .......... .......... .......... .......... 94%  104M 0s
+14600K .......... .......... .......... .......... .......... 94%  112M 0s
+14650K .......... .......... .......... .......... .......... 95%  132M 0s
+14700K .......... .......... .......... .......... .......... 95% 44.2M 0s
+14750K .......... .......... .......... .......... .......... 95% 2.94M 0s
+14800K .......... .......... .......... .......... .......... 96%  173M 0s
+14850K .......... .......... .......... .......... .......... 96%  290M 0s
+14900K .......... .......... .......... .......... .......... 96%  180M 0s
+14950K .......... .......... .......... .......... .......... 97%  158M 0s
+15000K .......... .......... .......... .......... .......... 97%  165M 0s
+15050K .......... .......... .......... .......... .......... 97%  170M 0s
+15100K .......... .......... .......... .......... .......... 98%  166M 0s
+15150K .......... .......... .......... .......... .......... 98%  332M 0s
+15200K .......... .......... .......... .......... .......... 98%  170M 0s
+15250K .......... .......... .......... .......... .......... 99%  184M 0s
+15300K .......... .......... .......... .......... .......... 99%  161M 0s
+15350K .......... .......... .......... .......... .......... 99%  177M 0s
+15400K .......... .......... .......... .......... .......... 99%  238M 0s
+15450K ...                                                   100% 7004G=0.2s
+
+2014-05-23 21:57:10 (86.3 MB/s) - ‘rstudio-server-0.98.507-amd64.deb.1’ saved [15824560/15824560]
+
+2014-05-23 17:57:10,872 PID: 7409 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && sudo gdebi -n rstudio-server-0.98.507-amd64.deb
+2014-05-23 17:57:22,291 PID: 7409 sshutils.py:585 - DEBUG - output of 'source /etc/profile && sudo gdebi -n rstudio-server-0.98.507-amd64.deb':
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+Building data structures... 0%   Building data structures... 0%   Building data structures... 0%   Building data structures... 0%   Building data structures... 0%   Building data structures... 1%   Building data structures... 1%   Building data structures... 1%   Building data structures... 1%   Building data structures... 1%   Building data structures... 2%   Building data structures... 2%   Building data structures... 2%   Building data structures... 2%   Building data structures... 2%   Building data structures... 3%   Building data structures... 3%   Building data structures... 3%   Building data structures... 3%   Building data structures... 3%   Building data structures... 4%   Building data structures... 4%   Building data structures... 4%   Building data structures... 4%   Building data structures... 4%   Building data structures... 5%   Building data structures... 5%   Building data structures... 5%   Building data structures... 5%   Building data structures... 5%   Building data structures... 6%   Building data structures... 6%   Building data structures... 6%   Building data structures... 6%   Building data structures... 6%   Building data structures... 7%   Building data structures... 7%   Building data structures... 7%   Building data structures... 7%   Building data structures... 7%   Building data structures... 8%   Building data structures... 8%   Building data structures... 8%   Building data structures... 8%   Building data structures... 8%   Building data structures... 9%   Building data structures... 9%   Building data structures... 9%   Building data structures... 9%   Building data structures... 9%   Building data structures... 10%  Building data structures... 10%  Building data structures... 10%  Building data structures... 10%  Building data structures... 10%  Building data structures... 11%  Building data structures... 11%  Building data structures... 11%  Building data structures... 11%  Building data structures... 11%  Building data structures... 12%  Building data structures... 12%  Building data structures... 12%  Building data structures... 12%  Building data structures... 12%  Building data structures... 13%  Building data structures... 13%  Building data structures... 13%  Building data structures... 13%  Building data structures... 13%  Building data structures... 13%  Building data structures... 14%  Building data structures... 14%  Building data structures... 14%  Building data structures... 14%  Building data structures... 14%  Building data structures... 15%  Building data structures... 15%  Building data structures... 15%  Building data structures... 15%  Building data structures... 15%  Building data structures... 16%  Building data structures... 16%  Building data structures... 16%  Building data structures... 16%  Building data structures... 16%  Building data structures... 17%  Building data structures... 17%  Building data structures... 17%  Building data structures... 17%  Building data structures... 17%  Building data structures... 18%  Building data structures... 18%  Building data structures... 18%  Building data structures... 18%  Building data structures... 18%  Building data structures... 19%  Building data structures... 19%  Building data structures... 19%  Building data structures... 19%  Building data structures... 19%  Building data structures... 20%  Building data structures... 20%  Building data structures... 20%  Building data structures... 20%  Building data structures... 20%  Building data structures... 21%  Building data structures... 21%  Building data structures... 21%  Building data structures... 21%  Building data structures... 21%  Building data structures... 22%  Building data structures... 22%  Building data structures... 22%  Building data structures... 22%  Building data structures... 22%  Building data structures... 23%  Building data structures... 23%  Building data structures... 23%  Building data structures... 23%  Building data structures... 23%  Building data structures... 24%  Building data structures... 24%  Building data structures... 24%  Building data structures... 24%  Building data structures... 24%  Building data structures... 25%  Building data structures... 25%  Building data structures... 25%  Building data structures... 25%  Building data structures... 25%  Building data structures... 26%  Building data structures... 26%  Building data structures... 26%  Building data structures... 26%  Building data structures... 26%  Building data structures... 26%  Building data structures... 27%  Building data structures... 27%  Building data structures... 27%  Building data structures... 27%  Building data structures... 27%  Building data structures... 28%  Building data structures... 28%  Building data structures... 28%  Building data structures... 28%  Building data structures... 28%  Building data structures... 29%  Building data structures... 29%  Building data structures... 29%  Building data structures... 29%  Building data structures... 29%  Building data structures... 30%  Building data structures... 30%  Building data structures... 30%  Building data structures... 30%  Building data structures... 30%  Building data structures... 31%  Building data structures... 31%  Building data structures... 31%  Building data structures... 31%  Building data structures... 31%  Building data structures... 32%  Building data structures... 32%  Building data structures... 32%  Building data structures... 32%  Building data structures... 32%  Building data structures... 33%  Building data structures... 33%  Building data structures... 33%  Building data structures... 33%  Building data structures... 33%  Building data structures... 34%  Building data structures... 34%  Building data structures... 34%  Building data structures... 34%  Building data structures... 34%  Building data structures... 35%  Building data structures... 35%  Building data structures... 35%  Building data structures... 35%  Building data structures... 35%  Building data structures... 36%  Building data structures... 36%  Building data structures... 36%  Building data structures... 36%  Building data structures... 36%  Building data structures... 37%  Building data structures... 37%  Building data structures... 37%  Building data structures... 37%  Building data structures... 37%  Building data structures... 38%  Building data structures... 38%  Building data structures... 38%  Building data structures... 38%  Building data structures... 38%  Building data structures... 39%  Building data structures... 39%  Building data structures... 39%  Building data structures... 39%  Building data structures... 39%  Building data structures... 39%  Building data structures... 40%  Building data structures... 40%  Building data structures... 40%  Building data structures... 40%  Building data structures... 40%  Building data structures... 41%  Building data structures... 41%  Building data structures... 41%  Building data structures... 41%  Building data structures... 41%  Building data structures... 42%  Building data structures... 42%  Building data structures... 42%  Building data structures... 42%  Building data structures... 42%  Building data structures... 43%  Building data structures... 43%  Building data structures... 43%  Building data structures... 43%  Building data structures... 43%  Building data structures... 44%  Building data structures... 44%  Building data structures... 44%  Building data structures... 44%  Building data structures... 44%  Building data structures... 45%  Building data structures... 45%  Building data structures... 45%  Building data structures... 45%  Building data structures... 45%  Building data structures... 46%  Building data structures... 46%  Building data structures... 46%  Building data structures... 46%  Building data structures... 46%  Building data structures... 47%  Building data structures... 47%  Building data structures... 47%  Building data structures... 47%  Building data structures... 47%  Building data structures... 48%  Building data structures... 48%  Building data structures... 48%  Building data structures... 48%  Building data structures... 48%  Building data structures... 49%  Building data structures... 49%  Building data structures... 49%  Building data structures... 49%  Building data structures... 49%  Building data structures... 50%  Building data structures... 50%  Building data structures... 50%  Building data structures... 50%  Building data structures... 50%  Building data structures... 51%  Building data structures... 51%  Building data structures... 51%  Building data structures... 51%  Building data structures... 51%  Building data structures... 52%  Building data structures... 52%  Building data structures... 52%  Building data structures... 52%  Building data structures... 52%  Building data structures... 53%  Building data structures... 53%  Building data structures... 53%  Building data structures... 53%  Building data structures... 53%  Building data structures... 53%  Building data structures... 54%  Building data structures... 54%  Building data structures... 54%  Building data structures... 54%  Building data structures... 54%  Building data structures... 55%  Building data structures... 55%  Building data structures... 55%  Building data structures... 55%  Building data structures... 55%  Building data structures... 56%  Building data structures... 56%  Building data structures... 56%  Building data structures... 56%  Building data structures... 56%  Building data structures... 57%  Building data structures... 57%  Building data structures... 57%  Building data structures... 57%  Building data structures... 57%  Building data structures... 58%  Building data structures... 58%  Building data structures... 58%  Building data structures... 58%  Building data structures... 58%  Building data structures... 59%  Building data structures... 59%  Building data structures... 59%  Building data structures... 59%  Building data structures... 59%  Building data structures... 60%  Building data structures... 60%  Building data structures... 60%  Building data structures... 60%  Building data structures... 60%  Building data structures... 61%  Building data structures... 61%  Building data structures... 61%  Building data structures... 61%  Building data structures... 61%  Building data structures... 62%  Building data structures... 62%  Building data structures... 62%  Building data structures... 62%  Building data structures... 62%  Building data structures... 63%  Building data structures... 63%  Building data structures... 63%  Building data structures... 63%  Building data structures... 63%  Building data structures... 64%  Building data structures... 64%  Building data structures... 64%  Building data structures... 64%  Building data structures... 64%  Building data structures... 65%  Building data structures... 65%  Building data structures... 65%  Building data structures... 65%  Building data structures... 65%  Building data structures... 66%  Building data structures... 66%  Building data structures... 66%  Building data structures... 66%  Building data structures... 66%  Building data structures... 66%  Building data structures... 67%  Building data structures... 67%  Building data structures... 67%  Building data structures... 67%  Building data structures... 67%  Building data structures... 68%  Building data structures... 68%  Building data structures... 68%  Building data structures... 68%  Building data structures... 68%  Building data structures... 69%  Building data structures... 69%  Building data structures... 69%  Building data structures... 69%  Building data structures... 69%  Building data structures... 70%  Building data structures... 70%  Building data structures... 70%  Building data structures... 70%  Building data structures... 70%  Building data structures... 71%  Building data structures... 71%  Building data structures... 71%  Building data structures... 71%  Building data structures... 71%  Building data structures... 72%  Building data structures... 72%  Building data structures... 72%  Building data structures... 72%  Building data structures... 72%  Building data structures... 73%  Building data structures... 73%  Building data structures... 73%  Building data structures... 73%  Building data structures... 73%  Building data structures... 74%  Building data structures... 74%  Building data structures... 74%  Building data structures... 74%  Building data structures... 74%  Building data structures... 75%  Building data structures... 75%  Building data structures... 75%  Building data structures... 75%  Building data structures... 75%  Building data structures... 76%  Building data structures... 76%  Building data structures... 76%  Building data structures... 76%  Building data structures... 76%  Building data structures... 77%  Building data structures... 77%  Building data structures... 77%  Building data structures... 77%  Building data structures... 77%  Building data structures... 78%  Building data structures... 78%  Building data structures... 78%  Building data structures... 78%  Building data structures... 78%  Building data structures... 79%  Building data structures... 79%  Building data structures... 79%  Building data structures... 79%  Building data structures... 79%  Building data structures... 79%  Building data structures... 80%  Building data structures... 80%  Building data structures... 80%  Building data structures... 80%  Building data structures... 80%  Building data structures... 81%  Building data structures... 81%  Building data structures... 81%  Building data structures... 81%  Building data structures... 81%  Building data structures... 82%  Building data structures... 82%  Building data structures... 82%  Building data structures... 82%  Building data structures... 82%  Building data structures... 83%  Building data structures... 83%  Building data structures... 83%  Building data structures... 83%  Building data structures... 83%  Building data structures... 84%  Building data structures... 84%  Building data structures... 84%  Building data structures... 84%  Building data structures... 84%  Building data structures... 85%  Building data structures... 85%  Building data structures... 85%  Building data structures... 85%  Building data structures... 85%  Building data structures... 86%  Building data structures... 86%  Building data structures... 86%  Building data structures... 86%  Building data structures... 86%  Building data structures... 87%  Building data structures... 87%  Building data structures... 87%  Building data structures... 87%  Building data structures... 87%  Building data structures... 88%  Building data structures... 88%  Building data structures... 88%  Building data structures... 88%  Building data structures... 88%  Building data structures... 89%  Building data structures... 89%  Building data structures... 89%  Building data structures... 89%  Building data structures... 89%  Building data structures... 90%  Building data structures... 90%  Building data structures... 90%  Building data structures... 90%  Building data structures... 90%  Building data structures... 91%  Building data structures... 91%  Building data structures... 91%  Building data structures... 91%  Building data structures... 91%  Building data structures... 92%  Building data structures... 92%  Building data structures... 92%  Building data structures... 92%  Building data structures... 92%  Building data structures... 92%  Building data structures... 93%  Building data structures... 93%  Building data structures... 93%  Building data structures... 93%  Building data structures... 93%  Building data structures... 94%  Building data structures... 94%  Building data structures... 94%  Building data structures... 94%  Building data structures... 94%  Building data structures... 95%  Building data structures... 95%  Building data structures... 95%  Building data structures... 95%  Building data structures... 95%  Building data structures... 96%  Building data structures... 96%  Building data structures... 96%  Building data structures... 96%  Building data structures... 96%  Building data structures... 97%  Building data structures... 97%  Building data structures... 97%  Building data structures... 97%  Building data structures... 97%  Building data structures... 98%  Building data structures... 98%  Building data structures... 98%  Building data structures... 98%  Building data structures... 98%  Building data structures... 99%  Building data structures... 99%  Building data structures... 99%  Building data structures... 99%  Building data structures... 99%  Building data structures... Done
+Building data structures... 0%   Building data structures... 1%   Building data structures... 3%   Building data structures... 5%   Building data structures... 7%   Building data structures... 9%   Building data structures... 11%  Building data structures... 13%  Building data structures... 15%  Building data structures... 17%  Building data structures... 19%  Building data structures... 21%  Building data structures... 23%  Building data structures... 25%  Building data structures... 27%  Building data structures... 29%  Building data structures... 31%  Building data structures... 33%  Building data structures... 35%  Building data structures... 37%  Building data structures... 39%  Building data structures... 41%  Building data structures... 43%  Building data structures... 45%  Building data structures... 47%  Building data structures... 49%  Building data structures... 51%  Building data structures... 53%  Building data structures... 55%  Building data structures... 57%  Building data structures... 59%  Building data structures... 61%  Building data structures... 63%  Building data structures... 65%  Building data structures... 67%  Building data structures... 69%  Building data structures... 71%  Building data structures... 73%  Building data structures... 75%  Building data structures... 77%  Building data structures... 79%  Building data structures... 81%  Building data structures... 83%  Building data structures... 85%  Building data structures... 87%  Building data structures... 89%  Building data structures... 91%  Building data structures... 93%  Building data structures... 95%  Building data structures... 97%  Building data structures... 99%  Building data structures... Done
+0% [Working]                                                                    0% [Connecting to us-east-1.ec2.archive.ubuntu.com]                             0% [Connecting to us-east-1.ec2.archive.ubuntu.com (54.231.0.169)]              0% [Waiting for headers]                                                        Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu/ raring/universe libssl0.9.8 amd64 0.9.8o-7ubuntu3.1 [861 kB]
+2% [1 libssl0.9.8 17.6 kB/861 kB 2%]                                            100% [Working]                                                                  Fetched 861 kB in 0s (0 B/s)
+Selecting previously unselected package libssl0.9.8:amd64.
+(Reading database ... 112033 files and directories currently installed.)
+Unpacking libssl0.9.8:amd64 (from .../libssl0.9.8_0.9.8o-7ubuntu3.1_amd64.deb) ...
+Setting up libssl0.9.8:amd64 (0.9.8o-7ubuntu3.1) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+Selecting previously unselected package rstudio-server.
+(Reading database ... 112057 files and directories currently installed.)
+Unpacking rstudio-server (from rstudio-server-0.98.507-amd64.deb) ...
+Setting up rstudio-server (0.98.507) ...
+rstudio-server start/running, process 13707
+Fetched 861 kB in 0s (0 B/s)
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin:
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin:
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+groupadd: group 'rstudio-server' already exists
+rsession: no process found
+2014-05-23 17:57:22,292 PID: 7409 cluster.py:1724 - ERROR - Error occured while running plugin 'rstudio':
+2014-05-23 17:57:22,292 PID: 7409 cli.py:307 - ERROR - Unhandled exception occured
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cli.py", line 274, in main
+    sc.execute(args)
+  File "/usr/local/lib/python2.7/dist-packages/StarCluster-0.95.5-py2.7.egg/starcluster/commands/runplugin.py", line 40, in execute
+    self.cm.run_plugin(plugin_name, cluster_tag)
+  File "/usr/local/lib/python2.7/dist-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cluster.py", line 380, in run_plugin
+    cl.run_plugin(plug, name=plugin_name)
+  File "/usr/local/lib/python2.7/dist-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cluster.py", line 1715, in run_plugin
+    func(*args)
+  File "/home/davej/.starcluster/plugins/rstudio.py", line 15, in run
+    node.sss.execute("rstudio-server verify-installation")
+AttributeError: 'Node' object has no attribute 'sss'

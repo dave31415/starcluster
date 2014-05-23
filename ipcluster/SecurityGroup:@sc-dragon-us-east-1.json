@@ -1,0 +1,16 @@
+{
+  "control": 39063, 
+  "task": 44442, 
+  "notification": 47936, 
+  "task_scheme": "leastload", 
+  "mux": 35027, 
+  "iopub": 51146, 
+  "ssh": "sgeadmin@ec2-54-235-2-222.compute-1.amazonaws.com", 
+  "key": "3010468d-3551-42be-b6c4-3f01f6b4363e", 
+  "registration": 41066, 
+  "interface": "tcp://10.233.62.125", 
+  "signature_scheme": "hmac-sha256", 
+  "pack": "pickle", 
+  "unpack": "pickle", 
+  "location": "10.233.62.125"
+}
