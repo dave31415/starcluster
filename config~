@@ -264,7 +264,7 @@ SETUP_CLASS = starcluster.plugins.pkginstaller.PackageInstaller
 PACKAGES = mongodb, python-pymongo, r-base-dev
 
 [plugin rstudio]
-SETUP_CLASS = starcluster.plugins.pkginstaller.rstudio
+SETUP_CLASS = rstudio.RStudioServerInstaller
 
 # Use this plugin to create one or more cluster users and download all user ssh
 # keys to $HOME/.starcluster/user_keys/<cluster>-<region>.tar.gz
