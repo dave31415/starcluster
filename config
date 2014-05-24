@@ -98,7 +98,7 @@ NODE_INSTANCE_TYPE = r3.xlarge
 # list of plugins to load after StarCluster's default setup routines (OPTIONAL)
 # see "Configuring StarCluster Plugins" below on how to define plugin sections
 
-PLUGINS = pkginstaller,createusers,ipcluster,tmux,hadoop,mysqlcluster,xvfb
+PLUGINS = pkginstaller,createusers,ipcluster,tmux,hadoop,mysqlcluster,xvfb,rstudio,shiny
 
 # list of permissions (or firewall rules) to apply to the cluster's security
 # group (OPTIONAL).
@@ -138,8 +138,12 @@ CLUSTER_SIZE=10
 #############################
 
 [volume bigdata]
-VOLUME_ID = vol-d7fd1692
+VOLUME_ID = vol-cfb75d8a
 MOUNT_PATH = /bigdata
+
+[volume homedir]
+VOLUME_ID = vol-2f89636a
+MOUNT_PATH = /home
 
 # By default StarCluster will attempt first to mount the entire volume device,
 # failing that it will try the first partition. If you have more than one
@@ -200,6 +204,9 @@ MOUNT_PATH = /bigdata
 [plugin rstudio]
 SETUP_CLASS = rstudio.RStudioServerInstaller
 
+[plugin shiny]
+SETUP_CLASS = rstudio.ShinyServerInstaller
+
 ######################
 ## Built-in Plugins ##
 ######################
@@ -221,7 +228,7 @@ SETUP_CLASS = rstudio.RStudioServerInstaller
 SETUP_CLASS = starcluster.plugins.users.CreateUsers
 #NUM_USERS = 30
 # # you can also comment out NUM_USERS and specify exact usernames, e.g.
-usernames = davej,jm,suman,aravind,debbie,ken,aaron,jspens,mmason,sean,anand,rstudio
+usernames = davej,jm,suman,aravind,debbie,ken,aaron,jspens,mmason,sean,anand,rstudio,shiny
 DOWNLOAD_KEYS = True
 
 #
@@ -273,8 +280,8 @@ SETUP_CLASS = starcluster.plugins.hadoop.Hadoop
 [plugin mysqlcluster]
 SETUP_CLASS = starcluster.plugins.mysql.MysqlCluster
 NUM_REPLICAS = 2
-DATA_MEMORY = 300M
-INDEX_MEMORY = 200M
+DATA_MEMORY = 200M
+INDEX_MEMORY = 100M
 DUMP_FILE = test.sql
 DUMP_INTERVAL = 60
 DEDICATED_QUERY = True

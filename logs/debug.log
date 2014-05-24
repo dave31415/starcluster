@@ -4191,3 +4191,1151 @@ ClusterValidationError: key_location '/Users/davej/amaz/east.pem' does not exist
 2014-05-23 21:11:45,752 PID: 10659 sshutils.py:859 - DEBUG - rsa private key fingerprint (/Users/davej/.starcluster/user_keys/east.pem): 94:91:37:dd:62:95:94:50:8b:e9:7c:c8:e2:cc:13:fe:c0:52:51:e7
 2014-05-23 21:11:45,849 PID: 10659 node.py:1091 - DEBUG - Using native OpenSSH client
 2014-05-23 21:11:45,849 PID: 10659 node.py:1104 - DEBUG - ssh_cmd: ssh -i /Users/davej/.starcluster/user_keys/east.pem root@ec2-54-235-2-222.compute-1.amazonaws.com
+2014-05-23 21:33:46,683 PID: 10714 config.py:567 - DEBUG - Loading config
+2014-05-23 21:33:46,685 PID: 10714 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 21:33:46,706 PID: 10714 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 21:33:48,295 PID: 10714 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 21:33:48,470 PID: 10714 cluster.py:767 - DEBUG - adding node i-e84ec9bb to self._nodes list
+2014-05-23 21:33:48,471 PID: 10714 cluster.py:767 - DEBUG - adding node i-b74bcce4 to self._nodes list
+2014-05-23 21:33:48,489 PID: 10714 cluster.py:767 - DEBUG - adding node i-4e49ce1d to self._nodes list
+2014-05-23 21:33:48,490 PID: 10714 cluster.py:767 - DEBUG - adding node i-bf4dcaec to self._nodes list
+2014-05-23 21:33:48,490 PID: 10714 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 21:33:49,034 PID: 10714 sshutils.py:859 - DEBUG - rsa private key fingerprint (/Users/davej/.starcluster/user_keys/east.pem): 94:91:37:dd:62:95:94:50:8b:e9:7c:c8:e2:cc:13:fe:c0:52:51:e7
+2014-05-23 21:33:49,138 PID: 10714 node.py:1091 - DEBUG - Using native OpenSSH client
+2014-05-23 21:33:49,138 PID: 10714 node.py:1104 - DEBUG - ssh_cmd: ssh -i /Users/davej/.starcluster/user_keys/east.pem root@ec2-54-235-2-222.compute-1.amazonaws.com
+2014-05-23 22:17:25,504 PID: 10757 config.py:567 - DEBUG - Loading config
+2014-05-23 22:17:25,540 PID: 10757 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 22:17:25,546 PID: 10757 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 22:17:27,241 PID: 10757 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 22:17:27,241 PID: 10757 cluster.py:767 - DEBUG - adding node i-e84ec9bb to self._nodes list
+2014-05-23 22:17:27,241 PID: 10757 cluster.py:767 - DEBUG - adding node i-b74bcce4 to self._nodes list
+2014-05-23 22:17:27,241 PID: 10757 cluster.py:767 - DEBUG - adding node i-4e49ce1d to self._nodes list
+2014-05-23 22:17:27,242 PID: 10757 cluster.py:767 - DEBUG - adding node i-bf4dcaec to self._nodes list
+2014-05-23 22:17:27,242 PID: 10757 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 22:17:27,678 PID: 10757 sshutils.py:859 - DEBUG - rsa private key fingerprint (/Users/davej/.starcluster/user_keys/east.pem): 94:91:37:dd:62:95:94:50:8b:e9:7c:c8:e2:cc:13:fe:c0:52:51:e7
+2014-05-23 22:17:27,789 PID: 10757 cluster.py:759 - DEBUG - existing nodes: {u'i-bf4dcaec': <Node: node001 (i-bf4dcaec)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-4e49ce1d': <Node: node002 (i-4e49ce1d)>, u'i-b74bcce4': <Node: node003 (i-b74bcce4)>}
+2014-05-23 22:17:27,789 PID: 10757 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:17:27,789 PID: 10757 cluster.py:762 - DEBUG - updating existing node i-b74bcce4 in self._nodes
+2014-05-23 22:17:27,789 PID: 10757 cluster.py:762 - DEBUG - updating existing node i-4e49ce1d in self._nodes
+2014-05-23 22:17:27,790 PID: 10757 cluster.py:762 - DEBUG - updating existing node i-bf4dcaec in self._nodes
+2014-05-23 22:17:27,790 PID: 10757 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 22:17:27,893 PID: 10757 cluster.py:759 - DEBUG - existing nodes: {u'i-bf4dcaec': <Node: node001 (i-bf4dcaec)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-4e49ce1d': <Node: node002 (i-4e49ce1d)>, u'i-b74bcce4': <Node: node003 (i-b74bcce4)>}
+2014-05-23 22:17:27,894 PID: 10757 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:17:27,894 PID: 10757 cluster.py:762 - DEBUG - updating existing node i-b74bcce4 in self._nodes
+2014-05-23 22:17:27,894 PID: 10757 cluster.py:762 - DEBUG - updating existing node i-4e49ce1d in self._nodes
+2014-05-23 22:17:27,894 PID: 10757 cluster.py:762 - DEBUG - updating existing node i-bf4dcaec in self._nodes
+2014-05-23 22:17:27,894 PID: 10757 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 22:17:28,004 PID: 10757 cluster.py:759 - DEBUG - existing nodes: {u'i-bf4dcaec': <Node: node001 (i-bf4dcaec)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-4e49ce1d': <Node: node002 (i-4e49ce1d)>, u'i-b74bcce4': <Node: node003 (i-b74bcce4)>}
+2014-05-23 22:17:28,004 PID: 10757 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:17:28,005 PID: 10757 cluster.py:762 - DEBUG - updating existing node i-b74bcce4 in self._nodes
+2014-05-23 22:17:28,005 PID: 10757 cluster.py:762 - DEBUG - updating existing node i-4e49ce1d in self._nodes
+2014-05-23 22:17:28,005 PID: 10757 cluster.py:762 - DEBUG - updating existing node i-bf4dcaec in self._nodes
+2014-05-23 22:17:28,005 PID: 10757 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 22:17:28,005 PID: 10757 cli.py:300 - ERROR - Cluster 'dragon' contains 'stoppable' and 'unstoppable' nodes. Your options are:
+
+1. Use the --terminate-unstoppable option to stop all 'stoppable' nodes and terminate all 'unstoppable' nodes
+
+2. Use the 'terminate' command to destroy the cluster.
+
+Pass --help for more info.
+2014-05-23 22:17:28,007 PID: 10757 cli.py:301 - DEBUG - Cluster 'dragon' contains 'stoppable' and 'unstoppable' nodes. Your options are:
+
+1. Use the --terminate-unstoppable option to stop all 'stoppable' nodes and terminate all 'unstoppable' nodes
+
+2. Use the 'terminate' command to destroy the cluster.
+
+Pass --help for more info.
+Traceback (most recent call last):
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cli.py", line 274, in main
+    sc.execute(args)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/commands/stop.py", line 110, in execute
+    cluster_name)
+BaseException: Cluster 'dragon' contains 'stoppable' and 'unstoppable' nodes. Your options are:
+
+1. Use the --terminate-unstoppable option to stop all 'stoppable' nodes and terminate all 'unstoppable' nodes
+
+2. Use the 'terminate' command to destroy the cluster.
+
+Pass --help for more info.
+2014-05-23 22:17:59,917 PID: 10761 config.py:567 - DEBUG - Loading config
+2014-05-23 22:17:59,917 PID: 10761 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 22:17:59,923 PID: 10761 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 22:18:00,480 PID: 10761 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 22:18:00,481 PID: 10761 cluster.py:767 - DEBUG - adding node i-e84ec9bb to self._nodes list
+2014-05-23 22:18:00,482 PID: 10761 cluster.py:767 - DEBUG - adding node i-b74bcce4 to self._nodes list
+2014-05-23 22:18:00,482 PID: 10761 cluster.py:767 - DEBUG - adding node i-4e49ce1d to self._nodes list
+2014-05-23 22:18:00,482 PID: 10761 cluster.py:767 - DEBUG - adding node i-bf4dcaec to self._nodes list
+2014-05-23 22:18:00,482 PID: 10761 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 22:18:00,736 PID: 10761 sshutils.py:859 - DEBUG - rsa private key fingerprint (/Users/davej/.starcluster/user_keys/east.pem): 94:91:37:dd:62:95:94:50:8b:e9:7c:c8:e2:cc:13:fe:c0:52:51:e7
+2014-05-23 22:18:00,851 PID: 10761 cluster.py:759 - DEBUG - existing nodes: {u'i-bf4dcaec': <Node: node001 (i-bf4dcaec)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-4e49ce1d': <Node: node002 (i-4e49ce1d)>, u'i-b74bcce4': <Node: node003 (i-b74bcce4)>}
+2014-05-23 22:18:00,852 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:18:00,852 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-b74bcce4 in self._nodes
+2014-05-23 22:18:00,852 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-4e49ce1d in self._nodes
+2014-05-23 22:18:00,852 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-bf4dcaec in self._nodes
+2014-05-23 22:18:00,852 PID: 10761 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 22:18:00,956 PID: 10761 cluster.py:759 - DEBUG - existing nodes: {u'i-bf4dcaec': <Node: node001 (i-bf4dcaec)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-4e49ce1d': <Node: node002 (i-4e49ce1d)>, u'i-b74bcce4': <Node: node003 (i-b74bcce4)>}
+2014-05-23 22:18:00,956 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:18:00,956 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-b74bcce4 in self._nodes
+2014-05-23 22:18:00,956 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-4e49ce1d in self._nodes
+2014-05-23 22:18:00,957 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-bf4dcaec in self._nodes
+2014-05-23 22:18:00,957 PID: 10761 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 22:18:01,057 PID: 10761 cluster.py:759 - DEBUG - existing nodes: {u'i-bf4dcaec': <Node: node001 (i-bf4dcaec)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-4e49ce1d': <Node: node002 (i-4e49ce1d)>, u'i-b74bcce4': <Node: node003 (i-b74bcce4)>}
+2014-05-23 22:18:01,090 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:18:01,091 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-b74bcce4 in self._nodes
+2014-05-23 22:18:01,091 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-4e49ce1d in self._nodes
+2014-05-23 22:18:01,091 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-bf4dcaec in self._nodes
+2014-05-23 22:18:01,092 PID: 10761 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 22:18:04,376 PID: 10761 cluster.py:759 - DEBUG - existing nodes: {u'i-bf4dcaec': <Node: node001 (i-bf4dcaec)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-4e49ce1d': <Node: node002 (i-4e49ce1d)>, u'i-b74bcce4': <Node: node003 (i-b74bcce4)>}
+2014-05-23 22:18:04,376 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:18:04,376 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-b74bcce4 in self._nodes
+2014-05-23 22:18:04,376 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-4e49ce1d in self._nodes
+2014-05-23 22:18:04,376 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-bf4dcaec in self._nodes
+2014-05-23 22:18:04,377 PID: 10761 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 22:18:04,482 PID: 10761 cluster.py:759 - DEBUG - existing nodes: {u'i-bf4dcaec': <Node: node001 (i-bf4dcaec)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-4e49ce1d': <Node: node002 (i-4e49ce1d)>, u'i-b74bcce4': <Node: node003 (i-b74bcce4)>}
+2014-05-23 22:18:04,482 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:18:04,482 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-b74bcce4 in self._nodes
+2014-05-23 22:18:04,483 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-4e49ce1d in self._nodes
+2014-05-23 22:18:04,483 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-bf4dcaec in self._nodes
+2014-05-23 22:18:04,483 PID: 10761 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 22:18:04,611 PID: 10761 cluster.py:759 - DEBUG - existing nodes: {u'i-bf4dcaec': <Node: node001 (i-bf4dcaec)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-4e49ce1d': <Node: node002 (i-4e49ce1d)>, u'i-b74bcce4': <Node: node003 (i-b74bcce4)>}
+2014-05-23 22:18:04,611 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:18:04,611 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-b74bcce4 in self._nodes
+2014-05-23 22:18:04,612 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-4e49ce1d in self._nodes
+2014-05-23 22:18:04,612 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-bf4dcaec in self._nodes
+2014-05-23 22:18:04,612 PID: 10761 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 22:18:04,735 PID: 10761 cluster.py:759 - DEBUG - existing nodes: {u'i-bf4dcaec': <Node: node001 (i-bf4dcaec)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-4e49ce1d': <Node: node002 (i-4e49ce1d)>, u'i-b74bcce4': <Node: node003 (i-b74bcce4)>}
+2014-05-23 22:18:04,735 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:18:04,735 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-b74bcce4 in self._nodes
+2014-05-23 22:18:04,736 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-4e49ce1d in self._nodes
+2014-05-23 22:18:04,736 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-bf4dcaec in self._nodes
+2014-05-23 22:18:04,736 PID: 10761 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 22:18:04,848 PID: 10761 cluster.py:759 - DEBUG - existing nodes: {u'i-bf4dcaec': <Node: node001 (i-bf4dcaec)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-4e49ce1d': <Node: node002 (i-4e49ce1d)>, u'i-b74bcce4': <Node: node003 (i-b74bcce4)>}
+2014-05-23 22:18:04,848 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:18:04,848 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-b74bcce4 in self._nodes
+2014-05-23 22:18:04,848 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-4e49ce1d in self._nodes
+2014-05-23 22:18:04,848 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-bf4dcaec in self._nodes
+2014-05-23 22:18:04,849 PID: 10761 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 22:18:04,849 PID: 10761 cluster.py:1714 - INFO - Running plugin starcluster.plugins.hadoop.Hadoop
+2014-05-23 22:18:04,849 PID: 10761 cluster.py:1718 - DEBUG - method on_shutdown not implemented by plugin starcluster.plugins.hadoop.Hadoop
+2014-05-23 22:18:04,953 PID: 10761 cluster.py:759 - DEBUG - existing nodes: {u'i-bf4dcaec': <Node: node001 (i-bf4dcaec)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-4e49ce1d': <Node: node002 (i-4e49ce1d)>, u'i-b74bcce4': <Node: node003 (i-b74bcce4)>}
+2014-05-23 22:18:04,953 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:18:04,953 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-b74bcce4 in self._nodes
+2014-05-23 22:18:04,953 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-4e49ce1d in self._nodes
+2014-05-23 22:18:04,954 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-bf4dcaec in self._nodes
+2014-05-23 22:18:04,954 PID: 10761 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 22:18:04,954 PID: 10761 cluster.py:1714 - INFO - Running plugin starcluster.plugins.sge.SGEPlugin
+2014-05-23 22:18:04,954 PID: 10761 cluster.py:1718 - DEBUG - method on_shutdown not implemented by plugin starcluster.plugins.sge.SGEPlugin
+2014-05-23 22:18:05,086 PID: 10761 cluster.py:759 - DEBUG - existing nodes: {u'i-bf4dcaec': <Node: node001 (i-bf4dcaec)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-4e49ce1d': <Node: node002 (i-4e49ce1d)>, u'i-b74bcce4': <Node: node003 (i-b74bcce4)>}
+2014-05-23 22:18:05,086 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:18:05,086 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-b74bcce4 in self._nodes
+2014-05-23 22:18:05,086 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-4e49ce1d in self._nodes
+2014-05-23 22:18:05,086 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-bf4dcaec in self._nodes
+2014-05-23 22:18:05,086 PID: 10761 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 22:18:05,087 PID: 10761 cluster.py:1714 - INFO - Running plugin starcluster.clustersetup.DefaultClusterSetup
+2014-05-23 22:18:05,087 PID: 10761 cluster.py:1718 - DEBUG - method on_shutdown not implemented by plugin starcluster.clustersetup.DefaultClusterSetup
+2014-05-23 22:18:05,188 PID: 10761 cluster.py:759 - DEBUG - existing nodes: {u'i-bf4dcaec': <Node: node001 (i-bf4dcaec)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-4e49ce1d': <Node: node002 (i-4e49ce1d)>, u'i-b74bcce4': <Node: node003 (i-b74bcce4)>}
+2014-05-23 22:18:05,188 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:18:05,188 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-b74bcce4 in self._nodes
+2014-05-23 22:18:05,189 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-4e49ce1d in self._nodes
+2014-05-23 22:18:05,189 PID: 10761 cluster.py:762 - DEBUG - updating existing node i-bf4dcaec in self._nodes
+2014-05-23 22:18:05,189 PID: 10761 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-bf4dcaec)>, <Node: node002 (i-4e49ce1d)>, <Node: node003 (i-b74bcce4)>]
+2014-05-23 22:18:05,548 PID: 10761 node.py:889 - INFO - Detaching volume vol-d7fd1692 from master
+2014-05-23 22:18:05,783 PID: 10761 node.py:973 - INFO - Stopping node: master (i-e84ec9bb)
+2014-05-23 22:18:06,141 PID: 10761 node.py:985 - INFO - Canceling spot request sir-f36a244a
+2014-05-23 22:18:06,560 PID: 10761 node.py:987 - INFO - Terminating node: node001 (i-bf4dcaec)
+2014-05-23 22:18:06,961 PID: 10761 node.py:985 - INFO - Canceling spot request sir-8e0ace49
+2014-05-23 22:18:07,472 PID: 10761 node.py:987 - INFO - Terminating node: node002 (i-4e49ce1d)
+2014-05-23 22:18:07,882 PID: 10761 node.py:985 - INFO - Canceling spot request sir-44fb444a
+2014-05-23 22:18:08,223 PID: 10761 node.py:987 - INFO - Terminating node: node003 (i-b74bcce4)
+2014-05-23 22:18:08,599 PID: 10761 stop.py:124 - WARNING - All non-spot, EBS-backed nodes are now in a 'stopped' state
+2014-05-23 22:18:08,599 PID: 10761 stop.py:126 - WARNING - You can restart this cluster by passing -x to the 'start' command
+2014-05-23 22:18:08,599 PID: 10761 stop.py:128 - WARNING - Use the 'terminate' command to *completely* terminate this cluster
+2014-05-23 22:19:25,153 PID: 10765 config.py:567 - DEBUG - Loading config
+2014-05-23 22:19:25,199 PID: 10765 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 22:19:25,207 PID: 10765 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 22:19:26,503 PID: 10765 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 22:19:26,503 PID: 10765 cluster.py:767 - DEBUG - adding node i-e84ec9bb to self._nodes list
+2014-05-23 22:19:26,503 PID: 10765 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>]
+2014-05-23 22:19:26,853 PID: 10765 sshutils.py:859 - DEBUG - rsa private key fingerprint (/Users/davej/.starcluster/user_keys/east.pem): 94:91:37:dd:62:95:94:50:8b:e9:7c:c8:e2:cc:13:fe:c0:52:51:e7
+2014-05-23 22:19:27,094 PID: 10765 cluster.py:759 - DEBUG - existing nodes: {u'i-e84ec9bb': <Node: master (i-e84ec9bb)>}
+2014-05-23 22:19:27,095 PID: 10765 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:19:27,095 PID: 10765 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>]
+2014-05-23 22:19:27,095 PID: 10765 cluster.py:1784 - INFO - Validating existing instances...
+2014-05-23 22:19:27,427 PID: 10765 cluster.py:1803 - INFO - Validating cluster template settings...
+2014-05-23 22:19:27,616 PID: 10765 sshutils.py:859 - DEBUG - rsa private key fingerprint (/Users/davej/.starcluster/user_keys/east.pem): 94:91:37:dd:62:95:94:50:8b:e9:7c:c8:e2:cc:13:fe:c0:52:51:e7
+2014-05-23 22:19:28,059 PID: 10765 cluster.py:911 - DEBUG - Userdata size in KB: 0.61
+2014-05-23 22:19:28,059 PID: 10765 cluster.py:1821 - INFO - Cluster template settings are valid
+2014-05-23 22:19:28,059 PID: 10765 cluster.py:1641 - INFO - Starting cluster...
+2014-05-23 22:19:28,147 PID: 10765 cluster.py:759 - DEBUG - existing nodes: {u'i-e84ec9bb': <Node: master (i-e84ec9bb)>}
+2014-05-23 22:19:28,147 PID: 10765 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:19:28,147 PID: 10765 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>]
+2014-05-23 22:19:28,147 PID: 10765 cluster.py:1647 - INFO - Starting stopped node: master
+2014-05-23 22:19:29,009 PID: 10765 cluster.py:1442 - INFO - Waiting for cluster to come up... (updating every 30s)
+2014-05-23 22:19:29,149 PID: 10765 cluster.py:1399 - INFO - Waiting for all nodes to be in a 'running' state...
+2014-05-23 22:19:29,385 PID: 10765 cluster.py:759 - DEBUG - existing nodes: {u'i-e84ec9bb': <Node: master (i-e84ec9bb)>}
+2014-05-23 22:19:29,385 PID: 10765 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:19:29,385 PID: 10765 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>]
+2014-05-23 22:19:59,473 PID: 10765 cluster.py:759 - DEBUG - existing nodes: {u'i-e84ec9bb': <Node: master (i-e84ec9bb)>}
+2014-05-23 22:19:59,659 PID: 10765 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:19:59,660 PID: 10765 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>]
+2014-05-23 22:19:59,660 PID: 10765 cluster.py:1427 - INFO - Waiting for SSH to come up on all nodes...
+2014-05-23 22:19:59,796 PID: 10765 cluster.py:759 - DEBUG - existing nodes: {u'i-e84ec9bb': <Node: master (i-e84ec9bb)>}
+2014-05-23 22:19:59,796 PID: 10765 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:19:59,796 PID: 10765 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>]
+2014-05-23 22:19:59,801 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:19:59,906 PID: 10765 sshutils.py:87 - DEBUG - loading private key /Users/davej/.starcluster/user_keys/east.pem
+2014-05-23 22:19:59,907 PID: 10765 sshutils.py:94 - DEBUG - specified key does not end in either rsa or dsa, trying both
+2014-05-23 22:19:59,919 PID: 10765 sshutils.py:185 - DEBUG - Using private key /Users/davej/.starcluster/user_keys/east.pem (RSA)
+2014-05-23 22:19:59,920 PID: 10765 sshutils.py:112 - DEBUG - connecting to host ec2-54-227-106-107.compute-1.amazonaws.com on port 22 as user root
+2014-05-23 22:20:00,802 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:20:01,264 PID: 10765 sshutils.py:204 - DEBUG - creating sftp connection
+2014-05-23 22:20:01,804 PID: 10765 utils.py:118 - INFO - Waiting for cluster to come up took 0.547 mins
+2014-05-23 22:20:01,804 PID: 10765 cluster.py:1668 - INFO - The master node is ec2-54-227-106-107.compute-1.amazonaws.com
+2014-05-23 22:20:01,805 PID: 10765 cluster.py:1669 - INFO - Configuring cluster...
+2014-05-23 22:20:02,149 PID: 10765 cluster.py:1492 - INFO - Attaching volume vol-d7fd1692 to master node on /dev/sdz ...
+2014-05-23 22:20:02,431 PID: 10765 cluster.py:1494 - DEBUG - resp = attaching
+2014-05-23 22:20:02,431 PID: 10765 awsutils.py:1374 - INFO - Waiting for vol-d7fd1692 to transition to: attached... 
+2014-05-23 22:20:09,216 PID: 10765 cluster.py:759 - DEBUG - existing nodes: {u'i-e84ec9bb': <Node: master (i-e84ec9bb)>}
+2014-05-23 22:20:09,217 PID: 10765 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:20:09,217 PID: 10765 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>]
+2014-05-23 22:20:09,217 PID: 10765 cluster.py:1714 - INFO - Running plugin starcluster.clustersetup.DefaultClusterSetup
+2014-05-23 22:20:09,217 PID: 10765 clustersetup.py:121 - INFO - Configuring hostnames...
+2014-05-23 22:20:09,222 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:20:09,376 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && hostname -F /etc/hostname
+2014-05-23 22:20:09,458 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && hostname -F /etc/hostname':
+
+2014-05-23 22:20:10,258 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && fdisk -l 2>/dev/null
+2014-05-23 22:20:10,319 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && fdisk -l 2>/dev/null':
+
+Disk /dev/xvda: 8589 MB, 8589934592 bytes
+255 heads, 63 sectors/track, 1044 cylinders, total 16777216 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x00000000
+
+Device Boot      Start         End      Blocks   Id  System
+/dev/xvda1   *       16065    16771859     8377897+  83  Linux
+
+Disk /dev/xvdaa: 161.1 GB, 161061273600 bytes
+255 heads, 63 sectors/track, 19581 cylinders, total 314572800 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x00000000
+
+
+Disk /dev/xvdz: 322.1 GB, 322122547200 bytes
+255 heads, 63 sectors/track, 39162 cylinders, total 629145600 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x00000000
+
+2014-05-23 22:20:10,421 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && cat /proc/partitions
+2014-05-23 22:20:10,455 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && cat /proc/partitions':
+major minor  #blocks  name
+
+202        0    8388608 xvda
+202        1    8377897 xvda1
+202     6656  157286400 xvdaa
+202     6400  314572800 xvdz
+2014-05-23 22:20:10,492 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && fdisk -l /dev/xvdz 2>/dev/null
+2014-05-23 22:20:10,594 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && fdisk -l /dev/xvdz 2>/dev/null':
+
+Disk /dev/xvdz: 322.1 GB, 322122547200 bytes
+255 heads, 63 sectors/track, 39162 cylinders, total 629145600 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x00000000
+
+2014-05-23 22:20:10,596 PID: 10765 clustersetup.py:318 - INFO - Mounting EBS volume vol-d7fd1692 on /bigdata...
+2014-05-23 22:20:10,697 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && mount
+2014-05-23 22:20:10,732 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && mount':
+/dev/xvda1 on / type ext4 (rw)
+proc on /proc type proc (rw,noexec,nosuid,nodev)
+sysfs on /sys type sysfs (rw,noexec,nosuid,nodev)
+none on /sys/fs/cgroup type tmpfs (rw)
+none on /sys/fs/fuse/connections type fusectl (rw)
+none on /sys/kernel/debug type debugfs (rw)
+none on /sys/kernel/security type securityfs (rw)
+udev on /dev type devtmpfs (rw,mode=0755)
+devpts on /dev/pts type devpts (rw,noexec,nosuid,gid=5,mode=0620)
+tmpfs on /run type tmpfs (rw,noexec,nosuid,size=10%,mode=0755)
+none on /run/lock type tmpfs (rw,noexec,nosuid,nodev,size=5242880)
+none on /run/shm type tmpfs (rw,nosuid,nodev)
+none on /run/user type tmpfs (rw,noexec,nosuid,nodev,size=104857600,mode=0755)
+rpc_pipefs on /run/rpc_pipefs type rpc_pipefs (rw)
+2014-05-23 22:20:10,899 PID: 10765 sshutils.py:307 - DEBUG - new /etc/fstab after removing regex ( /bigdata ) matches:
+LABEL=cloudimg-rootfs	/	 ext4	defaults	0 0
+/dev/xvdaa	/mnt	auto	defaults,nobootwait,comment=cloudconfig	0	2
+
+2014-05-23 22:20:11,184 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && mount /bigdata
+2014-05-23 22:20:11,287 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && mount /bigdata':
+
+2014-05-23 22:20:11,409 PID: 10765 clustersetup.py:192 - INFO - Creating cluster user: sgeadmin (uid: 1001, gid: 1001)
+2014-05-23 22:20:11,410 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:20:11,520 PID: 10765 clustersetup.py:207 - DEBUG - user sgeadmin exists on node master, no action
+2014-05-23 22:20:12,411 PID: 10765 clustersetup.py:238 - INFO - Configuring scratch space for user(s): sgeadmin
+2014-05-23 22:20:12,412 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:20:12,476 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && chown -R sgeadmin:sgeadmin /mnt/sgeadmin
+2014-05-23 22:20:12,513 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && chown -R sgeadmin:sgeadmin /mnt/sgeadmin':
+
+2014-05-23 22:20:13,413 PID: 10765 clustersetup.py:247 - INFO - Configuring /etc/hosts on each node
+2014-05-23 22:20:13,416 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:20:13,598 PID: 10765 sshutils.py:307 - DEBUG - new /etc/hosts after removing regex (master) matches:
+127.0.0.1 localhost
+
+# The following lines are desirable for IPv6 capable hosts
+::1 ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
+10.95.185.44 node001
+10.140.175.79 node002
+10.7.163.123 node003
+
+2014-05-23 22:20:14,417 PID: 10765 node.py:703 - INFO - Starting NFS server on master
+2014-05-23 22:20:14,453 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && /etc/init.d/portmap start
+2014-05-23 22:20:14,570 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && /etc/init.d/portmap start':
+Rather than invoking init scripts through /etc/init.d, use the service(8)
+utility, e.g. service portmap start
+
+Since the script you are attempting to invoke has been converted to an
+Upstart job, you may also use the start(8) utility, e.g. start portmap
+2014-05-23 22:20:14,673 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && mount -t rpc_pipefs sunrpc /var/lib/nfs/rpc_pipefs/
+2014-05-23 22:20:14,707 PID: 10765 sshutils.py:582 - DEBUG - (ignored) remote command 'source /etc/profile && mount -t rpc_pipefs sunrpc /var/lib/nfs/rpc_pipefs/' failed with status 32:
+mount: mount point /var/lib/nfs/rpc_pipefs/ does not exist
+2014-05-23 22:20:14,743 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && mkdir -p /etc/exports.d
+2014-05-23 22:20:14,836 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && mkdir -p /etc/exports.d':
+
+2014-05-23 22:20:14,937 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && mkdir -p /dummy_export_for_broken_init_script
+2014-05-23 22:20:14,988 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && mkdir -p /dummy_export_for_broken_init_script':
+
+2014-05-23 22:20:15,187 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && /etc/init.d/nfs start
+2014-05-23 22:20:15,345 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && /etc/init.d/nfs start':
+* Exporting directories for NFS kernel daemon...
+...done.
+* Starting NFS kernel daemon
+...done.
+2014-05-23 22:20:15,380 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && rm -f /etc/exports.d/dummy.exports
+2014-05-23 22:20:15,468 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && rm -f /etc/exports.d/dummy.exports':
+
+2014-05-23 22:20:15,571 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && rm -rf /dummy_export_for_broken_init_script
+2014-05-23 22:20:15,603 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && rm -rf /dummy_export_for_broken_init_script':
+
+2014-05-23 22:20:15,705 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && exportfs -fra
+2014-05-23 22:20:15,739 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && exportfs -fra':
+
+2014-05-23 22:20:15,740 PID: 10765 utils.py:118 - INFO - Setting up NFS took 0.022 mins
+2014-05-23 22:20:15,741 PID: 10765 clustersetup.py:259 - INFO - Configuring passwordless ssh for root
+2014-05-23 22:20:16,078 PID: 10765 node.py:509 - DEBUG - Using existing key: /root/.ssh/id_rsa
+2014-05-23 22:20:17,153 PID: 10765 sshutils.py:307 - DEBUG - new /root/.ssh/known_hosts after removing regex (master|ip-10-51-146-221.ec2.internal|ip-10-51-146-221|ec2-54-227-106-107.compute-1.amazonaws.com) matches:
+ip-10-95-185-44,10.95.185.44 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsQKM6wjGwXQXLjX6PaCJZAy4ohy0hVLxc7wmay73gF5ALr80XgAfs2jTpbd05zf5iN9RI+cAQJHql32f9DmXdVwQSd2lj4f0EnAauQdLM9+/xL4hZP+avaVk8jjy+AKGDLcOXwQJF5X2ndaCfNUfnnJXOAZb1MOStdykHu2wuxlA1EEYjOvU+rssnQx/oZ8p9qAQP4Q6unp1M/APXHWm1hYs0aE08zaACn9blW+L340X+XOZTk6tFui4Cf/K+fboiFXDcBPRdf4D1jYp/3kVNGf8uaGWEa+CdC6wb7sebilFG2tNhgOrwGyh9dI9cCzEfUzPfhwgxysACZmgI0YuX
+node001,10.95.185.44 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsQKM6wjGwXQXLjX6PaCJZAy4ohy0hVLxc7wmay73gF5ALr80XgAfs2jTpbd05zf5iN9RI+cAQJHql32f9DmXdVwQSd2lj4f0EnAauQdLM9+/xL4hZP+avaVk8jjy+AKGDLcOXwQJF5X2ndaCfNUfnnJXOAZb1MOStdykHu2wuxlA1EEYjOvU+rssnQx/oZ8p9qAQP4Q6unp1M/APXHWm1hYs0aE08zaACn9blW+L340X+XOZTk6tFui4Cf/K+fboiFXDcBPRdf4D1jYp/3kVNGf8uaGWEa+CdC6wb7sebilFG2tNhgOrwGyh9dI9cCzEfUzPfhwgxysACZmgI0YuX
+ec2-54-237-82-146.compute-1.amazonaws.com,54.237.82.146 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsQKM6wjGwXQXLjX6PaCJZAy4ohy0hVLxc7wmay73gF5ALr80XgAfs2jTpbd05zf5iN9RI+cAQJHql32f9DmXdVwQSd2lj4f0EnAauQdLM9+/xL4hZP+avaVk8jjy+AKGDLcOXwQJF5X2ndaCfNUfnnJXOAZb1MOStdykHu2wuxlA1EEYjOvU+rssnQx/oZ8p9qAQP4Q6unp1M/APXHWm1hYs0aE08zaACn9blW+L340X+XOZTk6tFui4Cf/K+fboiFXDcBPRdf4D1jYp/3kVNGf8uaGWEa+CdC6wb7sebilFG2tNhgOrwGyh9dI9cCzEfUzPfhwgxysACZmgI0YuX
+ip-10-95-185-44.ec2.internal,10.95.185.44 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsQKM6wjGwXQXLjX6PaCJZAy4ohy0hVLxc7wmay73gF5ALr80XgAfs2jTpbd05zf5iN9RI+cAQJHql32f9DmXdVwQSd2lj4f0EnAauQdLM9+/xL4hZP+avaVk8jjy+AKGDLcOXwQJF5X2ndaCfNUfnnJXOAZb1MOStdykHu2wuxlA1EEYjOvU+rssnQx/oZ8p9qAQP4Q6unp1M/APXHWm1hYs0aE08zaACn9blW+L340X+XOZTk6tFui4Cf/K+fboiFXDcBPRdf4D1jYp/3kVNGf8uaGWEa+CdC6wb7sebilFG2tNhgOrwGyh9dI9cCzEfUzPfhwgxysACZmgI0YuX
+ip-10-140-175-79.ec2.internal,10.140.175.79 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDclnQndiVOKbVn1CpIP4H8mOtNIgZmKiIStv5otb8jmFrPmaAebpftmX8l9Lqm4xYeLk6ztQ3sNfeP+2t1H2ePcVU8LaYQ/LU1vaKQTNpJ/S1vFLTwpfJ5euCxcjYgangE1zynOsZSGTA1g9mT8JAHx26+LPLKztLalLg31fau056eEzVhalp1Fubtbo99CwhVdA/taEgPhbGvI06NfSNZEbLS91U0LfnO9cTXvBmHpC4ze+G+oYkODbw7RleHBAsoIofINud4VqM6VMQsqeE6TbGwH5xXpkeYh2FUUe0hZvLrNLg7sKS3IwhhtrxsUBRjxUayL7SeUk3XAoYJe2L7
+node002,10.140.175.79 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDclnQndiVOKbVn1CpIP4H8mOtNIgZmKiIStv5otb8jmFrPmaAebpftmX8l9Lqm4xYeLk6ztQ3sNfeP+2t1H2ePcVU8LaYQ/LU1vaKQTNpJ/S1vFLTwpfJ5euCxcjYgangE1zynOsZSGTA1g9mT8JAHx26+LPLKztLalLg31fau056eEzVhalp1Fubtbo99CwhVdA/taEgPhbGvI06NfSNZEbLS91U0LfnO9cTXvBmHpC4ze+G+oYkODbw7RleHBAsoIofINud4VqM6VMQsqeE6TbGwH5xXpkeYh2FUUe0hZvLrNLg7sKS3IwhhtrxsUBRjxUayL7SeUk3XAoYJe2L7
+ec2-54-205-88-103.compute-1.amazonaws.com,54.205.88.103 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDclnQndiVOKbVn1CpIP4H8mOtNIgZmKiIStv5otb8jmFrPmaAebpftmX8l9Lqm4xYeLk6ztQ3sNfeP+2t1H2ePcVU8LaYQ/LU1vaKQTNpJ/S1vFLTwpfJ5euCxcjYgangE1zynOsZSGTA1g9mT8JAHx26+LPLKztLalLg31fau056eEzVhalp1Fubtbo99CwhVdA/taEgPhbGvI06NfSNZEbLS91U0LfnO9cTXvBmHpC4ze+G+oYkODbw7RleHBAsoIofINud4VqM6VMQsqeE6TbGwH5xXpkeYh2FUUe0hZvLrNLg7sKS3IwhhtrxsUBRjxUayL7SeUk3XAoYJe2L7
+ip-10-140-175-79,10.140.175.79 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDclnQndiVOKbVn1CpIP4H8mOtNIgZmKiIStv5otb8jmFrPmaAebpftmX8l9Lqm4xYeLk6ztQ3sNfeP+2t1H2ePcVU8LaYQ/LU1vaKQTNpJ/S1vFLTwpfJ5euCxcjYgangE1zynOsZSGTA1g9mT8JAHx26+LPLKztLalLg31fau056eEzVhalp1Fubtbo99CwhVdA/taEgPhbGvI06NfSNZEbLS91U0LfnO9cTXvBmHpC4ze+G+oYkODbw7RleHBAsoIofINud4VqM6VMQsqeE6TbGwH5xXpkeYh2FUUe0hZvLrNLg7sKS3IwhhtrxsUBRjxUayL7SeUk3XAoYJe2L7
+node003,10.7.163.123 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAHMkfiTOQhQW1Jb6oRYBH2ZsKUc2iv5M6Z/hIeVi/b99vY8iC5MfrSj9kYhgf4vaUXcjSkPTf4zkFUK/43n8F02vvKlaDKyvvZcq14qVuyk/n6lGIIxdi8tOB6NbDpl5M7FpMTv8sQ7Zkt2KkWEvarTLejVD5VjfYGO8KPGBp4GEgsl0zVD8jmPEypp2neTrS3QtB0uqhgqk0UguK5jjTAtnCu1DotE2eo7cG7SqhaijbgNpxcHDTazgGfO4FnZ0YxY35BH1OFkgGMt2RsfmTiMipP8Y6RF7yEvLZxj4BCX6gOi2+THZtvFAq0Owzh8IcwbrmsHGOTddNZDXXwMUv
+ip-10-7-163-123.ec2.internal,10.7.163.123 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAHMkfiTOQhQW1Jb6oRYBH2ZsKUc2iv5M6Z/hIeVi/b99vY8iC5MfrSj9kYhgf4vaUXcjSkPTf4zkFUK/43n8F02vvKlaDKyvvZcq14qVuyk/n6lGIIxdi8tOB6NbDpl5M7FpMTv8sQ7Zkt2KkWEvarTLejVD5VjfYGO8KPGBp4GEgsl0zVD8jmPEypp2neTrS3QtB0uqhgqk0UguK5jjTAtnCu1DotE2eo7cG7SqhaijbgNpxcHDTazgGfO4FnZ0YxY35BH1OFkgGMt2RsfmTiMipP8Y6RF7yEvLZxj4BCX6gOi2+THZtvFAq0Owzh8IcwbrmsHGOTddNZDXXwMUv
+ip-10-7-163-123,10.7.163.123 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAHMkfiTOQhQW1Jb6oRYBH2ZsKUc2iv5M6Z/hIeVi/b99vY8iC5MfrSj9kYhgf4vaUXcjSkPTf4zkFUK/43n8F02vvKlaDKyvvZcq14qVuyk/n6lGIIxdi8tOB6NbDpl5M7FpMTv8sQ7Zkt2KkWEvarTLejVD5VjfYGO8KPGBp4GEgsl0zVD8jmPEypp2neTrS3QtB0uqhgqk0UguK5jjTAtnCu1DotE2eo7cG7SqhaijbgNpxcHDTazgGfO4FnZ0YxY35BH1OFkgGMt2RsfmTiMipP8Y6RF7yEvLZxj4BCX6gOi2+THZtvFAq0Owzh8IcwbrmsHGOTddNZDXXwMUv
+ec2-54-87-231-100.compute-1.amazonaws.com,54.87.231.100 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAHMkfiTOQhQW1Jb6oRYBH2ZsKUc2iv5M6Z/hIeVi/b99vY8iC5MfrSj9kYhgf4vaUXcjSkPTf4zkFUK/43n8F02vvKlaDKyvvZcq14qVuyk/n6lGIIxdi8tOB6NbDpl5M7FpMTv8sQ7Zkt2KkWEvarTLejVD5VjfYGO8KPGBp4GEgsl0zVD8jmPEypp2neTrS3QtB0uqhgqk0UguK5jjTAtnCu1DotE2eo7cG7SqhaijbgNpxcHDTazgGfO4FnZ0YxY35BH1OFkgGMt2RsfmTiMipP8Y6RF7yEvLZxj4BCX6gOi2+THZtvFAq0Owzh8IcwbrmsHGOTddNZDXXwMUv
+ip-10-233-62-125.ec2.internal,10.233.62.125 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5+xTiBvDaqcpjo2hTmDXhGRq6+WTARTQzy5Op5o/Idv1b+a+OIjH9JNoVt9gL5jbYTC0YAaS6cr+MF3MlC3eQi9dHWJDpvfRBXcNjopuzCRQfoz+kLM9FxAmXvFOquKuuy2nneaFY29JqzYBIeFbhG6dztCBa8tpB2yJ+cUHR1AUpqoDo99B82EaOEw7QuyS0Ov8+THW39QYcT8yheXZ7H+80ImfmesPikb2WTH4NVWGs/ZiyIIIf8aB5+rYkhN8uYpkqONL9wbhMhx8krdyhH3LR2diTvv0wCUxusvPqNNQfrvx7kfEzKd9hQXHz+iJ6Zy7V7PoPQdpxhSfl+AoD
+ip-10-233-62-125,10.233.62.125 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5+xTiBvDaqcpjo2hTmDXhGRq6+WTARTQzy5Op5o/Idv1b+a+OIjH9JNoVt9gL5jbYTC0YAaS6cr+MF3MlC3eQi9dHWJDpvfRBXcNjopuzCRQfoz+kLM9FxAmXvFOquKuuy2nneaFY29JqzYBIeFbhG6dztCBa8tpB2yJ+cUHR1AUpqoDo99B82EaOEw7QuyS0Ov8+THW39QYcT8yheXZ7H+80ImfmesPikb2WTH4NVWGs/ZiyIIIf8aB5+rYkhN8uYpkqONL9wbhMhx8krdyhH3LR2diTvv0wCUxusvPqNNQfrvx7kfEzKd9hQXHz+iJ6Zy7V7PoPQdpxhSfl+AoD
+ec2-54-235-2-222.compute-1.amazonaws.com,54.235.2.222 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5+xTiBvDaqcpjo2hTmDXhGRq6+WTARTQzy5Op5o/Idv1b+a+OIjH9JNoVt9gL5jbYTC0YAaS6cr+MF3MlC3eQi9dHWJDpvfRBXcNjopuzCRQfoz+kLM9FxAmXvFOquKuuy2nneaFY29JqzYBIeFbhG6dztCBa8tpB2yJ+cUHR1AUpqoDo99B82EaOEw7QuyS0Ov8+THW39QYcT8yheXZ7H+80ImfmesPikb2WTH4NVWGs/ZiyIIIf8aB5+rYkhN8uYpkqONL9wbhMhx8krdyhH3LR2diTvv0wCUxusvPqNNQfrvx7kfEzKd9hQXHz+iJ6Zy7V7PoPQdpxhSfl+AoD
+
+2014-05-23 22:20:18,458 PID: 10765 clustersetup.py:267 - INFO - Configuring passwordless ssh for sgeadmin
+2014-05-23 22:20:18,649 PID: 10765 node.py:509 - DEBUG - Using existing key: /home/sgeadmin/.ssh/id_rsa
+2014-05-23 22:20:19,578 PID: 10765 sshutils.py:307 - DEBUG - new /home/sgeadmin/.ssh/known_hosts after removing regex (master|ip-10-51-146-221.ec2.internal|ip-10-51-146-221|ec2-54-227-106-107.compute-1.amazonaws.com) matches:
+ip-10-95-185-44,10.95.185.44 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsQKM6wjGwXQXLjX6PaCJZAy4ohy0hVLxc7wmay73gF5ALr80XgAfs2jTpbd05zf5iN9RI+cAQJHql32f9DmXdVwQSd2lj4f0EnAauQdLM9+/xL4hZP+avaVk8jjy+AKGDLcOXwQJF5X2ndaCfNUfnnJXOAZb1MOStdykHu2wuxlA1EEYjOvU+rssnQx/oZ8p9qAQP4Q6unp1M/APXHWm1hYs0aE08zaACn9blW+L340X+XOZTk6tFui4Cf/K+fboiFXDcBPRdf4D1jYp/3kVNGf8uaGWEa+CdC6wb7sebilFG2tNhgOrwGyh9dI9cCzEfUzPfhwgxysACZmgI0YuX
+node001,10.95.185.44 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsQKM6wjGwXQXLjX6PaCJZAy4ohy0hVLxc7wmay73gF5ALr80XgAfs2jTpbd05zf5iN9RI+cAQJHql32f9DmXdVwQSd2lj4f0EnAauQdLM9+/xL4hZP+avaVk8jjy+AKGDLcOXwQJF5X2ndaCfNUfnnJXOAZb1MOStdykHu2wuxlA1EEYjOvU+rssnQx/oZ8p9qAQP4Q6unp1M/APXHWm1hYs0aE08zaACn9blW+L340X+XOZTk6tFui4Cf/K+fboiFXDcBPRdf4D1jYp/3kVNGf8uaGWEa+CdC6wb7sebilFG2tNhgOrwGyh9dI9cCzEfUzPfhwgxysACZmgI0YuX
+ec2-54-237-82-146.compute-1.amazonaws.com,54.237.82.146 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsQKM6wjGwXQXLjX6PaCJZAy4ohy0hVLxc7wmay73gF5ALr80XgAfs2jTpbd05zf5iN9RI+cAQJHql32f9DmXdVwQSd2lj4f0EnAauQdLM9+/xL4hZP+avaVk8jjy+AKGDLcOXwQJF5X2ndaCfNUfnnJXOAZb1MOStdykHu2wuxlA1EEYjOvU+rssnQx/oZ8p9qAQP4Q6unp1M/APXHWm1hYs0aE08zaACn9blW+L340X+XOZTk6tFui4Cf/K+fboiFXDcBPRdf4D1jYp/3kVNGf8uaGWEa+CdC6wb7sebilFG2tNhgOrwGyh9dI9cCzEfUzPfhwgxysACZmgI0YuX
+ip-10-95-185-44.ec2.internal,10.95.185.44 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsQKM6wjGwXQXLjX6PaCJZAy4ohy0hVLxc7wmay73gF5ALr80XgAfs2jTpbd05zf5iN9RI+cAQJHql32f9DmXdVwQSd2lj4f0EnAauQdLM9+/xL4hZP+avaVk8jjy+AKGDLcOXwQJF5X2ndaCfNUfnnJXOAZb1MOStdykHu2wuxlA1EEYjOvU+rssnQx/oZ8p9qAQP4Q6unp1M/APXHWm1hYs0aE08zaACn9blW+L340X+XOZTk6tFui4Cf/K+fboiFXDcBPRdf4D1jYp/3kVNGf8uaGWEa+CdC6wb7sebilFG2tNhgOrwGyh9dI9cCzEfUzPfhwgxysACZmgI0YuX
+ip-10-140-175-79.ec2.internal,10.140.175.79 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDclnQndiVOKbVn1CpIP4H8mOtNIgZmKiIStv5otb8jmFrPmaAebpftmX8l9Lqm4xYeLk6ztQ3sNfeP+2t1H2ePcVU8LaYQ/LU1vaKQTNpJ/S1vFLTwpfJ5euCxcjYgangE1zynOsZSGTA1g9mT8JAHx26+LPLKztLalLg31fau056eEzVhalp1Fubtbo99CwhVdA/taEgPhbGvI06NfSNZEbLS91U0LfnO9cTXvBmHpC4ze+G+oYkODbw7RleHBAsoIofINud4VqM6VMQsqeE6TbGwH5xXpkeYh2FUUe0hZvLrNLg7sKS3IwhhtrxsUBRjxUayL7SeUk3XAoYJe2L7
+node002,10.140.175.79 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDclnQndiVOKbVn1CpIP4H8mOtNIgZmKiIStv5otb8jmFrPmaAebpftmX8l9Lqm4xYeLk6ztQ3sNfeP+2t1H2ePcVU8LaYQ/LU1vaKQTNpJ/S1vFLTwpfJ5euCxcjYgangE1zynOsZSGTA1g9mT8JAHx26+LPLKztLalLg31fau056eEzVhalp1Fubtbo99CwhVdA/taEgPhbGvI06NfSNZEbLS91U0LfnO9cTXvBmHpC4ze+G+oYkODbw7RleHBAsoIofINud4VqM6VMQsqeE6TbGwH5xXpkeYh2FUUe0hZvLrNLg7sKS3IwhhtrxsUBRjxUayL7SeUk3XAoYJe2L7
+ec2-54-205-88-103.compute-1.amazonaws.com,54.205.88.103 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDclnQndiVOKbVn1CpIP4H8mOtNIgZmKiIStv5otb8jmFrPmaAebpftmX8l9Lqm4xYeLk6ztQ3sNfeP+2t1H2ePcVU8LaYQ/LU1vaKQTNpJ/S1vFLTwpfJ5euCxcjYgangE1zynOsZSGTA1g9mT8JAHx26+LPLKztLalLg31fau056eEzVhalp1Fubtbo99CwhVdA/taEgPhbGvI06NfSNZEbLS91U0LfnO9cTXvBmHpC4ze+G+oYkODbw7RleHBAsoIofINud4VqM6VMQsqeE6TbGwH5xXpkeYh2FUUe0hZvLrNLg7sKS3IwhhtrxsUBRjxUayL7SeUk3XAoYJe2L7
+ip-10-140-175-79,10.140.175.79 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDclnQndiVOKbVn1CpIP4H8mOtNIgZmKiIStv5otb8jmFrPmaAebpftmX8l9Lqm4xYeLk6ztQ3sNfeP+2t1H2ePcVU8LaYQ/LU1vaKQTNpJ/S1vFLTwpfJ5euCxcjYgangE1zynOsZSGTA1g9mT8JAHx26+LPLKztLalLg31fau056eEzVhalp1Fubtbo99CwhVdA/taEgPhbGvI06NfSNZEbLS91U0LfnO9cTXvBmHpC4ze+G+oYkODbw7RleHBAsoIofINud4VqM6VMQsqeE6TbGwH5xXpkeYh2FUUe0hZvLrNLg7sKS3IwhhtrxsUBRjxUayL7SeUk3XAoYJe2L7
+node003,10.7.163.123 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAHMkfiTOQhQW1Jb6oRYBH2ZsKUc2iv5M6Z/hIeVi/b99vY8iC5MfrSj9kYhgf4vaUXcjSkPTf4zkFUK/43n8F02vvKlaDKyvvZcq14qVuyk/n6lGIIxdi8tOB6NbDpl5M7FpMTv8sQ7Zkt2KkWEvarTLejVD5VjfYGO8KPGBp4GEgsl0zVD8jmPEypp2neTrS3QtB0uqhgqk0UguK5jjTAtnCu1DotE2eo7cG7SqhaijbgNpxcHDTazgGfO4FnZ0YxY35BH1OFkgGMt2RsfmTiMipP8Y6RF7yEvLZxj4BCX6gOi2+THZtvFAq0Owzh8IcwbrmsHGOTddNZDXXwMUv
+ip-10-7-163-123.ec2.internal,10.7.163.123 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAHMkfiTOQhQW1Jb6oRYBH2ZsKUc2iv5M6Z/hIeVi/b99vY8iC5MfrSj9kYhgf4vaUXcjSkPTf4zkFUK/43n8F02vvKlaDKyvvZcq14qVuyk/n6lGIIxdi8tOB6NbDpl5M7FpMTv8sQ7Zkt2KkWEvarTLejVD5VjfYGO8KPGBp4GEgsl0zVD8jmPEypp2neTrS3QtB0uqhgqk0UguK5jjTAtnCu1DotE2eo7cG7SqhaijbgNpxcHDTazgGfO4FnZ0YxY35BH1OFkgGMt2RsfmTiMipP8Y6RF7yEvLZxj4BCX6gOi2+THZtvFAq0Owzh8IcwbrmsHGOTddNZDXXwMUv
+ip-10-7-163-123,10.7.163.123 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAHMkfiTOQhQW1Jb6oRYBH2ZsKUc2iv5M6Z/hIeVi/b99vY8iC5MfrSj9kYhgf4vaUXcjSkPTf4zkFUK/43n8F02vvKlaDKyvvZcq14qVuyk/n6lGIIxdi8tOB6NbDpl5M7FpMTv8sQ7Zkt2KkWEvarTLejVD5VjfYGO8KPGBp4GEgsl0zVD8jmPEypp2neTrS3QtB0uqhgqk0UguK5jjTAtnCu1DotE2eo7cG7SqhaijbgNpxcHDTazgGfO4FnZ0YxY35BH1OFkgGMt2RsfmTiMipP8Y6RF7yEvLZxj4BCX6gOi2+THZtvFAq0Owzh8IcwbrmsHGOTddNZDXXwMUv
+ec2-54-87-231-100.compute-1.amazonaws.com,54.87.231.100 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAHMkfiTOQhQW1Jb6oRYBH2ZsKUc2iv5M6Z/hIeVi/b99vY8iC5MfrSj9kYhgf4vaUXcjSkPTf4zkFUK/43n8F02vvKlaDKyvvZcq14qVuyk/n6lGIIxdi8tOB6NbDpl5M7FpMTv8sQ7Zkt2KkWEvarTLejVD5VjfYGO8KPGBp4GEgsl0zVD8jmPEypp2neTrS3QtB0uqhgqk0UguK5jjTAtnCu1DotE2eo7cG7SqhaijbgNpxcHDTazgGfO4FnZ0YxY35BH1OFkgGMt2RsfmTiMipP8Y6RF7yEvLZxj4BCX6gOi2+THZtvFAq0Owzh8IcwbrmsHGOTddNZDXXwMUv
+ip-10-233-62-125.ec2.internal,10.233.62.125 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5+xTiBvDaqcpjo2hTmDXhGRq6+WTARTQzy5Op5o/Idv1b+a+OIjH9JNoVt9gL5jbYTC0YAaS6cr+MF3MlC3eQi9dHWJDpvfRBXcNjopuzCRQfoz+kLM9FxAmXvFOquKuuy2nneaFY29JqzYBIeFbhG6dztCBa8tpB2yJ+cUHR1AUpqoDo99B82EaOEw7QuyS0Ov8+THW39QYcT8yheXZ7H+80ImfmesPikb2WTH4NVWGs/ZiyIIIf8aB5+rYkhN8uYpkqONL9wbhMhx8krdyhH3LR2diTvv0wCUxusvPqNNQfrvx7kfEzKd9hQXHz+iJ6Zy7V7PoPQdpxhSfl+AoD
+ip-10-233-62-125,10.233.62.125 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5+xTiBvDaqcpjo2hTmDXhGRq6+WTARTQzy5Op5o/Idv1b+a+OIjH9JNoVt9gL5jbYTC0YAaS6cr+MF3MlC3eQi9dHWJDpvfRBXcNjopuzCRQfoz+kLM9FxAmXvFOquKuuy2nneaFY29JqzYBIeFbhG6dztCBa8tpB2yJ+cUHR1AUpqoDo99B82EaOEw7QuyS0Ov8+THW39QYcT8yheXZ7H+80ImfmesPikb2WTH4NVWGs/ZiyIIIf8aB5+rYkhN8uYpkqONL9wbhMhx8krdyhH3LR2diTvv0wCUxusvPqNNQfrvx7kfEzKd9hQXHz+iJ6Zy7V7PoPQdpxhSfl+AoD
+ec2-54-235-2-222.compute-1.amazonaws.com,54.235.2.222 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5+xTiBvDaqcpjo2hTmDXhGRq6+WTARTQzy5Op5o/Idv1b+a+OIjH9JNoVt9gL5jbYTC0YAaS6cr+MF3MlC3eQi9dHWJDpvfRBXcNjopuzCRQfoz+kLM9FxAmXvFOquKuuy2nneaFY29JqzYBIeFbhG6dztCBa8tpB2yJ+cUHR1AUpqoDo99B82EaOEw7QuyS0Ov8+THW39QYcT8yheXZ7H+80ImfmesPikb2WTH4NVWGs/ZiyIIIf8aB5+rYkhN8uYpkqONL9wbhMhx8krdyhH3LR2diTvv0wCUxusvPqNNQfrvx7kfEzKd9hQXHz+iJ6Zy7V7PoPQdpxhSfl+AoD
+
+2014-05-23 22:20:20,316 PID: 10765 cluster.py:759 - DEBUG - existing nodes: {u'i-e84ec9bb': <Node: master (i-e84ec9bb)>}
+2014-05-23 22:20:20,316 PID: 10765 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:20:20,316 PID: 10765 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>]
+2014-05-23 22:20:20,316 PID: 10765 cluster.py:1714 - INFO - Running plugin starcluster.plugins.sge.SGEPlugin
+2014-05-23 22:20:20,344 PID: 10765 sge.py:175 - INFO - Configuring SGE...
+2014-05-23 22:20:20,407 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && cd /opt/sge6 && sed 's/AddQueue/#AddQueue/g' inst_sge > inst_sge_sc
+2014-05-23 22:20:20,468 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && cd /opt/sge6 && sed 's/AddQueue/#AddQueue/g' inst_sge > inst_sge_sc':
+
+2014-05-23 22:20:20,562 PID: 10765 utils.py:118 - INFO - Setting up NFS took 0.000 mins
+2014-05-23 22:20:20,588 PID: 10765 sge.py:139 - INFO - Removing previous SGE installation...
+2014-05-23 22:20:20,623 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && rm -rf /opt/sge6/default
+2014-05-23 22:20:20,721 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && rm -rf /opt/sge6/default':
+
+2014-05-23 22:20:20,757 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && exportfs -fr
+2014-05-23 22:20:20,845 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && exportfs -fr':
+
+2014-05-23 22:20:21,004 PID: 10765 sge.py:151 - INFO - Installing Sun Grid Engine...
+2014-05-23 22:20:21,069 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && /opt/sge6/util/arch
+2014-05-23 22:20:21,122 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && /opt/sge6/util/arch':
+linux-x64
+2014-05-23 22:20:21,277 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && cd /opt/sge6 && TERM=rxvt ./inst_sge_sc -m -x -noremote -auto ./ec2_sge.conf
+2014-05-23 22:20:25,494 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && cd /opt/sge6 && TERM=rxvt ./inst_sge_sc -m -x -noremote -auto ./ec2_sge.conf':
+Reading configuration from file ./ec2_sge.conf
+[H[2JInstall log can be found in: /opt/sge6/default/common/install_logs/qmaster_install_master_2014-05-24_02:20:14.log
+Install log can be found in: /opt/sge6/default/common/install_logs/execd_install_master_2014-05-24_02:20:17.log
+2014-05-23 22:20:25,529 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && cat /proc/cpuinfo | grep processor | wc -l
+2014-05-23 22:20:25,619 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && cat /proc/cpuinfo | grep processor | wc -l':
+8
+2014-05-23 22:20:25,721 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && qconf -aattr hostgroup hostlist master @allhosts
+2014-05-23 22:20:25,827 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && qconf -aattr hostgroup hostlist master @allhosts':
+root@master modified "@allhosts" in host group list
+2014-05-23 22:20:25,929 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && qconf -aattr queue slots "[master=8]" all.q
+2014-05-23 22:20:25,973 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && qconf -aattr queue slots "[master=8]" all.q':
+root@master modified "all.q" in cluster queue list
+2014-05-23 22:20:26,075 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && qconf -mattr queue shell "/bin/bash" all.q
+2014-05-23 22:20:26,112 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && qconf -mattr queue shell "/bin/bash" all.q':
+root@master modified "all.q" in cluster queue list
+2014-05-23 22:20:26,273 PID: 10765 sge.py:70 - INFO - Creating SGE parallel environment 'orte'
+2014-05-23 22:20:26,275 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:20:27,399 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && qconf -Ap /tmp/pe.txt
+2014-05-23 22:20:27,437 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && qconf -Ap /tmp/pe.txt':
+root@master added "orte" to parallel environment list
+2014-05-23 22:20:27,437 PID: 10765 sge.py:87 - INFO - Adding parallel environment 'orte' to queue 'all.q'
+2014-05-23 22:20:27,539 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && qconf -mattr queue pe_list "orte" all.q
+2014-05-23 22:20:27,581 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && qconf -mattr queue pe_list "orte" all.q':
+Unable to find "orte" in "pe_list" of "all.q" - Adding new element.
+
+root@master modified "all.q" in cluster queue list
+2014-05-23 22:20:27,678 PID: 10765 cluster.py:759 - DEBUG - existing nodes: {u'i-e84ec9bb': <Node: master (i-e84ec9bb)>}
+2014-05-23 22:20:27,678 PID: 10765 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:20:27,678 PID: 10765 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>]
+2014-05-23 22:20:27,679 PID: 10765 cluster.py:1714 - INFO - Running plugin starcluster.plugins.hadoop.Hadoop
+2014-05-23 22:20:27,679 PID: 10765 hadoop.py:220 - INFO - Configuring Hadoop...
+2014-05-23 22:20:27,679 PID: 10765 hadoop.py:221 - INFO - Adding user sgeadmin to hadoop group
+2014-05-23 22:20:27,686 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:20:27,720 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && gpasswd -a sgeadmin hadoop
+2014-05-23 22:20:27,848 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && gpasswd -a sgeadmin hadoop':
+Adding user sgeadmin to group hadoop
+2014-05-23 22:20:28,687 PID: 10765 hadoop.py:230 - INFO - Installing configuration templates...
+2014-05-23 22:20:28,688 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:20:28,723 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && cp -r /etc/hadoop-0.20/conf.empty /etc/hadoop-0.20/conf.starcluster
+2014-05-23 22:20:28,768 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && cp -r /etc/hadoop-0.20/conf.empty /etc/hadoop-0.20/conf.starcluster':
+
+2014-05-23 22:20:28,892 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && update-alternatives --install /etc/hadoop-0.20/conf hadoop-0.20-conf /etc/hadoop-0.20/conf.starcluster 50
+2014-05-23 22:20:29,179 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && update-alternatives --install /etc/hadoop-0.20/conf hadoop-0.20-conf /etc/hadoop-0.20/conf.starcluster 50':
+
+2014-05-23 22:20:29,690 PID: 10765 hadoop.py:235 - INFO - Configuring environment...
+2014-05-23 22:20:29,691 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:20:29,811 PID: 10765 sshutils.py:307 - DEBUG - new /etc/hadoop-0.20/conf.starcluster/hadoop-env.sh after removing regex (JAVA_HOME) matches:
+# Set Hadoop-specific environment variables here.
+
+# optional.  When running a distributed configuration it is best to
+# remote nodes.
+
+# The java implementation to use.  Required.
+
+# Extra Java CLASSPATH elements.  Optional.
+# export HADOOP_CLASSPATH="<extra_entries>:$HADOOP_CLASSPATH"
+
+# The maximum amount of heap to use, in MB. Default is 1000.
+# export HADOOP_HEAPSIZE=2000
+
+# Extra Java runtime options.  Empty by default.
+# if [ "$HADOOP_OPTS" == "" ]; then export HADOOP_OPTS=-server; else HADOOP_OPTS+=" -server"; fi
+
+# Command specific options appended to HADOOP_OPTS when specified
+export HADOOP_NAMENODE_OPTS="-Dcom.sun.management.jmxremote $HADOOP_NAMENODE_OPTS"
+export HADOOP_SECONDARYNAMENODE_OPTS="-Dcom.sun.management.jmxremote $HADOOP_SECONDARYNAMENODE_OPTS"
+export HADOOP_DATANODE_OPTS="-Dcom.sun.management.jmxremote $HADOOP_DATANODE_OPTS"
+export HADOOP_BALANCER_OPTS="-Dcom.sun.management.jmxremote $HADOOP_BALANCER_OPTS"
+export HADOOP_JOBTRACKER_OPTS="-Dcom.sun.management.jmxremote $HADOOP_JOBTRACKER_OPTS"
+# export HADOOP_TASKTRACKER_OPTS=
+# The following applies to multiple commands (fs, dfs, fsck, distcp etc)
+# export HADOOP_CLIENT_OPTS
+
+# Extra ssh options.  Empty by default.
+# export HADOOP_SSH_OPTS="-o ConnectTimeout=1 -o SendEnv=HADOOP_CONF_DIR"
+
+# Where log files are stored.  $HADOOP_HOME/logs by default.
+# export HADOOP_LOG_DIR=${HADOOP_HOME}/logs
+
+# File naming remote slave hosts.  $HADOOP_HOME/conf/slaves by default.
+# export HADOOP_SLAVES=${HADOOP_HOME}/conf/slaves
+
+# host:path where hadoop code should be rsync'd from.  Unset by default.
+# export HADOOP_MASTER=master:/home/$USER/src/hadoop
+
+# Seconds to sleep between slave commands.  Unset by default.  This
+# can be useful in large clusters, where, e.g., slave rsyncs can
+# otherwise arrive faster than the master can service them.
+# export HADOOP_SLAVE_SLEEP=0.1
+
+# The directory where pid files are stored. /tmp by default.
+# NOTE: this should be set to a directory that can only be written to by 
+#       the users that are going to run the hadoop daemons.  Otherwise there is
+#       the potential for a symlink attack.
+# export HADOOP_PID_DIR=/var/hadoop/pids
+
+# A string representing this instance of hadoop. $USER by default.
+# export HADOOP_IDENT_STRING=$USER
+
+# The scheduling priority for daemon processes.  See 'man nice'.
+# export HADOOP_NICENESS=10
+
+2014-05-23 22:20:30,692 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:20:31,694 PID: 10765 hadoop.py:240 - INFO - Configuring MapReduce Site...
+2014-05-23 22:20:31,696 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:20:32,697 PID: 10765 hadoop.py:245 - INFO - Configuring Core Site...
+2014-05-23 22:20:32,699 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:20:33,700 PID: 10765 hadoop.py:250 - INFO - Configuring HDFS Site...
+2014-05-23 22:20:33,702 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:20:34,703 PID: 10765 hadoop.py:255 - INFO - Configuring masters file...
+2014-05-23 22:20:34,704 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:20:35,705 PID: 10765 hadoop.py:260 - INFO - Configuring slaves file...
+2014-05-23 22:20:35,707 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:20:36,708 PID: 10765 hadoop.py:265 - INFO - Configuring HDFS...
+2014-05-23 22:20:36,709 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:20:36,775 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && chown -R hdfs:hadoop /mnt/hadoop
+2014-05-23 22:20:36,827 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && chown -R hdfs:hadoop /mnt/hadoop':
+
+2014-05-23 22:20:36,862 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && chmod -R 775 /mnt/hadoop
+2014-05-23 22:20:36,951 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && chmod -R 775 /mnt/hadoop':
+
+2014-05-23 22:20:37,078 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && chown -R mapred:hadoop /mnt/hadoop/hadoop-mapred
+2014-05-23 22:20:37,111 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && chown -R mapred:hadoop /mnt/hadoop/hadoop-mapred':
+
+2014-05-23 22:20:37,214 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && chmod -R 775 /mnt/hadoop/hadoop-mapred
+2014-05-23 22:20:37,247 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && chmod -R 775 /mnt/hadoop/hadoop-mapred':
+
+2014-05-23 22:20:37,381 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && chown -R sgeadmin:hadoop /mnt/hadoop/hadoop-sgeadmin
+2014-05-23 22:20:37,418 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && chown -R sgeadmin:hadoop /mnt/hadoop/hadoop-sgeadmin':
+
+2014-05-23 22:20:37,526 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && chmod -R 775 /mnt/hadoop/hadoop-sgeadmin
+2014-05-23 22:20:37,560 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && chmod -R 775 /mnt/hadoop/hadoop-sgeadmin':
+
+2014-05-23 22:20:37,711 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:20:37,713 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && chown -R hdfs:hadoop /mnt/hadoop/hadoop-hdfs
+2014-05-23 22:20:37,747 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && chown -R hdfs:hadoop /mnt/hadoop/hadoop-hdfs':
+
+2014-05-23 22:20:37,783 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && chmod -R 775 /mnt/hadoop/hadoop-hdfs
+2014-05-23 22:20:37,871 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && chmod -R 775 /mnt/hadoop/hadoop-hdfs':
+
+2014-05-23 22:20:38,712 PID: 10765 hadoop.py:270 - INFO - Configuring dumbo...
+2014-05-23 22:20:38,713 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:20:39,714 PID: 10765 hadoop.py:288 - INFO - Starting namenode...
+2014-05-23 22:20:39,750 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && /etc/init.d/hadoop-0.20-namenode restart
+2014-05-23 22:20:53,958 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && /etc/init.d/hadoop-0.20-namenode restart':
+Restarting Hadoop namenode daemon: no namenode to stop
+Starting Hadoop namenode daemon: starting namenode, logging to /usr/lib/hadoop-0.20/logs/hadoop-hadoop-namenode-master.out
+hadoop-0.20-namenode.
+2014-05-23 22:20:54,021 PID: 10765 hadoop.py:290 - INFO - Starting secondary namenode...
+2014-05-23 22:20:54,089 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && /etc/init.d/hadoop-0.20-secondarynamenode restart
+2014-05-23 22:21:08,292 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && /etc/init.d/hadoop-0.20-secondarynamenode restart':
+Restarting Hadoop secondarynamenode daemon: no secondarynamenode to stop
+Starting Hadoop secondarynamenode daemon: starting secondarynamenode, logging to /usr/lib/hadoop-0.20/logs/hadoop-hadoop-secondarynamenode-master.out
+hadoop-0.20-secondarynamenode.
+2014-05-23 22:21:08,349 PID: 10765 hadoop.py:292 - INFO - Starting datanode on all nodes...
+2014-05-23 22:21:08,350 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:08,418 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && /etc/init.d/hadoop-0.20-datanode restart
+2014-05-23 22:21:09,352 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:10,354 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:11,355 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:12,357 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:13,358 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:14,359 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:15,361 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:16,362 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:17,372 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:18,374 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:19,375 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:20,376 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:21,377 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:22,379 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:22,628 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && /etc/init.d/hadoop-0.20-datanode restart':
+Restarting Hadoop datanode daemon: no datanode to stop
+Starting Hadoop datanode daemon: starting datanode, logging to /usr/lib/hadoop-0.20/logs/hadoop-hadoop-datanode-master.out
+hadoop-0.20-datanode.
+2014-05-23 22:21:23,381 PID: 10765 hadoop.py:297 - INFO - Starting jobtracker...
+2014-05-23 22:21:23,416 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && /etc/init.d/hadoop-0.20-jobtracker restart
+2014-05-23 22:21:37,576 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && /etc/init.d/hadoop-0.20-jobtracker restart':
+Restarting Hadoop jobtracker daemon: no jobtracker to stop
+Starting Hadoop jobtracker daemon: starting jobtracker, logging to /usr/lib/hadoop-0.20/logs/hadoop-hadoop-jobtracker-master.out
+hadoop-0.20-jobtracker.
+2014-05-23 22:21:37,577 PID: 10765 hadoop.py:299 - INFO - Starting tasktracker on all nodes...
+2014-05-23 22:21:37,577 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:37,696 PID: 10765 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && /etc/init.d/hadoop-0.20-tasktracker restart
+2014-05-23 22:21:38,579 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:39,580 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:40,581 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:41,582 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:42,584 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:43,585 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:44,587 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:45,589 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:46,590 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:47,591 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:48,593 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:49,594 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:50,595 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:51,597 PID: 10765 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 22:21:52,115 PID: 10765 sshutils.py:585 - DEBUG - output of 'source /etc/profile && /etc/init.d/hadoop-0.20-tasktracker restart':
+Restarting Hadoop tasktracker daemon: no tasktracker to stop
+Starting Hadoop tasktracker daemon: starting tasktracker, logging to /usr/lib/hadoop-0.20/logs/hadoop-hadoop-tasktracker-master.out
+hadoop-0.20-tasktracker.
+2014-05-23 22:21:53,152 PID: 10765 hadoop.py:323 - INFO - Job tracker status: http://ec2-54-227-106-107.compute-1.amazonaws.com:50030
+2014-05-23 22:21:53,152 PID: 10765 hadoop.py:324 - INFO - Namenode status: http://ec2-54-227-106-107.compute-1.amazonaws.com:50070
+2014-05-23 22:21:53,152 PID: 10765 utils.py:118 - INFO - Configuring cluster took 1.856 mins
+2014-05-23 22:21:53,152 PID: 10765 utils.py:118 - INFO - Starting cluster took 2.418 mins
+2014-05-23 22:21:53,153 PID: 10765 start.py:255 - INFO - 
+The cluster is now ready to use. To login to the master node as root, run:
+
+    $ starcluster sshmaster dragon
+
+If you're having issues with the cluster you can reboot the instances and completely reconfigure the cluster from scratch using:
+
+    $ starcluster restart dragon
+
+When you're finished using the cluster and wish to terminate it and stop paying for service:
+
+    $ starcluster terminate dragon
+
+Alternatively, if the cluster uses EBS instances, you can use the 'stop' command to shutdown all nodes and put them into a 'stopped' state preserving the EBS volumes backing the nodes:
+
+    $ starcluster stop dragon
+
+WARNING: Any data stored in ephemeral storage (usually /mnt) will be lost!
+
+You can activate a 'stopped' cluster by passing the -x option to the 'start' command:
+
+    $ starcluster start -x dragon
+
+This will start all 'stopped' nodes and reconfigure the cluster.
+
+2014-05-23 22:24:03,152 PID: 10782 config.py:567 - DEBUG - Loading config
+2014-05-23 22:24:03,298 PID: 10782 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 22:24:03,304 PID: 10782 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 22:24:05,635 PID: 10782 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 22:24:05,635 PID: 10782 cluster.py:767 - DEBUG - adding node i-e84ec9bb to self._nodes list
+2014-05-23 22:24:05,635 PID: 10782 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>]
+2014-05-23 22:24:06,171 PID: 10782 sshutils.py:859 - DEBUG - rsa private key fingerprint (/Users/davej/.starcluster/user_keys/east.pem): 94:91:37:dd:62:95:94:50:8b:e9:7c:c8:e2:cc:13:fe:c0:52:51:e7
+2014-05-23 22:24:06,280 PID: 10782 cluster.py:759 - DEBUG - existing nodes: {u'i-e84ec9bb': <Node: master (i-e84ec9bb)>}
+2014-05-23 22:24:06,281 PID: 10782 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:24:06,281 PID: 10782 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>]
+2014-05-23 22:24:06,404 PID: 10782 cluster.py:759 - DEBUG - existing nodes: {u'i-e84ec9bb': <Node: master (i-e84ec9bb)>}
+2014-05-23 22:24:06,404 PID: 10782 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:24:06,404 PID: 10782 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>]
+2014-05-23 22:24:06,404 PID: 10782 cluster.py:983 - DEBUG - Highest node number is 0. choosing 1.
+2014-05-23 22:24:06,404 PID: 10782 cluster.py:1029 - INFO - Launching node(s): node001, node002, node003
+2014-05-23 22:24:06,583 PID: 10782 cluster.py:911 - DEBUG - Userdata size in KB: 0.61
+2014-05-23 22:24:06,855 PID: 10782 cluster.py:911 - DEBUG - Userdata size in KB: 0.61
+2014-05-23 22:24:06,965 PID: 10782 awsutils.py:495 - DEBUG - Forcing delete_on_termination for AMI: ami-6b211202
+2014-05-23 22:24:07,480 PID: 10782 cluster.py:911 - DEBUG - Userdata size in KB: 0.61
+2014-05-23 22:24:07,551 PID: 10782 awsutils.py:495 - DEBUG - Forcing delete_on_termination for AMI: ami-6b211202
+2014-05-23 22:24:07,913 PID: 10782 cluster.py:911 - DEBUG - Userdata size in KB: 0.61
+2014-05-23 22:24:07,988 PID: 10782 awsutils.py:495 - DEBUG - Forcing delete_on_termination for AMI: ami-6b211202
+2014-05-23 22:24:08,208 PID: 10782 cli.py:277 - ERROR - MaxSpotInstanceCountExceeded: Max spot instance count exceeded
+Traceback (most recent call last):
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cli.py", line 274, in main
+    sc.execute(args)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/commands/addnode.py", line 128, in execute
+    no_create=self.opts.no_create)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cluster.py", line 189, in add_nodes
+    no_create=no_create)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cluster.py", line 1033, in add_nodes
+    spot_bid=spot_bid)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cluster.py", line 964, in create_nodes
+    resvs.extend(self.ec2.request_instances(image_id, **kwargs))
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/awsutils.py", line 517, in request_instances
+    **shared_kwargs)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/awsutils.py", line 534, in request_spot_instances
+    return self.conn.request_spot_instances(**kwargs)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/boto/ec2/connection.py", line 1597, in request_spot_instances
+    verb='POST')
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/boto/connection.py", line 1141, in get_list
+    raise self.ResponseError(response.status, response.reason, body)
+EC2ResponseError: EC2ResponseError: 400 Bad Request
+<?xml version="1.0" encoding="UTF-8"?>
+<Response><Errors><Error><Code>MaxSpotInstanceCountExceeded</Code><Message>Max spot instance count exceeded</Message></Error></Errors><RequestID>fbabc125-8c2f-4b4e-98dd-940a7d80ca09</RequestID></Response>
+2014-05-23 22:49:08,263 PID: 10857 config.py:567 - DEBUG - Loading config
+2014-05-23 22:49:08,286 PID: 10857 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 22:49:08,307 PID: 10857 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 22:49:09,222 PID: 10857 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 22:49:09,222 PID: 10857 cluster.py:767 - DEBUG - adding node i-e84ec9bb to self._nodes list
+2014-05-23 22:49:09,223 PID: 10857 cluster.py:767 - DEBUG - adding node i-9659dfc5 to self._nodes list
+2014-05-23 22:49:09,883 PID: 10857 cluster.py:767 - DEBUG - adding node i-1266e041 to self._nodes list
+2014-05-23 22:49:10,433 PID: 10857 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-9659dfc5)>, <Node: node002 (i-1266e041)>]
+2014-05-23 22:49:10,989 PID: 10857 sshutils.py:859 - DEBUG - rsa private key fingerprint (/Users/davej/.starcluster/user_keys/east.pem): 94:91:37:dd:62:95:94:50:8b:e9:7c:c8:e2:cc:13:fe:c0:52:51:e7
+2014-05-23 22:49:11,089 PID: 10857 cluster.py:759 - DEBUG - existing nodes: {u'i-9659dfc5': <Node: node001 (i-9659dfc5)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-1266e041': <Node: node002 (i-1266e041)>}
+2014-05-23 22:49:11,089 PID: 10857 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:49:11,089 PID: 10857 cluster.py:762 - DEBUG - updating existing node i-9659dfc5 in self._nodes
+2014-05-23 22:49:11,090 PID: 10857 cluster.py:762 - DEBUG - updating existing node i-1266e041 in self._nodes
+2014-05-23 22:49:11,090 PID: 10857 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-9659dfc5)>, <Node: node002 (i-1266e041)>]
+2014-05-23 22:49:21,962 PID: 10857 cluster.py:759 - DEBUG - existing nodes: {u'i-9659dfc5': <Node: node001 (i-9659dfc5)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-1266e041': <Node: node002 (i-1266e041)>}
+2014-05-23 22:49:21,962 PID: 10857 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:49:21,962 PID: 10857 cluster.py:762 - DEBUG - updating existing node i-9659dfc5 in self._nodes
+2014-05-23 22:49:21,962 PID: 10857 cluster.py:762 - DEBUG - updating existing node i-1266e041 in self._nodes
+2014-05-23 22:49:21,962 PID: 10857 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-9659dfc5)>, <Node: node002 (i-1266e041)>]
+2014-05-23 22:49:21,962 PID: 10857 cluster.py:1714 - INFO - Running plugin starcluster.plugins.hadoop.Hadoop
+2014-05-23 22:49:21,962 PID: 10857 cluster.py:1718 - DEBUG - method on_shutdown not implemented by plugin starcluster.plugins.hadoop.Hadoop
+2014-05-23 22:49:22,051 PID: 10857 cluster.py:759 - DEBUG - existing nodes: {u'i-9659dfc5': <Node: node001 (i-9659dfc5)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-1266e041': <Node: node002 (i-1266e041)>}
+2014-05-23 22:49:22,051 PID: 10857 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:49:22,051 PID: 10857 cluster.py:762 - DEBUG - updating existing node i-9659dfc5 in self._nodes
+2014-05-23 22:49:22,051 PID: 10857 cluster.py:762 - DEBUG - updating existing node i-1266e041 in self._nodes
+2014-05-23 22:49:22,051 PID: 10857 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-9659dfc5)>, <Node: node002 (i-1266e041)>]
+2014-05-23 22:49:22,052 PID: 10857 cluster.py:1714 - INFO - Running plugin starcluster.plugins.sge.SGEPlugin
+2014-05-23 22:49:22,052 PID: 10857 cluster.py:1718 - DEBUG - method on_shutdown not implemented by plugin starcluster.plugins.sge.SGEPlugin
+2014-05-23 22:49:22,148 PID: 10857 cluster.py:759 - DEBUG - existing nodes: {u'i-9659dfc5': <Node: node001 (i-9659dfc5)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-1266e041': <Node: node002 (i-1266e041)>}
+2014-05-23 22:49:22,148 PID: 10857 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:49:22,148 PID: 10857 cluster.py:762 - DEBUG - updating existing node i-9659dfc5 in self._nodes
+2014-05-23 22:49:22,148 PID: 10857 cluster.py:762 - DEBUG - updating existing node i-1266e041 in self._nodes
+2014-05-23 22:49:22,149 PID: 10857 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-9659dfc5)>, <Node: node002 (i-1266e041)>]
+2014-05-23 22:49:22,149 PID: 10857 cluster.py:1714 - INFO - Running plugin starcluster.clustersetup.DefaultClusterSetup
+2014-05-23 22:49:22,149 PID: 10857 cluster.py:1718 - DEBUG - method on_shutdown not implemented by plugin starcluster.clustersetup.DefaultClusterSetup
+2014-05-23 22:49:22,244 PID: 10857 cluster.py:759 - DEBUG - existing nodes: {u'i-9659dfc5': <Node: node001 (i-9659dfc5)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-1266e041': <Node: node002 (i-1266e041)>}
+2014-05-23 22:49:22,245 PID: 10857 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:49:22,245 PID: 10857 cluster.py:762 - DEBUG - updating existing node i-9659dfc5 in self._nodes
+2014-05-23 22:49:22,245 PID: 10857 cluster.py:762 - DEBUG - updating existing node i-1266e041 in self._nodes
+2014-05-23 22:49:22,245 PID: 10857 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-9659dfc5)>, <Node: node002 (i-1266e041)>]
+2014-05-23 22:49:22,453 PID: 10857 node.py:889 - INFO - Detaching volume vol-d7fd1692 from master
+2014-05-23 22:49:23,096 PID: 10857 cluster.py:759 - DEBUG - existing nodes: {u'i-9659dfc5': <Node: node001 (i-9659dfc5)>, u'i-e84ec9bb': <Node: master (i-e84ec9bb)>, u'i-1266e041': <Node: node002 (i-1266e041)>}
+2014-05-23 22:49:23,096 PID: 10857 cluster.py:762 - DEBUG - updating existing node i-e84ec9bb in self._nodes
+2014-05-23 22:49:23,097 PID: 10857 cluster.py:762 - DEBUG - updating existing node i-9659dfc5 in self._nodes
+2014-05-23 22:49:23,097 PID: 10857 cluster.py:762 - DEBUG - updating existing node i-1266e041 in self._nodes
+2014-05-23 22:49:23,097 PID: 10857 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-e84ec9bb)>, <Node: node001 (i-9659dfc5)>, <Node: node002 (i-1266e041)>]
+2014-05-23 22:49:23,097 PID: 10857 node.py:987 - INFO - Terminating node: master (i-e84ec9bb)
+2014-05-23 22:49:23,468 PID: 10857 node.py:985 - INFO - Canceling spot request sir-06ff8e4a
+2014-05-23 22:49:23,980 PID: 10857 node.py:987 - INFO - Terminating node: node001 (i-9659dfc5)
+2014-05-23 22:49:24,390 PID: 10857 node.py:985 - INFO - Canceling spot request sir-db54724f
+2014-05-23 22:49:24,719 PID: 10857 node.py:987 - INFO - Terminating node: node002 (i-1266e041)
+2014-05-23 22:49:25,231 PID: 10857 cluster.py:1579 - INFO - Canceling spot instance request: sir-06ff8e4a
+2014-05-23 22:49:25,438 PID: 10857 cluster.py:1579 - INFO - Canceling spot instance request: sir-db54724f
+2014-05-23 22:49:25,721 PID: 10857 utils.py:649 - INFO - Waiting for cluster to terminate...
+2014-05-23 22:50:54,287 PID: 10857 utils.py:649 - INFO - Removing placement group: @sc-dragon
+2014-05-23 22:50:56,091 PID: 10857 utils.py:649 - INFO - Removing security group: @sc-dragon
+2014-05-23 23:00:09,862 PID: 10867 config.py:567 - DEBUG - Loading config
+2014-05-23 23:00:09,872 PID: 10867 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:00:09,897 PID: 10867 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 23:00:10,552 PID: 10867 cli.py:300 - ERROR - zone us-east-2a does not exist in region us-east-1
+2014-05-23 23:00:10,572 PID: 10867 cli.py:301 - DEBUG - zone us-east-2a does not exist in region us-east-1
+Traceback (most recent call last):
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cli.py", line 274, in main
+    sc.execute(args)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/commands/createvolume.py", line 131, in execute
+    zone = self.ec2.get_zone(zone).name
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/awsutils.py", line 1023, in get_zone
+    raise exception.ZoneDoesNotExist(zone, self.region.name)
+ZoneDoesNotExist: zone us-east-2a does not exist in region us-east-1
+2014-05-23 23:00:20,246 PID: 10871 config.py:567 - DEBUG - Loading config
+2014-05-23 23:00:20,247 PID: 10871 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:00:20,252 PID: 10871 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 23:00:20,548 PID: 10871 createvolume.py:91 - INFO - No keypair specified, picking one from config...
+2014-05-23 23:00:20,661 PID: 10871 createvolume.py:97 - INFO - Using keypair: east
+2014-05-23 23:00:20,990 PID: 10871 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 23:00:20,990 PID: 10871 cluster.py:775 - DEBUG - returning self._nodes = []
+2014-05-23 23:00:21,295 PID: 10871 volume.py:94 - INFO - No instance in group @sc-volumecreator for zone us-east-1a, launching one now.
+2014-05-23 23:00:21,378 PID: 10871 cluster.py:911 - DEBUG - Userdata size in KB: 0.46
+2014-05-23 23:00:21,505 PID: 10871 awsutils.py:495 - DEBUG - Forcing delete_on_termination for AMI: ami-9bf9c9f2
+2014-05-23 23:00:22,044 PID: 10871 cluster.py:968 - INFO - Reservation:r-0209df7c
+2014-05-23 23:00:22,044 PID: 10871 cluster.py:1442 - INFO - Waiting for volume host to come up... (updating every 30s)
+2014-05-23 23:00:22,229 PID: 10871 cluster.py:1399 - INFO - Waiting for all nodes to be in a 'running' state...
+2014-05-23 23:00:22,555 PID: 10871 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 23:00:22,556 PID: 10871 cluster.py:767 - DEBUG - adding node i-db68ee88 to self._nodes list
+2014-05-23 23:00:23,109 PID: 10871 cluster.py:775 - DEBUG - returning self._nodes = [<Node: volhost-us-east-1a (i-db68ee88)>]
+2014-05-23 23:00:53,332 PID: 10871 cluster.py:759 - DEBUG - existing nodes: {u'i-db68ee88': <Node: volhost-us-east-1a (i-db68ee88)>}
+2014-05-23 23:00:53,332 PID: 10871 cluster.py:762 - DEBUG - updating existing node i-db68ee88 in self._nodes
+2014-05-23 23:00:53,332 PID: 10871 cluster.py:775 - DEBUG - returning self._nodes = [<Node: volhost-us-east-1a (i-db68ee88)>]
+2014-05-23 23:01:23,683 PID: 10871 cluster.py:759 - DEBUG - existing nodes: {u'i-db68ee88': <Node: volhost-us-east-1a (i-db68ee88)>}
+2014-05-23 23:01:23,683 PID: 10871 cluster.py:762 - DEBUG - updating existing node i-db68ee88 in self._nodes
+2014-05-23 23:01:23,683 PID: 10871 cluster.py:775 - DEBUG - returning self._nodes = [<Node: volhost-us-east-1a (i-db68ee88)>]
+2014-05-23 23:01:23,684 PID: 10871 cluster.py:1427 - INFO - Waiting for SSH to come up on all nodes...
+2014-05-23 23:01:23,784 PID: 10871 cluster.py:759 - DEBUG - existing nodes: {u'i-db68ee88': <Node: volhost-us-east-1a (i-db68ee88)>}
+2014-05-23 23:01:23,785 PID: 10871 cluster.py:762 - DEBUG - updating existing node i-db68ee88 in self._nodes
+2014-05-23 23:01:23,785 PID: 10871 cluster.py:775 - DEBUG - returning self._nodes = [<Node: volhost-us-east-1a (i-db68ee88)>]
+2014-05-23 23:01:23,791 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:23,867 PID: 10871 sshutils.py:87 - DEBUG - loading private key /Users/davej/.starcluster/user_keys/east.pem
+2014-05-23 23:01:23,867 PID: 10871 sshutils.py:94 - DEBUG - specified key does not end in either rsa or dsa, trying both
+2014-05-23 23:01:23,898 PID: 10871 sshutils.py:185 - DEBUG - Using private key /Users/davej/.starcluster/user_keys/east.pem (RSA)
+2014-05-23 23:01:23,898 PID: 10871 sshutils.py:112 - DEBUG - connecting to host ec2-54-224-235-37.compute-1.amazonaws.com on port 22 as user root
+2014-05-23 23:01:24,793 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:25,794 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:26,796 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:27,797 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:28,798 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:29,799 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:30,801 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:31,802 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:32,804 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:33,805 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:34,806 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:35,808 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:36,810 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:37,811 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:38,812 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:39,814 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:40,814 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:41,815 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:42,817 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:43,819 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:44,820 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:45,821 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:46,823 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:47,824 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:48,826 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:49,381 PID: 10882 config.py:567 - DEBUG - Loading config
+2014-05-23 23:01:49,381 PID: 10882 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:01:49,386 PID: 10882 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 23:01:49,827 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:50,827 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:51,829 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:52,830 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:53,832 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:54,303 PID: 10871 sshutils.py:112 - DEBUG - connecting to host ec2-54-224-235-37.compute-1.amazonaws.com on port 22 as user root
+2014-05-23 23:01:54,809 PID: 10871 sshutils.py:204 - DEBUG - creating sftp connection
+2014-05-23 23:01:54,833 PID: 10871 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:01:55,834 PID: 10871 utils.py:118 - INFO - Waiting for cluster to come up took 1.563 mins
+2014-05-23 23:01:55,971 PID: 10871 cluster.py:759 - DEBUG - existing nodes: {u'i-db68ee88': <Node: volhost-us-east-1a (i-db68ee88)>}
+2014-05-23 23:01:55,971 PID: 10871 cluster.py:762 - DEBUG - updating existing node i-db68ee88 in self._nodes
+2014-05-23 23:01:55,971 PID: 10871 cluster.py:775 - DEBUG - returning self._nodes = [<Node: volhost-us-east-1a (i-db68ee88)>]
+2014-05-23 23:01:56,071 PID: 10871 cluster.py:759 - DEBUG - existing nodes: {u'i-db68ee88': <Node: volhost-us-east-1a (i-db68ee88)>}
+2014-05-23 23:01:56,072 PID: 10871 cluster.py:762 - DEBUG - updating existing node i-db68ee88 in self._nodes
+2014-05-23 23:01:56,072 PID: 10871 cluster.py:775 - DEBUG - returning self._nodes = [<Node: volhost-us-east-1a (i-db68ee88)>]
+2014-05-23 23:01:56,072 PID: 10871 volume.py:197 - INFO - Checking for required remote commands...
+2014-05-23 23:01:56,107 PID: 10871 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && which mkfs.ext3
+2014-05-23 23:01:56,165 PID: 10871 sshutils.py:585 - DEBUG - output of 'source /etc/profile && which mkfs.ext3':
+/sbin/mkfs.ext3
+2014-05-23 23:01:56,166 PID: 10871 awsutils.py:970 - INFO - Creating 20GB volume in zone us-east-1a
+2014-05-23 23:01:56,307 PID: 10871 volume.py:111 - INFO - New volume id: vol-cfb75d8a
+2014-05-23 23:01:56,307 PID: 10871 awsutils.py:1366 - INFO - Waiting for vol-cfb75d8a to become 'available'...
+2014-05-23 23:02:02,897 PID: 10871 volume.py:143 - INFO - Attaching volume vol-cfb75d8a to instance i-db68ee88...
+2014-05-23 23:02:03,203 PID: 10871 awsutils.py:1374 - INFO - Waiting for vol-cfb75d8a to transition to: attached... 
+2014-05-23 23:02:15,901 PID: 10871 volume.py:223 - INFO - Formatting volume...
+2014-05-23 23:02:15,936 PID: 10871 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && mkfs.ext3 /dev/xvdz
+2014-05-23 23:02:41,890 PID: 10871 sshutils.py:585 - DEBUG - output of 'source /etc/profile && mkfs.ext3 /dev/xvdz':
+Filesystem label=
+OS type: Linux
+Block size=4096 (log=2)
+Fragment size=4096 (log=2)
+Stride=0 blocks, Stripe width=0 blocks
+1310720 inodes, 5242880 blocks
+262144 blocks (5.00%) reserved for the super user
+First data block=0
+Maximum filesystem blocks=0
+160 block groups
+32768 blocks per group, 32768 fragments per group
+8192 inodes per group
+Superblock backups stored on blocks:
+32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208,
+4096000
+
+Allocating group tables:   0/160  1/160  2/160  3/160  4/160  5/160  6/160  7/160  8/160  9/160 10/160 11/160 12/160 13/160 14/160 15/160 16/160 17/160 18/160 19/160 20/160 21/160 22/160 23/160 24/160 25/160 26/160 27/160 28/160 29/160 30/160 31/160 32/160 33/160 34/160 35/160 36/160 37/160 38/160 39/160 40/160 41/160 42/160 43/160 44/160 45/160 46/160 47/160 48/160 49/160 50/160 51/160 52/160 53/160 54/160 55/160 56/160 57/160 58/160 59/160 60/160 61/160 62/160 63/160 64/160 65/160 66/160 67/160 68/160 69/160 70/160 71/160 72/160 73/160 74/160 75/160 76/160 77/160 78/160 79/160 80/160 81/160 82/160 83/160 84/160 85/160 86/160 87/160 88/160 89/160 90/160 91/160 92/160 93/160 94/160 95/160 96/160 97/160 98/160 99/160100/160101/160102/160103/160104/160105/160106/160107/160108/160109/160110/160111/160112/160113/160114/160115/160116/160117/160118/160119/160120/160121/160122/160123/160124/160125/160126/160127/160128/160129/160130/160131/160132/160133/160134/160135/160136/160137/160138/160139/160140/160141/160142/160143/160144/160145/160146/160147/160148/160149/160150/160151/160152/160153/160154/160155/160156/160157/160158/160159/160       done
+Writing inode tables:   0/160  1/160  2/160  3/160  4/160  5/160  6/160  7/160  8/160  9/160 10/160 11/160 12/160 13/160 14/160 15/160 16/160 17/160 18/160 19/160 20/160 21/160 22/160 23/160 24/160 25/160 26/160 27/160 28/160 29/160 30/160 31/160 32/160 33/160 34/160 35/160 36/160 37/160 38/160 39/160 40/160 41/160 42/160 43/160 44/160 45/160 46/160 47/160 48/160 49/160 50/160 51/160 52/160 53/160 54/160 55/160 56/160 57/160 58/160 59/160 60/160 61/160 62/160 63/160 64/160 65/160 66/160 67/160 68/160 69/160 70/160 71/160 72/160 73/160 74/160 75/160 76/160 77/160 78/160 79/160 80/160 81/160 82/160 83/160 84/160 85/160 86/160 87/160 88/160 89/160 90/160 91/160 92/160 93/160 94/160 95/160 96/160 97/160 98/160 99/160100/160101/160102/160103/160104/160105/160106/160107/160108/160109/160110/160111/160112/160113/160114/160115/160116/160117/160118/160119/160120/160121/160122/160123/160124/160125/160126/160127/160128/160129/160130/160131/160132/160133/160134/160135/160136/160137/160138/160139/160140/160141/160142/160143/160144/160145/160146/160147/160148/160149/160150/160151/160152/160153/160154/160155/160156/160157/160158/160159/160       done
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information:   0/160  1/160  2/160  3/160  4/160  5/160  6/160  7/160  8/160  9/160 10/160 11/160 12/160 13/160 14/160 15/160 16/160 17/160 18/160 19/160 20/160 21/160 22/160 23/160 24/160 25/160 26/160 27/160 28/160 29/160 30/160 31/160 32/160 33/160 34/160 35/160 36/160 37/160 38/160 39/160 40/160 41/160 42/160 43/160 44/160 45/160 46/160 47/160 48/160 49/160 50/160 51/160 52/160 53/160 54/160 55/160 56/160 57/160 58/160 59/160 60/160 61/160 62/160 63/160 64/160 65/160 66/160 67/160 68/160 69/160 70/160 71/160 72/160 73/160 74/160 75/160 76/160 77/160 78/160 79/160 80/160 81/160 82/160 83/160 84/160 85/160 86/160 87/160 88/160 89/160 90/160 91/160 92/160 93/160 94/160 95/160 96/160 97/160 98/160 99/160100/160101/160102/160103/160104/160105/160106/160107/160108/160109/160110/160111/160112/160113/160114/160115/160116/160117/160118/160119/160120/160121/160122/160123/160124/160125/160126/160127/160128/160129/160130/160131/160132/160133/160134/160135/160136/160137/160138/160139/160140/160141/160142/160143/160144/160145/160146/160147/160148/160149/160150/160151/160152/160153/160154/160155/160156/160157/160158/160159/160       done
+
+mke2fs 1.42.5 (29-Jul-2012)
+2014-05-23 23:02:41,923 PID: 10871 volume.py:259 - INFO - Leaving volume vol-cfb75d8a attached to instance i-db68ee88
+2014-05-23 23:02:41,923 PID: 10871 volume.py:265 - INFO - Not terminating host instance i-db68ee88
+2014-05-23 23:02:41,923 PID: 10871 volume.py:304 - INFO - Your new 20GB volume vol-cfb75d8a has been created successfully
+2014-05-23 23:02:42,241 PID: 10871 volume.py:239 - WARNING - There are still volume hosts running: i-db68ee88
+2014-05-23 23:02:42,241 PID: 10871 utils.py:118 - INFO - Creating volume took 2.360 mins
+2014-05-23 23:03:25,815 PID: 10885 config.py:567 - DEBUG - Loading config
+2014-05-23 23:03:25,842 PID: 10885 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:03:25,847 PID: 10885 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 23:05:16,740 PID: 10894 config.py:567 - DEBUG - Loading config
+2014-05-23 23:05:16,768 PID: 10894 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:05:16,773 PID: 10894 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 23:05:17,983 PID: 10894 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 23:05:17,983 PID: 10894 cluster.py:775 - DEBUG - returning self._nodes = []
+2014-05-23 23:05:18,370 PID: 10894 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 23:05:18,370 PID: 10894 cluster.py:767 - DEBUG - adding node i-db68ee88 to self._nodes list
+2014-05-23 23:05:18,371 PID: 10894 cluster.py:775 - DEBUG - returning self._nodes = [<Node: volhost-us-east-1a (i-db68ee88)>]
+2014-05-23 23:05:18,697 PID: 10894 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 23:05:18,697 PID: 10894 cluster.py:775 - DEBUG - returning self._nodes = []
+2014-05-23 23:06:35,904 PID: 10898 config.py:567 - DEBUG - Loading config
+2014-05-23 23:06:35,904 PID: 10898 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:06:35,909 PID: 10898 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 23:06:36,421 PID: 10898 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 23:06:36,421 PID: 10898 cluster.py:767 - DEBUG - adding node i-db68ee88 to self._nodes list
+2014-05-23 23:06:36,421 PID: 10898 cluster.py:775 - DEBUG - returning self._nodes = [<Node: volhost-us-east-1a (i-db68ee88)>]
+2014-05-23 23:06:36,790 PID: 10898 terminate.py:91 - ERROR - Failed to terminate cluster!
+Traceback (most recent call last):
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/commands/terminate.py", line 83, in terminate
+    require_keys=not force)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cluster.py", line 67, in get_cluster
+    load_volumes=load_volumes)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cluster.py", line 593, in load_receipt
+    master = self.master_node
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cluster.py", line 742, in master_node
+    raise exception.MasterDoesNotExist()
+MasterDoesNotExist: No master node found!
+2014-05-23 23:06:36,826 PID: 10898 terminate.py:93 - ERROR - Use -f to forcefully terminate the cluster
+2014-05-23 23:06:36,826 PID: 10898 cli.py:300 - ERROR - No master node found!
+2014-05-23 23:06:36,828 PID: 10898 cli.py:301 - DEBUG - No master node found!
+Traceback (most recent call last):
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cli.py", line 274, in main
+    sc.execute(args)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/commands/terminate.py", line 101, in execute
+    self.terminate(cluster_name, force=self.opts.force)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/commands/terminate.py", line 83, in terminate
+    require_keys=not force)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cluster.py", line 67, in get_cluster
+    load_volumes=load_volumes)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cluster.py", line 593, in load_receipt
+    master = self.master_node
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cluster.py", line 742, in master_node
+    raise exception.MasterDoesNotExist()
+MasterDoesNotExist: No master node found!
+2014-05-23 23:07:17,712 PID: 10902 config.py:567 - DEBUG - Loading config
+2014-05-23 23:07:17,715 PID: 10902 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:07:38,507 PID: 10905 config.py:567 - DEBUG - Loading config
+2014-05-23 23:07:38,507 PID: 10905 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:07:38,512 PID: 10905 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 23:07:49,688 PID: 10908 config.py:567 - DEBUG - Loading config
+2014-05-23 23:07:49,688 PID: 10908 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:07:49,693 PID: 10908 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 23:07:53,551 PID: 10911 config.py:567 - DEBUG - Loading config
+2014-05-23 23:07:53,551 PID: 10911 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:07:53,556 PID: 10911 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 23:08:32,897 PID: 10917 config.py:567 - DEBUG - Loading config
+2014-05-23 23:08:32,924 PID: 10917 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:08:32,930 PID: 10917 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 23:09:47,490 PID: 10920 config.py:567 - DEBUG - Loading config
+2014-05-23 23:09:47,525 PID: 10920 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:10:28,807 PID: 10926 config.py:567 - DEBUG - Loading config
+2014-05-23 23:10:28,807 PID: 10926 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:10:28,812 PID: 10926 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 23:10:29,571 PID: 10926 removevolume.py:51 - ERROR - volume is currently in use. aborting...
+2014-05-23 23:11:57,625 PID: 10934 config.py:567 - DEBUG - Loading config
+2014-05-23 23:11:57,625 PID: 10934 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:11:57,630 PID: 10934 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 23:11:58,356 PID: 10934 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 23:11:58,356 PID: 10934 cluster.py:767 - DEBUG - adding node i-db68ee88 to self._nodes list
+2014-05-23 23:11:58,356 PID: 10934 cluster.py:775 - DEBUG - returning self._nodes = [<Node: volhost-us-east-1a (i-db68ee88)>]
+2014-05-23 23:11:58,526 PID: 10934 terminate.py:91 - ERROR - Failed to terminate cluster!
+Traceback (most recent call last):
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/commands/terminate.py", line 83, in terminate
+    require_keys=not force)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cluster.py", line 67, in get_cluster
+    load_volumes=load_volumes)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cluster.py", line 593, in load_receipt
+    master = self.master_node
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cluster.py", line 742, in master_node
+    raise exception.MasterDoesNotExist()
+MasterDoesNotExist: No master node found!
+2014-05-23 23:11:58,566 PID: 10934 terminate.py:93 - ERROR - Use -f to forcefully terminate the cluster
+2014-05-23 23:11:58,567 PID: 10934 cli.py:300 - ERROR - No master node found!
+2014-05-23 23:11:58,568 PID: 10934 cli.py:301 - DEBUG - No master node found!
+Traceback (most recent call last):
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cli.py", line 274, in main
+    sc.execute(args)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/commands/terminate.py", line 101, in execute
+    self.terminate(cluster_name, force=self.opts.force)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/commands/terminate.py", line 83, in terminate
+    require_keys=not force)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cluster.py", line 67, in get_cluster
+    load_volumes=load_volumes)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cluster.py", line 593, in load_receipt
+    master = self.master_node
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cluster.py", line 742, in master_node
+    raise exception.MasterDoesNotExist()
+MasterDoesNotExist: No master node found!
+2014-05-23 23:12:06,686 PID: 10937 config.py:567 - DEBUG - Loading config
+2014-05-23 23:12:06,686 PID: 10937 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:12:06,691 PID: 10937 terminate.py:80 - WARNING - Ignoring cluster settings due to --force option
+2014-05-23 23:12:06,691 PID: 10937 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 23:12:07,017 PID: 10937 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 23:12:07,017 PID: 10937 cluster.py:767 - DEBUG - adding node i-db68ee88 to self._nodes list
+2014-05-23 23:12:07,018 PID: 10937 cluster.py:775 - DEBUG - returning self._nodes = [<Node: volhost-us-east-1a (i-db68ee88)>]
+2014-05-23 23:12:13,364 PID: 10937 terminate.py:74 - INFO - Terminating i-db68ee88
+2014-05-23 23:12:13,866 PID: 10937 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 23:12:13,866 PID: 10937 cluster.py:775 - DEBUG - returning self._nodes = []
+2014-05-23 23:12:13,960 PID: 10937 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 23:12:13,960 PID: 10937 cluster.py:775 - DEBUG - returning self._nodes = []
+2014-05-23 23:12:13,961 PID: 10937 cluster.py:1570 - WARNING - Cannot run plugins: No master node found!
+2014-05-23 23:12:14,035 PID: 10937 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 23:12:14,035 PID: 10937 cluster.py:775 - DEBUG - returning self._nodes = []
+2014-05-23 23:12:14,135 PID: 10937 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 23:12:14,136 PID: 10937 cluster.py:775 - DEBUG - returning self._nodes = []
+2014-05-23 23:12:14,370 PID: 10937 utils.py:649 - INFO - Waiting for cluster to terminate...
+2014-05-23 23:12:56,803 PID: 10937 utils.py:649 - INFO - Removing security group: @sc-volumecreator
+2014-05-23 23:13:33,939 PID: 10946 config.py:567 - DEBUG - Loading config
+2014-05-23 23:13:33,966 PID: 10946 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:14:11,504 PID: 10949 config.py:567 - DEBUG - Loading config
+2014-05-23 23:14:11,613 PID: 10949 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:14:11,623 PID: 10949 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 23:14:12,590 PID: 10949 cli.py:300 - ERROR - zone us-east-2a does not exist in region us-east-1
+2014-05-23 23:14:12,592 PID: 10949 cli.py:301 - DEBUG - zone us-east-2a does not exist in region us-east-1
+Traceback (most recent call last):
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cli.py", line 274, in main
+    sc.execute(args)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/commands/createvolume.py", line 131, in execute
+    zone = self.ec2.get_zone(zone).name
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/awsutils.py", line 1023, in get_zone
+    raise exception.ZoneDoesNotExist(zone, self.region.name)
+ZoneDoesNotExist: zone us-east-2a does not exist in region us-east-1
+2014-05-23 23:14:32,824 PID: 10952 config.py:567 - DEBUG - Loading config
+2014-05-23 23:14:32,824 PID: 10952 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:14:32,829 PID: 10952 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 23:14:33,132 PID: 10952 createvolume.py:91 - INFO - No keypair specified, picking one from config...
+2014-05-23 23:14:33,240 PID: 10952 createvolume.py:97 - INFO - Using keypair: east
+2014-05-23 23:14:33,427 PID: 10952 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 23:14:33,427 PID: 10952 cluster.py:775 - DEBUG - returning self._nodes = []
+2014-05-23 23:14:33,660 PID: 10952 awsutils.py:295 - INFO - Creating security group @sc-volumecreator...
+2014-05-23 23:14:35,464 PID: 10952 volume.py:94 - INFO - No instance in group @sc-volumecreator for zone us-east-1a, launching one now.
+2014-05-23 23:14:35,562 PID: 10952 cluster.py:911 - DEBUG - Userdata size in KB: 0.46
+2014-05-23 23:14:35,668 PID: 10952 awsutils.py:495 - DEBUG - Forcing delete_on_termination for AMI: ami-9bf9c9f2
+2014-05-23 23:14:36,592 PID: 10952 cluster.py:968 - INFO - Reservation:r-0b32e475
+2014-05-23 23:14:36,592 PID: 10952 cluster.py:1442 - INFO - Waiting for volume host to come up... (updating every 30s)
+2014-05-23 23:14:36,803 PID: 10952 cluster.py:1399 - INFO - Waiting for all nodes to be in a 'running' state...
+2014-05-23 23:14:37,003 PID: 10952 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 23:14:37,003 PID: 10952 cluster.py:767 - DEBUG - adding node i-0b70f658 to self._nodes list
+2014-05-23 23:14:37,627 PID: 10952 cluster.py:775 - DEBUG - returning self._nodes = [<Node: volhost-us-east-1a (i-0b70f658)>]
+2014-05-23 23:15:07,924 PID: 10952 cluster.py:759 - DEBUG - existing nodes: {u'i-0b70f658': <Node: volhost-us-east-1a (i-0b70f658)>}
+2014-05-23 23:15:07,924 PID: 10952 cluster.py:762 - DEBUG - updating existing node i-0b70f658 in self._nodes
+2014-05-23 23:15:07,924 PID: 10952 cluster.py:775 - DEBUG - returning self._nodes = [<Node: volhost-us-east-1a (i-0b70f658)>]
+2014-05-23 23:15:07,924 PID: 10952 cluster.py:1427 - INFO - Waiting for SSH to come up on all nodes...
+2014-05-23 23:15:08,043 PID: 10952 cluster.py:759 - DEBUG - existing nodes: {u'i-0b70f658': <Node: volhost-us-east-1a (i-0b70f658)>}
+2014-05-23 23:15:08,043 PID: 10952 cluster.py:762 - DEBUG - updating existing node i-0b70f658 in self._nodes
+2014-05-23 23:15:08,043 PID: 10952 cluster.py:775 - DEBUG - returning self._nodes = [<Node: volhost-us-east-1a (i-0b70f658)>]
+2014-05-23 23:15:08,049 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:08,132 PID: 10952 sshutils.py:87 - DEBUG - loading private key /Users/davej/.starcluster/user_keys/east.pem
+2014-05-23 23:15:08,132 PID: 10952 sshutils.py:94 - DEBUG - specified key does not end in either rsa or dsa, trying both
+2014-05-23 23:15:08,151 PID: 10952 sshutils.py:185 - DEBUG - Using private key /Users/davej/.starcluster/user_keys/east.pem (RSA)
+2014-05-23 23:15:08,152 PID: 10952 sshutils.py:112 - DEBUG - connecting to host ec2-54-237-23-229.compute-1.amazonaws.com on port 22 as user root
+2014-05-23 23:15:09,050 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:10,052 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:11,053 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:12,054 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:13,055 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:14,056 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:15,057 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:16,058 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:17,059 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:18,061 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:19,062 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:20,063 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:21,064 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:22,065 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:23,066 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:24,068 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:25,069 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:26,071 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:27,072 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:28,073 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:29,074 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:30,076 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:31,077 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:32,078 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:33,080 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:34,082 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:35,083 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:36,084 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:37,085 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:38,086 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:39,087 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:40,088 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:41,089 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:42,090 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:43,092 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:44,093 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:45,095 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:46,096 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:47,098 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:48,099 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:49,101 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:50,102 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:51,103 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:52,104 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:52,361 PID: 10952 sshutils.py:112 - DEBUG - connecting to host ec2-54-237-23-229.compute-1.amazonaws.com on port 22 as user root
+2014-05-23 23:15:52,875 PID: 10952 sshutils.py:204 - DEBUG - creating sftp connection
+2014-05-23 23:15:53,105 PID: 10952 threadpool.py:168 - DEBUG - unfinished_tasks = 1
+2014-05-23 23:15:54,106 PID: 10952 utils.py:118 - INFO - Waiting for cluster to come up took 1.292 mins
+2014-05-23 23:15:54,196 PID: 10952 cluster.py:759 - DEBUG - existing nodes: {u'i-0b70f658': <Node: volhost-us-east-1a (i-0b70f658)>}
+2014-05-23 23:15:54,196 PID: 10952 cluster.py:762 - DEBUG - updating existing node i-0b70f658 in self._nodes
+2014-05-23 23:15:54,196 PID: 10952 cluster.py:775 - DEBUG - returning self._nodes = [<Node: volhost-us-east-1a (i-0b70f658)>]
+2014-05-23 23:15:54,275 PID: 10952 cluster.py:759 - DEBUG - existing nodes: {u'i-0b70f658': <Node: volhost-us-east-1a (i-0b70f658)>}
+2014-05-23 23:15:54,276 PID: 10952 cluster.py:762 - DEBUG - updating existing node i-0b70f658 in self._nodes
+2014-05-23 23:15:54,276 PID: 10952 cluster.py:775 - DEBUG - returning self._nodes = [<Node: volhost-us-east-1a (i-0b70f658)>]
+2014-05-23 23:15:54,276 PID: 10952 volume.py:197 - INFO - Checking for required remote commands...
+2014-05-23 23:15:54,343 PID: 10952 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && which mkfs.ext3
+2014-05-23 23:15:54,387 PID: 10952 sshutils.py:585 - DEBUG - output of 'source /etc/profile && which mkfs.ext3':
+/sbin/mkfs.ext3
+2014-05-23 23:15:54,387 PID: 10952 awsutils.py:970 - INFO - Creating 20GB volume in zone us-east-1a
+2014-05-23 23:15:54,547 PID: 10952 volume.py:111 - INFO - New volume id: vol-2f89636a
+2014-05-23 23:15:54,547 PID: 10952 awsutils.py:1366 - INFO - Waiting for vol-2f89636a to become 'available'...
+2014-05-23 23:16:01,043 PID: 10952 volume.py:143 - INFO - Attaching volume vol-2f89636a to instance i-0b70f658...
+2014-05-23 23:16:01,371 PID: 10952 awsutils.py:1374 - INFO - Waiting for vol-2f89636a to transition to: attached... 
+2014-05-23 23:16:07,882 PID: 10952 volume.py:223 - INFO - Formatting volume...
+2014-05-23 23:16:07,917 PID: 10952 sshutils.py:561 - DEBUG - executing remote command: source /etc/profile && mkfs.ext3 /dev/xvdz
+2014-05-23 23:16:34,442 PID: 10952 sshutils.py:585 - DEBUG - output of 'source /etc/profile && mkfs.ext3 /dev/xvdz':
+Filesystem label=
+OS type: Linux
+Block size=4096 (log=2)
+Fragment size=4096 (log=2)
+Stride=0 blocks, Stripe width=0 blocks
+1310720 inodes, 5242880 blocks
+262144 blocks (5.00%) reserved for the super user
+First data block=0
+Maximum filesystem blocks=0
+160 block groups
+32768 blocks per group, 32768 fragments per group
+8192 inodes per group
+Superblock backups stored on blocks:
+32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208,
+4096000
+
+Allocating group tables:   0/160  1/160  2/160  3/160  4/160  5/160  6/160  7/160  8/160  9/160 10/160 11/160 12/160 13/160 14/160 15/160 16/160 17/160 18/160 19/160 20/160 21/160 22/160 23/160 24/160 25/160 26/160 27/160 28/160 29/160 30/160 31/160 32/160 33/160 34/160 35/160 36/160 37/160 38/160 39/160 40/160 41/160 42/160 43/160 44/160 45/160 46/160 47/160 48/160 49/160 50/160 51/160 52/160 53/160 54/160 55/160 56/160 57/160 58/160 59/160 60/160 61/160 62/160 63/160 64/160 65/160 66/160 67/160 68/160 69/160 70/160 71/160 72/160 73/160 74/160 75/160 76/160 77/160 78/160 79/160 80/160 81/160 82/160 83/160 84/160 85/160 86/160 87/160 88/160 89/160 90/160 91/160 92/160 93/160 94/160 95/160 96/160 97/160 98/160 99/160100/160101/160102/160103/160104/160105/160106/160107/160108/160109/160110/160111/160112/160113/160114/160115/160116/160117/160118/160119/160120/160121/160122/160123/160124/160125/160126/160127/160128/160129/160130/160131/160132/160133/160134/160135/160136/160137/160138/160139/160140/160141/160142/160143/160144/160145/160146/160147/160148/160149/160150/160151/160152/160153/160154/160155/160156/160157/160158/160159/160       done
+Writing inode tables:   0/160  1/160  2/160  3/160  4/160  5/160  6/160  7/160  8/160  9/160 10/160 11/160 12/160 13/160 14/160 15/160 16/160 17/160 18/160 19/160 20/160 21/160 22/160 23/160 24/160 25/160 26/160 27/160 28/160 29/160 30/160 31/160 32/160 33/160 34/160 35/160 36/160 37/160 38/160 39/160 40/160 41/160 42/160 43/160 44/160 45/160 46/160 47/160 48/160 49/160 50/160 51/160 52/160 53/160 54/160 55/160 56/160 57/160 58/160 59/160 60/160 61/160 62/160 63/160 64/160 65/160 66/160 67/160 68/160 69/160 70/160 71/160 72/160 73/160 74/160 75/160 76/160 77/160 78/160 79/160 80/160 81/160 82/160 83/160 84/160 85/160 86/160 87/160 88/160 89/160 90/160 91/160 92/160 93/160 94/160 95/160 96/160 97/160 98/160 99/160100/160101/160102/160103/160104/160105/160106/160107/160108/160109/160110/160111/160112/160113/160114/160115/160116/160117/160118/160119/160120/160121/160122/160123/160124/160125/160126/160127/160128/160129/160130/160131/160132/160133/160134/160135/160136/160137/160138/160139/160140/160141/160142/160143/160144/160145/160146/160147/160148/160149/160150/160151/160152/160153/160154/160155/160156/160157/160158/160159/160       done
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information:   0/160  1/160  2/160  3/160  4/160  5/160  6/160  7/160  8/160  9/160 10/160 11/160 12/160 13/160 14/160 15/160 16/160 17/160 18/160 19/160 20/160 21/160 22/160 23/160 24/160 25/160 26/160 27/160 28/160 29/160 30/160 31/160 32/160 33/160 34/160 35/160 36/160 37/160 38/160 39/160 40/160 41/160 42/160 43/160 44/160 45/160 46/160 47/160 48/160 49/160 50/160 51/160 52/160 53/160 54/160 55/160 56/160 57/160 58/160 59/160 60/160 61/160 62/160 63/160 64/160 65/160 66/160 67/160 68/160 69/160 70/160 71/160 72/160 73/160 74/160 75/160 76/160 77/160 78/160 79/160 80/160 81/160 82/160 83/160 84/160 85/160 86/160 87/160 88/160 89/160 90/160 91/160 92/160 93/160 94/160 95/160 96/160 97/160 98/160 99/160100/160101/160102/160103/160104/160105/160106/160107/160108/160109/160110/160111/160112/160113/160114/160115/160116/160117/160118/160119/160120/160121/160122/160123/160124/160125/160126/160127/160128/160129/160130/160131/160132/160133/160134/160135/160136/160137/160138/160139/160140/160141/160142/160143/160144/160145/160146/160147/160148/160149/160150/160151/160152/160153/160154/160155/160156/160157/160158/160159/160       done
+
+mke2fs 1.42.5 (29-Jul-2012)
+2014-05-23 23:16:34,443 PID: 10952 volume.py:259 - INFO - Leaving volume vol-2f89636a attached to instance i-0b70f658
+2014-05-23 23:16:34,444 PID: 10952 volume.py:261 - INFO - Terminating host instance i-0b70f658
+2014-05-23 23:16:34,444 PID: 10952 node.py:987 - INFO - Terminating node: volhost-us-east-1a (i-0b70f658)
+2014-05-23 23:16:34,707 PID: 10952 volume.py:304 - INFO - Your new 20GB volume vol-2f89636a has been created successfully
+2014-05-23 23:16:35,036 PID: 10952 volume.py:239 - WARNING - There are still volume hosts running: i-0b70f658
+2014-05-23 23:16:35,036 PID: 10952 utils.py:118 - INFO - Creating volume took 2.030 mins
+2014-05-23 23:32:55,002 PID: 10995 config.py:567 - DEBUG - Loading config
+2014-05-23 23:32:55,004 PID: 10995 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:32:55,013 PID: 10995 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 23:32:55,643 PID: 10995 cli.py:300 - ERROR - cluster template smallcluster does not exist
+2014-05-23 23:32:55,644 PID: 10995 cli.py:301 - DEBUG - cluster template smallcluster does not exist
+Traceback (most recent call last):
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cli.py", line 274, in main
+    sc.execute(args)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/commands/start.py", line 213, in execute
+    template = self.cm.get_default_cluster_template()
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cluster.py", line 97, in get_default_cluster_template
+    return self.cfg.get_default_cluster_template()
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/config.py", line 640, in get_default_cluster_template
+    raise exception.ClusterTemplateDoesNotExist(default)
+ClusterTemplateDoesNotExist: cluster template smallcluster does not exist
+2014-05-23 23:33:18,845 PID: 11000 config.py:567 - DEBUG - Loading config
+2014-05-23 23:33:18,845 PID: 11000 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:33:18,851 PID: 11000 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 23:33:19,252 PID: 11000 cli.py:300 - ERROR - Failed to import plugin rstudio: cannot import name _authorize_port
+2014-05-23 23:33:19,255 PID: 11000 cli.py:301 - DEBUG - Failed to import plugin rstudio: cannot import name _authorize_port
+Traceback (most recent call last):
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cli.py", line 274, in main
+    sc.execute(args)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/commands/start.py", line 225, in execute
+    scluster = self.cm.get_cluster_template(template, tag)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cluster.py", line 108, in get_cluster_template
+    ec2_conn=self.ec2)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/config.py", line 620, in get_cluster_template
+    debug=DEBUG_CONFIG)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/deathrow.py", line 54, in _load_plugins
+    (plugin_name, e[0]))
+PluginLoadError: Failed to import plugin rstudio: cannot import name _authorize_port
