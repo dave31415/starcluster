@@ -93,7 +93,7 @@ NODE_INSTANCE_TYPE = r3.xlarge
 # these volumes, if any, will be NFS shared to the worker nodes
 # see "Configuring EBS Volumes" below on how to define volume sections
 
-#VOLUMES = bigdata
+VOLUMES = bigdata,homedir
 
 # list of plugins to load after StarCluster's default setup routines (OPTIONAL)
 # see "Configuring StarCluster Plugins" below on how to define plugin sections
@@ -124,9 +124,6 @@ EXTENDS=small
 # This section is the same as smallcluster except for the following settings
 NODE_INSTANCE_TYPE = r3.2xlarge
 CLUSTER_SIZE=4
-VOLUMES = bigdata
-plugins = hadoop
-SPOT_BID= 0.07
 
 [cluster large]
 # Declares that this cluster uses mediumcluster as defaults

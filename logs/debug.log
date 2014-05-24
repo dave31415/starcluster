@@ -5339,3 +5339,149 @@ Traceback (most recent call last):
   File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/deathrow.py", line 54, in _load_plugins
     (plugin_name, e[0]))
 PluginLoadError: Failed to import plugin rstudio: cannot import name _authorize_port
+2014-05-23 23:47:11,031 PID: 11054 config.py:567 - DEBUG - Loading config
+2014-05-23 23:47:11,031 PID: 11054 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:47:11,039 PID: 11054 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 23:47:11,705 PID: 11054 rstudio.py:14 - INFO - Installing Rstudio Server on port 8787 of each node
+2014-05-23 23:47:11,705 PID: 11054 rstudio.py:37 - INFO - Shiny Server on port 3838 of each node
+2014-05-23 23:47:11,706 PID: 11054 cluster.py:1803 - INFO - Validating cluster template settings...
+2014-05-23 23:47:11,938 PID: 11054 sshutils.py:859 - DEBUG - rsa private key fingerprint (/Users/davej/.starcluster/user_keys/east.pem): 94:91:37:dd:62:95:94:50:8b:e9:7c:c8:e2:cc:13:fe:c0:52:51:e7
+2014-05-23 23:47:12,013 PID: 11054 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 23:47:12,014 PID: 11054 cluster.py:775 - DEBUG - returning self._nodes = []
+2014-05-23 23:47:12,487 PID: 11054 cluster.py:911 - DEBUG - Userdata size in KB: 0.89
+2014-05-23 23:47:12,487 PID: 11054 cluster.py:1821 - INFO - Cluster template settings are valid
+2014-05-23 23:47:12,491 PID: 11054 cluster.py:1641 - INFO - Starting cluster...
+2014-05-23 23:47:12,491 PID: 11054 cluster.py:1157 - INFO - Launching a 3-node cluster...
+2014-05-23 23:47:12,491 PID: 11054 cluster.py:1130 - DEBUG - Launch map: node001 (ami: ami-6b211202, type: r3.xlarge)...
+2014-05-23 23:47:12,491 PID: 11054 cluster.py:1130 - DEBUG - Launch map: node002 (ami: ami-6b211202, type: r3.xlarge)...
+2014-05-23 23:47:12,491 PID: 11054 cluster.py:1212 - INFO - Launching master node (ami: ami-6b211202, type: r3.xlarge)...
+2014-05-23 23:47:12,588 PID: 11054 awsutils.py:295 - INFO - Creating security group @sc-shamu...
+2014-05-23 23:47:14,411 PID: 11054 awsutils.py:414 - INFO - Creating placement group @sc-shamu...
+2014-05-23 23:47:14,619 PID: 11054 cluster.py:911 - DEBUG - Userdata size in KB: 0.89
+2014-05-23 23:47:14,703 PID: 11054 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-23 23:47:14,703 PID: 11054 cluster.py:775 - DEBUG - returning self._nodes = []
+2014-05-23 23:47:14,796 PID: 11054 awsutils.py:495 - DEBUG - Forcing delete_on_termination for AMI: ami-6b211202
+2014-05-23 23:47:15,832 PID: 11054 cluster.py:968 - INFO - Reservation:r-cebf7bb1
+2014-05-23 23:47:15,832 PID: 11054 cluster.py:1130 - DEBUG - Launch map: node001 (ami: ami-6b211202, type: r3.xlarge)...
+2014-05-23 23:47:15,832 PID: 11054 cluster.py:1130 - DEBUG - Launch map: node002 (ami: ami-6b211202, type: r3.xlarge)...
+2014-05-23 23:47:15,832 PID: 11054 cluster.py:1233 - INFO - Launching node001 (ami: ami-6b211202, type: r3.xlarge)
+2014-05-23 23:47:15,836 PID: 11054 cluster.py:911 - DEBUG - Userdata size in KB: 0.89
+2014-05-23 23:47:15,839 PID: 11054 cluster.py:911 - DEBUG - Userdata size in KB: 0.89
+2014-05-23 23:47:15,913 PID: 11054 awsutils.py:495 - DEBUG - Forcing delete_on_termination for AMI: ami-6b211202
+2014-05-23 23:47:16,447 PID: 11054 cluster.py:968 - INFO - SpotInstanceRequest:sir-7bf2dc4a
+2014-05-23 23:47:16,447 PID: 11054 cluster.py:1130 - DEBUG - Launch map: node001 (ami: ami-6b211202, type: r3.xlarge)...
+2014-05-23 23:47:16,447 PID: 11054 cluster.py:1130 - DEBUG - Launch map: node002 (ami: ami-6b211202, type: r3.xlarge)...
+2014-05-23 23:47:16,448 PID: 11054 cluster.py:1233 - INFO - Launching node002 (ami: ami-6b211202, type: r3.xlarge)
+2014-05-23 23:47:16,451 PID: 11054 cluster.py:911 - DEBUG - Userdata size in KB: 0.89
+2014-05-23 23:47:16,454 PID: 11054 cluster.py:911 - DEBUG - Userdata size in KB: 0.89
+2014-05-23 23:47:16,539 PID: 11054 awsutils.py:495 - DEBUG - Forcing delete_on_termination for AMI: ami-6b211202
+2014-05-23 23:47:16,959 PID: 11054 cluster.py:968 - INFO - SpotInstanceRequest:sir-7f5afe4f
+2014-05-23 23:47:16,959 PID: 11054 awsutils.py:553 - INFO - Waiting for spot requests to propagate...
+2014-05-23 23:47:17,170 PID: 11054 awsutils.py:553 - INFO - Waiting for instances to propagate...
+2014-05-23 23:47:17,397 PID: 11054 cluster.py:1442 - INFO - Waiting for cluster to come up... (updating every 30s)
+2014-05-23 23:47:17,498 PID: 11054 cluster.py:1379 - INFO - Waiting for open spot requests to become active...
+2014-05-23 23:48:11,847 PID: 11054 cli.py:300 - ERROR - Request to start cluster 'shamu' was cancelled!!!
+
+Please be aware that instances may still be running.
+You can check this from the output of:
+
+   $ starcluster listclusters
+
+If you wish to destroy these instances please run:
+
+   $ starcluster terminate shamu
+
+You can then use:
+
+   $ starcluster listclusters
+
+to verify that the cluster has been terminated.
+
+If you would like to re-use these instances, rerun
+the same start command with the -x (--no-create) option
+2014-05-23 23:48:11,919 PID: 11054 cli.py:301 - DEBUG - Request to start cluster 'shamu' was cancelled!!!
+
+Please be aware that instances may still be running.
+You can check this from the output of:
+
+   $ starcluster listclusters
+
+If you wish to destroy these instances please run:
+
+   $ starcluster terminate shamu
+
+You can then use:
+
+   $ starcluster listclusters
+
+to verify that the cluster has been terminated.
+
+If you would like to re-use these instances, rerun
+the same start command with the -x (--no-create) option
+Traceback (most recent call last):
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/cli.py", line 274, in main
+    sc.execute(args)
+  File "/Users/davej/anaconda/lib/python2.7/site-packages/StarCluster-0.95.5-py2.7.egg/starcluster/commands/start.py", line 249, in execute
+    raise exception.CancelledStartRequest(tag)
+CancelledStartRequest: Request to start cluster 'shamu' was cancelled!!!
+
+Please be aware that instances may still be running.
+You can check this from the output of:
+
+   $ starcluster listclusters
+
+If you wish to destroy these instances please run:
+
+   $ starcluster terminate shamu
+
+You can then use:
+
+   $ starcluster listclusters
+
+to verify that the cluster has been terminated.
+
+If you would like to re-use these instances, rerun
+the same start command with the -x (--no-create) option
+2014-05-23 23:48:26,830 PID: 11066 config.py:567 - DEBUG - Loading config
+2014-05-23 23:48:26,830 PID: 11066 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:48:26,835 PID: 11066 cli.py:96 - ERROR - volume 'home' not defined in config
+2014-05-23 23:49:28,214 PID: 11071 config.py:567 - DEBUG - Loading config
+2014-05-23 23:49:28,214 PID: 11071 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:49:28,220 PID: 11071 cli.py:96 - ERROR - volume 'home' not defined in config
+2014-05-23 23:49:47,348 PID: 11076 config.py:567 - DEBUG - Loading config
+2014-05-23 23:49:47,348 PID: 11076 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-23 23:49:47,353 PID: 11076 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-23 23:49:48,866 PID: 11076 rstudio.py:14 - INFO - Installing Rstudio Server on port 8787 of each node
+2014-05-23 23:49:48,867 PID: 11076 rstudio.py:37 - INFO - Shiny Server on port 3838 of each node
+2014-05-23 23:49:48,868 PID: 11076 cluster.py:1803 - INFO - Validating cluster template settings...
+2014-05-23 23:49:49,270 PID: 11076 sshutils.py:859 - DEBUG - rsa private key fingerprint (/Users/davej/.starcluster/user_keys/east.pem): 94:91:37:dd:62:95:94:50:8b:e9:7c:c8:e2:cc:13:fe:c0:52:51:e7
+2014-05-23 23:49:50,139 PID: 11076 cluster.py:911 - DEBUG - Userdata size in KB: 1.04
+2014-05-23 23:49:50,139 PID: 11076 cluster.py:1821 - INFO - Cluster template settings are valid
+2014-05-23 23:49:50,139 PID: 11076 cluster.py:1641 - INFO - Starting cluster...
+2014-05-23 23:49:50,139 PID: 11076 cluster.py:1157 - INFO - Launching a 3-node cluster...
+2014-05-23 23:49:50,139 PID: 11076 cluster.py:1130 - DEBUG - Launch map: node001 (ami: ami-6b211202, type: r3.xlarge)...
+2014-05-23 23:49:50,140 PID: 11076 cluster.py:1130 - DEBUG - Launch map: node002 (ami: ami-6b211202, type: r3.xlarge)...
+2014-05-23 23:49:50,140 PID: 11076 cluster.py:1212 - INFO - Launching master node (ami: ami-6b211202, type: r3.xlarge)...
+2014-05-23 23:49:50,243 PID: 11076 awsutils.py:295 - INFO - Creating security group @sc-willy...
+2014-05-23 23:49:52,141 PID: 11076 awsutils.py:414 - INFO - Creating placement group @sc-willy...
+2014-05-23 23:49:52,365 PID: 11076 cluster.py:911 - DEBUG - Userdata size in KB: 1.04
+2014-05-23 23:49:52,451 PID: 11076 awsutils.py:495 - DEBUG - Forcing delete_on_termination for AMI: ami-6b211202
+2014-05-23 23:49:53,410 PID: 11076 cluster.py:968 - INFO - Reservation:r-1421f76a
+2014-05-23 23:49:53,411 PID: 11076 cluster.py:1130 - DEBUG - Launch map: node001 (ami: ami-6b211202, type: r3.xlarge)...
+2014-05-23 23:49:53,411 PID: 11076 cluster.py:1130 - DEBUG - Launch map: node002 (ami: ami-6b211202, type: r3.xlarge)...
+2014-05-23 23:49:53,411 PID: 11076 cluster.py:1233 - INFO - Launching node001 (ami: ami-6b211202, type: r3.xlarge)
+2014-05-23 23:49:53,415 PID: 11076 cluster.py:911 - DEBUG - Userdata size in KB: 1.04
+2014-05-23 23:49:53,418 PID: 11076 cluster.py:911 - DEBUG - Userdata size in KB: 1.04
+2014-05-23 23:49:53,511 PID: 11076 awsutils.py:495 - DEBUG - Forcing delete_on_termination for AMI: ami-6b211202
+2014-05-23 23:49:54,333 PID: 11076 cluster.py:968 - INFO - SpotInstanceRequest:sir-9c9f4849
+2014-05-23 23:49:54,333 PID: 11076 cluster.py:1130 - DEBUG - Launch map: node001 (ami: ami-6b211202, type: r3.xlarge)...
+2014-05-23 23:49:54,333 PID: 11076 cluster.py:1130 - DEBUG - Launch map: node002 (ami: ami-6b211202, type: r3.xlarge)...
+2014-05-23 23:49:54,333 PID: 11076 cluster.py:1233 - INFO - Launching node002 (ami: ami-6b211202, type: r3.xlarge)
+2014-05-23 23:49:54,337 PID: 11076 cluster.py:911 - DEBUG - Userdata size in KB: 1.04
+2014-05-23 23:49:54,339 PID: 11076 cluster.py:911 - DEBUG - Userdata size in KB: 1.04
+2014-05-23 23:49:54,427 PID: 11076 awsutils.py:495 - DEBUG - Forcing delete_on_termination for AMI: ami-6b211202
+2014-05-23 23:49:55,152 PID: 11076 cluster.py:968 - INFO - SpotInstanceRequest:sir-c5426649
+2014-05-23 23:49:55,152 PID: 11076 awsutils.py:553 - INFO - Waiting for spot requests to propagate...
+2014-05-23 23:49:55,364 PID: 11076 awsutils.py:565 - DEBUG - 0: only 1/2 spot requests have propagated - sleeping...
+2014-05-23 23:50:00,464 PID: 11076 awsutils.py:565 - DEBUG - 1: only 1/2 spot requests have propagated - sleeping...
+2014-05-23 23:50:05,599 PID: 11076 awsutils.py:565 - DEBUG - 2: only 1/2 spot requests have propagated - sleeping...
