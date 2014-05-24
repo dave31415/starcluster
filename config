@@ -98,7 +98,7 @@ VOLUMES = bigdata,homedir
 # list of plugins to load after StarCluster's default setup routines (OPTIONAL)
 # see "Configuring StarCluster Plugins" below on how to define plugin sections
 
-PLUGINS = pkginstaller,createusers,ipcluster,tmux,hadoop,mysqlcluster,xvfb,rstudio,shiny
+PLUGINS = pkginstaller,createusers,ipcluster,tmux,hadoop,rstudio,shiny,xvfb
 
 # list of permissions (or firewall rules) to apply to the cluster's security
 # group (OPTIONAL).
@@ -123,7 +123,7 @@ SPOT_BID = 0.07
 EXTENDS=small
 # This section is the same as smallcluster except for the following settings
 NODE_INSTANCE_TYPE = r3.2xlarge
-CLUSTER_SIZE=4
+CLUSTER_SIZE=5
 
 [cluster large]
 # Declares that this cluster uses mediumcluster as defaults

@@ -7,16 +7,16 @@ def authorize_port(node,port):
     node.ec2.conn.authorize_security_group(group_id=group.id, ip_protocol='tcp', 
         from_port=port,to_port=port, cidr_ip=world_cidr)
 
-
 class RStudioServerInstaller(ClusterSetup):
     '''Install R and RStudio Server'''
     def __init__(self):
         log.info('Installing Rstudio Server on port 8787 of each node')
+        
+        self.port=8787
         self.debian_pkgs="r-base-core gdebi-core libapparmor1"
         self.pkg_file="rstudio-server-0.98.507-amd64.deb"
         self.root_url="http://download2.rstudio.org"
         self.url=self.root_url+'/'+self.pkg_file
-        self.port=8787
         
     def run(self, nodes, master, user, user_shell, volumes):
         for node in nodes:
@@ -34,12 +34,13 @@ class RStudioServerInstaller(ClusterSetup):
 class ShinyServerInstaller(ClusterSetup):
     '''Install Shiny and R if not installed'''
     def __init__(self):
-        log.info('Shiny Server on port 3838 of each node')
+        log.info('Installing Shiny Server on port 3838 of each node')
+        
+        self.port=3838
         self.debian_pkgs="r-base-core gdebi-core"
         self.pkg_file="shiny-server-1.1.0.10000-amd64.deb"
         self.root_url="http://download3.rstudio.org/ubuntu-12.04/x86_64"
         self.url=self.root_url+'/'+self.pkg_file
-        self.port=3838
         
     def run(self, nodes, master, user, user_shell, volumes):
         for node in nodes:
