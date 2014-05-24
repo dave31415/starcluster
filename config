@@ -194,8 +194,7 @@ MOUNT_PATH = /bigdata
 # SOME_PARAM_FOR_MY_PLUGIN = 1
 # SOME_OTHER_PARAM = 2
 
-######################                                                                                               
-## My Plugins ##                                                                                
+######################                                                                  ## My Plugins ##                
 ######################  
 
 [plugin rstudio]
@@ -222,8 +221,9 @@ SETUP_CLASS = rstudio.RStudioServerInstaller
 SETUP_CLASS = starcluster.plugins.users.CreateUsers
 #NUM_USERS = 30
 # # you can also comment out NUM_USERS and specify exact usernames, e.g.
-usernames = davej,jm,suman,aravind,debbie,ken,aaron,jspens,mmason,sean,anand
+usernames = davej,jm,suman,aravind,debbie,ken,aaron,jspens,mmason,sean,anand,rstudio
 DOWNLOAD_KEYS = True
+
 #
 # Use this plugin to configure the Condor queueing system
 # [plugin condor]
