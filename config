@@ -98,7 +98,7 @@ VOLUMES = bigdata,homedir
 # list of plugins to load after StarCluster's default setup routines (OPTIONAL)
 # see "Configuring StarCluster Plugins" below on how to define plugin sections
 
-PLUGINS = pkginstaller,createusers,ipcluster,tmux,hadoop,rstudio,shiny,xvfb
+PLUGINS = pkginstaller,createusers,ipcluster,tmux,hadoop,xvfb,R,rstudio,shiny
 
 # list of permissions (or firewall rules) to apply to the cluster's security
 # group (OPTIONAL).
@@ -197,6 +197,9 @@ MOUNT_PATH = /home
 
 ######################                                                                  ## My Plugins ##                
 ######################  
+
+[plugin R]
+SETUP_CLASS = rstudio.RInstaller
 
 [plugin rstudio]
 SETUP_CLASS = rstudio.RStudioServerInstaller
