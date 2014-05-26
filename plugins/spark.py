@@ -9,16 +9,16 @@ class SparkInstaller(ClusterSetup):
         self.url="http://d3kbcqa49mib13.cloudfront.net/%s.tgz" % self.spark_dir
 
     def run(self, nodes, master, user, user_shell, volumes):
-        open_up_all_ports()
         for node in nodes:
             log.info("Installing %s on %s" % ("Spark", node.alias))
             node.ssh.execute("wget %s &> wget.log" % self.url)
             node.ssh.execute("sleep 2")
             node.ssh.execute("tar xfvz %s.tgz" % self.spark_dir)
-            node.ssh.execute("echo %s > %s/conf/slaves" % (node.alias,spark_dir))
+            node.ssh.execute("echo %s > %s/conf/slaves" % (node.alias,self.spark_dir))
+        self.open_up_all_ports(node)
         master.ssh.execute("%s/sbin/start-all.sh" % self.spark_dir)
         
-    def open_up_all_ports(protocols=['tcp','udp','icmp']):
+    def open_up_all_ports(node,protocols=['tcp','udp','icmp']):
         #this might not be very secure, revisit
         log.info("Opening up all ports for Spark!")
     
