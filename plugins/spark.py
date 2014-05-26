@@ -18,7 +18,7 @@ class SparkInstaller(ClusterSetup):
         self.open_up_all_ports(node)
         master.ssh.execute("%s/sbin/start-all.sh" % self.spark_dir)
         
-    def open_up_all_ports(node,protocols=['tcp','udp','icmp']):
+    def open_up_all_ports(self,node,protocols=['tcp','udp','icmp']):
         #this might not be very secure, revisit
         log.info("Opening up all ports for Spark!")
     

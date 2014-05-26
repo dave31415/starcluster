@@ -59,7 +59,7 @@ class ShinyServerInstaller(ClusterSetup):
         for node in nodes:
             #R and Rstudio
             log.info("Installing %s on %s" % ("Shiny Server", node.alias))
-            if False:
+            if True:
                 node.ssh.execute('sudo apt-get -y install %s' % self.debian_pkgs)
                 #having trouble with this line, quotes
                 node.ssh.execute("wget %s &> wget.log" % self.url)
