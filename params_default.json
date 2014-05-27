@@ -1,0 +1,10 @@
+{
+"AWS_ACCESS_KEY_ID" : "your key",
+"AWS_SECRET_ACCESS_KEY" : "your secret key",
+"AWS_USER_ID" : "your user id , XXXX-YYYY-ZZZZ",
+"REGION" : "east",
+"KEY" : "your key in the east (without .pem)",
+"KEY_LOCATION" : "/home/me/keys",
+"CLUSTER_SIZE" : 3,
+"USER_NAME_LIST" : "tim,dick,jane,rstudio,shiny"
+}
