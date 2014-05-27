@@ -65,3 +65,33 @@
 2014-05-27 10:15:48,954 PID: 5279 sshutils.py:859 - DEBUG - rsa private key fingerprint (/Users/davej/.starcluster/user_keys/east.pem): 94:91:37:dd:62:95:94:50:8b:e9:7c:c8:e2:cc:13:fe:c0:52:51:e7
 2014-05-27 10:15:49,042 PID: 5279 node.py:1091 - DEBUG - Using native OpenSSH client
 2014-05-27 10:15:49,042 PID: 5279 node.py:1104 - DEBUG - ssh_cmd: ssh -i /Users/davej/.starcluster/user_keys/east.pem root@ec2-54-211-74-82.compute-1.amazonaws.com
+2014-05-27 10:51:26,133 PID: 5352 config.py:567 - DEBUG - Loading config
+2014-05-27 10:51:26,136 PID: 5352 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-27 10:51:26,140 PID: 5352 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-27 10:51:26,140 PID: 5352 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/aws.credentials
+2014-05-27 10:51:26,145 PID: 5352 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-27 10:51:26,948 PID: 5352 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-27 10:51:26,948 PID: 5352 cluster.py:767 - DEBUG - adding node i-53a12d00 to self._nodes list
+2014-05-27 10:51:26,948 PID: 5352 cluster.py:767 - DEBUG - adding node i-75a22e26 to self._nodes list
+2014-05-27 10:51:26,948 PID: 5352 cluster.py:767 - DEBUG - adding node i-65be3236 to self._nodes list
+2014-05-27 10:51:26,948 PID: 5352 cluster.py:767 - DEBUG - adding node i-87a529d4 to self._nodes list
+2014-05-27 10:51:26,948 PID: 5352 cluster.py:767 - DEBUG - adding node i-c2a52991 to self._nodes list
+2014-05-27 10:51:26,949 PID: 5352 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-53a12d00)>, <Node: node001 (i-87a529d4)>, <Node: node002 (i-75a22e26)>, <Node: node003 (i-c2a52991)>, <Node: node004 (i-65be3236)>]
+2014-05-27 10:51:27,092 PID: 5352 sshutils.py:859 - DEBUG - rsa private key fingerprint (/Users/davej/.starcluster/user_keys/east.pem): 94:91:37:dd:62:95:94:50:8b:e9:7c:c8:e2:cc:13:fe:c0:52:51:e7
+2014-05-27 10:51:27,215 PID: 5352 node.py:1091 - DEBUG - Using native OpenSSH client
+2014-05-27 10:51:27,215 PID: 5352 node.py:1104 - DEBUG - ssh_cmd: ssh -i /Users/davej/.starcluster/user_keys/east.pem root@ec2-54-211-74-82.compute-1.amazonaws.com
+2014-05-27 10:52:00,577 PID: 5364 config.py:567 - DEBUG - Loading config
+2014-05-27 10:52:00,578 PID: 5364 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-27 10:52:00,580 PID: 5364 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/config
+2014-05-27 10:52:00,580 PID: 5364 config.py:138 - DEBUG - Loading file: /Users/davej/.starcluster/aws.credentials
+2014-05-27 10:52:00,585 PID: 5364 awsutils.py:75 - DEBUG - creating self._conn w/ connection_authenticator kwargs = {'proxy_user': None, 'proxy_pass': None, 'proxy_port': None, 'proxy': None, 'is_secure': True, 'path': '/', 'region': None, 'validate_certs': True, 'port': None}
+2014-05-27 10:52:01,010 PID: 5364 cluster.py:759 - DEBUG - existing nodes: {}
+2014-05-27 10:52:01,010 PID: 5364 cluster.py:767 - DEBUG - adding node i-53a12d00 to self._nodes list
+2014-05-27 10:52:01,010 PID: 5364 cluster.py:767 - DEBUG - adding node i-75a22e26 to self._nodes list
+2014-05-27 10:52:01,010 PID: 5364 cluster.py:767 - DEBUG - adding node i-65be3236 to self._nodes list
+2014-05-27 10:52:01,010 PID: 5364 cluster.py:767 - DEBUG - adding node i-87a529d4 to self._nodes list
+2014-05-27 10:52:01,011 PID: 5364 cluster.py:767 - DEBUG - adding node i-c2a52991 to self._nodes list
+2014-05-27 10:52:01,011 PID: 5364 cluster.py:775 - DEBUG - returning self._nodes = [<Node: master (i-53a12d00)>, <Node: node001 (i-87a529d4)>, <Node: node002 (i-75a22e26)>, <Node: node003 (i-c2a52991)>, <Node: node004 (i-65be3236)>]
+2014-05-27 10:52:01,117 PID: 5364 sshutils.py:859 - DEBUG - rsa private key fingerprint (/Users/davej/.starcluster/user_keys/east.pem): 94:91:37:dd:62:95:94:50:8b:e9:7c:c8:e2:cc:13:fe:c0:52:51:e7
+2014-05-27 10:52:01,229 PID: 5364 node.py:1091 - DEBUG - Using native OpenSSH client
+2014-05-27 10:52:01,229 PID: 5364 node.py:1104 - DEBUG - ssh_cmd: ssh -i /Users/davej/.starcluster/user_keys/east.pem root@ec2-54-211-74-82.compute-1.amazonaws.com
