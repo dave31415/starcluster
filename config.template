@@ -88,7 +88,7 @@ NODE_INSTANCE_TYPE = r3.2xlarge
 # list of plugins to load after StarCluster's default setup routines (OPTIONAL)
 # see "Configuring StarCluster Plugins" below on how to define plugin sections
 
-PLUGINS = pkginstaller,createusers,ipcluster,tmux,hadoop,xvfb,R,rstudio,shiny,spark
+PLUGINS = mount,pkginstaller,createusers,ipcluster,tmux,hadoop,xvfb,R,rstudio,shiny,spark
 
 # list of permissions (or firewall rules) to apply to the cluster's security
 # group (OPTIONAL).
@@ -200,6 +200,9 @@ SETUP_CLASS = rstudio.ShinyServerInstaller
 
 [plugin spark]
 SETUP_CLASS = spark.SparkInstaller
+
+[plugin mount]
+SETUP_CLASS = mount.Mounter
 
 #[plugin fake]
 #SETUP_CLASS = fake.Fake
