@@ -17,7 +17,7 @@ def make_params():
         params["AWS_REGION_HOST"]="ec2.us-east-1.amazonaws.com"
     else :
         params["AVAILABILITY_ZONE"]="us-west-2a"
-        params["NODE_IMAGE_ID"] = "ami-1f85f52f"
+        params["NODE_IMAGE_ID"] = "ami-dfd0a0ef"
         params["AWS_REGION_NAME"]="us-west-2"
         params["AWS_REGION_HOST"]="ec2.us-west-2.amazonaws.com"
 
