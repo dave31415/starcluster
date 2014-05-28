@@ -13,10 +13,14 @@ def make_params():
     if PARS["REGION"] == "east":
         params["AVAILABILITY_ZONE"]="us-east-1a"
         params["NODE_IMAGE_ID"] = "ami-6b211202"
+        params["AWS_REGION_NAME"]="us-east-1"
+        params["AWS_REGION_HOST"]="ec2.us-east-1.amazonaws.com"
     else :
         params["AVAILABILITY_ZONE"]="us-west-2a"
         params["NODE_IMAGE_ID"] = "ami-1f85f52f"
-    
+        params["AWS_REGION_NAME"]="us-west-2"
+        params["AWS_REGION_HOST"]="ec2.us-west-2.amazonaws.com"
+
     #over-write params with these    
     for k,v in PARS.iteritems():
         key=k.upper()
