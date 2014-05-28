@@ -8,5 +8,6 @@
 "CLUSTER_SIZE" : 3,
 "USER_NAME_LIST" : "tim,dick,jane,rstudio,shiny",
 "RSTUDIO_PASSWD" : "your rstudio passwd",
-"SHINY_PASSWD" : "your shiny password"
+"SHINY_PASSWD" : "your shiny password",
+"NOTEBOOK_PASSWD" : "your ipython password",
 }
