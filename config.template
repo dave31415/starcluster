@@ -2,7 +2,7 @@
 ## StarCluster Configuration File ##
 ####################################
 [global]
-DEFAULT_TEMPLATE=smallcluster
+DEFAULT_TEMPLATE=small
 # enable experimental features for this release
 #ENABLE_EXPERIMENTAL=True
 # number of seconds to wait when polling instances (default: 30s)
@@ -239,7 +239,7 @@ SETUP_CLASS = starcluster.plugins.ipcluster.IPCluster
 ENABLE_NOTEBOOK = True
 # # Set a password for the notebook for increased security
 # # This is optional but *highly* recommended
-NOTEBOOK_PASSWD = beachworks
+NOTEBOOK_PASSWD = ${NOTEBOOK_PASSWD}
 # # Set a custom directory for storing/loading notebooks (optional)
 # NOTEBOOK_DIRECTORY = /path/to/notebook/dir
 # # Set a custom packer. Must be one of 'json', 'pickle', or 'msgpack'

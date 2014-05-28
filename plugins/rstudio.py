@@ -1,8 +1,9 @@
 from starcluster.clustersetup import ClusterSetup
 from starcluster.logger import log
+import json
 
 JSONDC=json.JSONDecoder()
-PARS=JSONDC.decode(open('../params.json','rU').read())
+PARS=JSONDC.decode(open('params.json','rU').read())
 rstudio_passwd=PARS['RSTUDIO_PASSWD']
 shiny_passwd=PARS['SHINY_PASSWD']
 
