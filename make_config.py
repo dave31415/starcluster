@@ -14,7 +14,7 @@ def make_params():
         params["AVAILABILITY_ZONE"]="us-east-1a"
         params["NODE_IMAGE_ID"] = "ami-6b211202"
     else :
-        default_params["AVAILABILITY_ZONE"]="us-west-2a"
+        params["AVAILABILITY_ZONE"]="us-west-2a"
         params["NODE_IMAGE_ID"] = "ami-1f85f52f"
     
     #over-write params with these    
